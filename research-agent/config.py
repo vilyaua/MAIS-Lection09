@@ -16,7 +16,10 @@ class Settings(BaseSettings):
     model_powerful: str = "openai:gpt-4.1"
     model_fast: str = "openai:gpt-4.1-mini"
 
-    # Ports
+    # Service hosts (localhost for local dev, service names for Docker)
+    search_mcp_host: str = "localhost"
+    report_mcp_host: str = "localhost"
+    acp_host: str = "localhost"
     search_mcp_port: int = 8901
     report_mcp_port: int = 8902
     acp_port: int = 8903
@@ -43,15 +46,15 @@ class Settings(BaseSettings):
 
     @property
     def search_mcp_url(self) -> str:
-        return f"http://localhost:{self.search_mcp_port}/mcp"
+        return f"http://{self.search_mcp_host}:{self.search_mcp_port}/mcp"
 
     @property
     def report_mcp_url(self) -> str:
-        return f"http://localhost:{self.report_mcp_port}/mcp"
+        return f"http://{self.report_mcp_host}:{self.report_mcp_port}/mcp"
 
     @property
     def acp_url(self) -> str:
-        return f"http://localhost:{self.acp_port}"
+        return f"http://{self.acp_host}:{self.acp_port}"
 
 
 # ---------------------------------------------------------------------------

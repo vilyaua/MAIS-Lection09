@@ -9,6 +9,7 @@ services:
     volumes:
       - ./data:/app/data
       - ./index:/app/index
+      - ./logs:/app/logs
     entrypoint: ["python", "mcp_servers/search_mcp.py"]
 
   report-mcp:
@@ -20,6 +21,7 @@ services:
       - "8902:8902"
     volumes:
       - ./output:/app/output
+      - ./logs:/app/logs
     entrypoint: ["python", "mcp_servers/report_mcp.py"]
 
   acp:
@@ -27,11 +29,14 @@ services:
     build: .
     env_file:
       - .env
+    environment:
+      - SEARCH_MCP_HOST=search-mcp
     ports:
       - "8903:8903"
     volumes:
       - ./data:/app/data
       - ./index:/app/index
+      - ./logs:/app/logs
     entrypoint: ["python", "acp_server.py"]
     depends_on:
       - search-mcp
@@ -43,8 +48,13 @@ services:
     tty: true
     env_file:
       - .env
+    environment:
+      - SEARCH_MCP_HOST=search-mcp
+      - REPORT_MCP_HOST=report-mcp
+      - ACP_HOST=acp
     volumes:
       - ./output:/app/output
+      - ./logs:/app/logs
     entrypoint: ["python", "main.py"]
     depends_on:
       - search-mcp

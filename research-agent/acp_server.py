@@ -70,4 +70,4 @@ async def critic_agent(
 
 
 if __name__ == "__main__":
-    server.run(port=settings.acp_port)
+    server.run(host="0.0.0.0", port=settings.acp_port)  # noqa: S104

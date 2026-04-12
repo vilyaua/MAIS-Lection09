@@ -5,9 +5,9 @@ Calls save_report via MCP (ReportMCP) with HITL interrupt.
 """
 
 import asyncio
+from concurrent.futures import ThreadPoolExecutor
 
-from acp_sdk.client import Client as ACPClient
-from acp_sdk.models import Message, MessagePart
+import httpx
 from langchain.agents import create_agent
 from langchain_core.tools import tool
 from langgraph.checkpoint.memory import InMemorySaver
@@ -17,20 +17,37 @@ from config import SUPERVISOR_PROMPT, Settings
 
 settings = Settings()
 
+# Thread pool for running async code from sync @tool functions
+_executor = ThreadPoolExecutor(max_workers=4)
+
+
+def _run_async(coro):
+    """Run an async coroutine from a sync context (safe even inside an existing event loop)."""
+    return asyncio.run(coro)
+
+
+def _run_async_in_thread(coro):
+    """Run async code in a separate thread to avoid event loop conflicts."""
+    future = _executor.submit(_run_async, coro)
+    return future.result(timeout=300)
+
 
 async def _delegate_acp(agent_name: str, content: str) -> str:
-    """Delegate to an ACP agent and return the response text."""
-    async with ACPClient(base_url=settings.acp_url) as client:
-        run = await client.run_sync(
-            agent=agent_name,
-            input=[Message(parts=[MessagePart(content=content)])],
-        )
-        # Collect output text from all messages
+    """Delegate to an ACP agent via HTTP (bypasses acp-sdk client serialization bug)."""
+    payload = {
+        "agent_name": agent_name,
+        "input": [{"parts": [{"content": content, "content_type": "text/plain"}]}],
+        "mode": "sync",
+    }
+    async with httpx.AsyncClient(timeout=300) as client:
+        resp = await client.post(f"{settings.acp_url}/runs", json=payload)
+        resp.raise_for_status()
+        data = resp.json()
         parts = []
-        for msg in run.output:
-            for part in msg.parts:
-                if hasattr(part, "content") and part.content:
-                    parts.append(part.content)
+        for msg in data.get("output", []):
+            for part in msg.get("parts", []):
+                if part.get("content"):
+                    parts.append(part["content"])
         return "\n".join(parts)
 
 
@@ -50,7 +67,7 @@ def delegate_to_planner(request: str) -> str:
     The Planner decomposes the request into a structured research plan
     with specific search queries and sources to check.
     """
-    return asyncio.get_event_loop().run_until_complete(_delegate_acp("planner", request))
+    return _run_async_in_thread(_delegate_acp("planner", request))
 
 
 @tool
@@ -60,7 +77,7 @@ def delegate_to_researcher(request: str) -> str:
     The Researcher follows the plan, searches web and knowledge base,
     and returns findings with source citations.
     """
-    return asyncio.get_event_loop().run_until_complete(_delegate_acp("researcher", request))
+    return _run_async_in_thread(_delegate_acp("researcher", request))
 
 
 @tool
@@ -70,7 +87,7 @@ def delegate_to_critic(findings: str) -> str:
     The Critic independently verifies findings for freshness, completeness,
     and structure. Returns APPROVE or REVISE verdict.
     """
-    return asyncio.get_event_loop().run_until_complete(_delegate_acp("critic", findings))
+    return _run_async_in_thread(_delegate_acp("critic", findings))
 
 
 @tool
@@ -87,7 +104,7 @@ def save_report(filename: str, content: str) -> str:
     action = decision.get("type", "reject")
 
     if action == "approve":
-        return asyncio.get_event_loop().run_until_complete(_call_report_mcp(filename, content))
+        return _run_async_in_thread(_call_report_mcp(filename, content))
     elif action == "edit":
         feedback = decision.get("feedback", "")
         return f"User requested changes: {feedback}. Please revise the report and call save_report again."

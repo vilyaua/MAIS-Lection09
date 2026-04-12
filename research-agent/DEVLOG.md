@@ -14,3 +14,13 @@
 - `schemas.py`, `retriever.py`, `ingest.py` — reused from hw8
 - `docker-compose.yml` — 4 services: search-mcp, report-mcp, acp, supervisor
 - Added `fastmcp>=3.0.0`, `acp-sdk>=1.0.0`, `langchain-mcp-adapters>=0.1.0` to requirements
+
+## 2026-04-12 — Fixes for Docker networking and runtime issues
+
+- Fixed uvicorn version conflict: pinned `>=0.35.0,<0.36.0` (fastmcp needs >=0.35, acp-sdk needs LoopSetupType removed in 0.36)
+- Fixed ACP server binding: `0.0.0.0` instead of `127.0.0.1` for Docker access
+- Added configurable service hostnames (`SEARCH_MCP_HOST`, `REPORT_MCP_HOST`, `ACP_HOST`) for Docker networking
+- Fixed async event loop conflict: `asyncio.run()` in ThreadPoolExecutor instead of `get_event_loop().run_until_complete()`
+- Worked around acp-sdk client serialization bug: replaced `acp_sdk.client.Client` with direct httpx calls
+- Added `./logs` volume mount to all Docker services
+- Verified full pipeline: Plan -> Research -> Critique (REVISE) -> Research -> Critique (APPROVE) via MCP+ACP
