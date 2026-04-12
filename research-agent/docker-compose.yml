@@ -1,0 +1,65 @@
+services:
+  search-mcp:
+    image: multi-agent-mcp-acp:latest
+    build: .
+    env_file:
+      - .env
+    ports:
+      - "8901:8901"
+    volumes:
+      - ./data:/app/data
+      - ./index:/app/index
+    entrypoint: ["python", "mcp_servers/search_mcp.py"]
+
+  report-mcp:
+    image: multi-agent-mcp-acp:latest
+    build: .
+    env_file:
+      - .env
+    ports:
+      - "8902:8902"
+    volumes:
+      - ./output:/app/output
+    entrypoint: ["python", "mcp_servers/report_mcp.py"]
+
+  acp:
+    image: multi-agent-mcp-acp:latest
+    build: .
+    env_file:
+      - .env
+    ports:
+      - "8903:8903"
+    volumes:
+      - ./data:/app/data
+      - ./index:/app/index
+    entrypoint: ["python", "acp_server.py"]
+    depends_on:
+      - search-mcp
+
+  supervisor:
+    image: multi-agent-mcp-acp:latest
+    build: .
+    stdin_open: true
+    tty: true
+    env_file:
+      - .env
+    volumes:
+      - ./output:/app/output
+    entrypoint: ["python", "main.py"]
+    depends_on:
+      - search-mcp
+      - report-mcp
+      - acp
+    profiles: ["cli"]
+
+  # One-off ingestion
+  ingest:
+    image: multi-agent-mcp-acp:latest
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+      - ./index:/app/index
+    entrypoint: ["python", "ingest.py"]
+    profiles: ["tools"]
