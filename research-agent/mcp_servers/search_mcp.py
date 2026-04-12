@@ -4,6 +4,7 @@ Shared by all 3 agents (Planner, Researcher, Critic).
 Run: python mcp_servers/search_mcp.py  (port 8901)
 """
 
+import asyncio
 import json
 import logging
 import sys
@@ -42,11 +43,14 @@ def _ddgs_search(query: str, max_results: int) -> list[dict]:
 
 
 @mcp.tool
-def web_search(query: str) -> str:
+async def web_search(query: str) -> str:
     """Search the web using DuckDuckGo. Returns titles, URLs, and snippets."""
     try:
-        future = _executor.submit(_ddgs_search, query, settings.max_search_results)
-        results = future.result(timeout=30)
+        loop = asyncio.get_event_loop()
+        results = await asyncio.wait_for(
+            loop.run_in_executor(_executor, _ddgs_search, query, settings.max_search_results),
+            timeout=30,
+        )
         if not results:
             return "No results found."
         formatted = []
@@ -64,21 +68,30 @@ def web_search(query: str) -> str:
         return f"Search error: {e}"
 
 
+def _fetch_url(url: str, max_len: int) -> str:
+    """Fetch URL content synchronously (runs in executor)."""
+    config = trafilatura.settings.use_config()
+    config.set("DEFAULT", "DOWNLOAD_TIMEOUT", "10")
+    downloaded = trafilatura.fetch_url(url, config=config)
+    if downloaded is None:
+        return f"Error: Could not fetch URL: {url}"
+    text = trafilatura.extract(downloaded)
+    if not text:
+        return f"Error: Could not extract text from: {url}"
+    if len(text) > max_len:
+        text = text[:max_len] + "\n\n[... truncated]"
+    return text
+
+
 @mcp.tool
-def read_url(url: str) -> str:
+async def read_url(url: str) -> str:
     """Fetch and extract the main text content from a web page."""
     try:
-        config = trafilatura.settings.use_config()
-        config.set("DEFAULT", "DOWNLOAD_TIMEOUT", "10")
-        downloaded = trafilatura.fetch_url(url, config=config)
-        if downloaded is None:
-            return f"Error: Could not fetch URL: {url}"
-        text = trafilatura.extract(downloaded)
-        if not text:
-            return f"Error: Could not extract text from: {url}"
-        if len(text) > settings.max_url_content_length:
-            text = text[: settings.max_url_content_length] + "\n\n[... truncated]"
-        return text
+        loop = asyncio.get_event_loop()
+        return await asyncio.wait_for(
+            loop.run_in_executor(_executor, _fetch_url, url, settings.max_url_content_length),
+            timeout=30,
+        )
     except Exception as e:
         return f"Error reading URL: {e}"
 

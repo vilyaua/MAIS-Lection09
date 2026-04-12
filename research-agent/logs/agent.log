@@ -1,0 +1,123 @@
+20:05:42 [INFO] Session reset by user
+20:05:46 [INFO] User: compare all available SUVs on spanish market with 0 and ECO. financing: renting new auto all included (around 700 eur per month) for 3-4 years with minimum upfront payment. April 2026. Check realistic numbers and people's reviews
+20:05:48 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:05:55 [INFO] HTTP Request: POST http://acp:8903/runs "HTTP/1.1 200 OK"
+20:05:57 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:10:57 [ERROR] Error during agent turn
+Traceback (most recent call last):
+  File "/app/app.py", line 127, in _run
+    for event in _sync_stream(
+                 ~~~~~~~~~~~~^
+        current_thread_id,
+        ^^^^^^^^^^^^^^^^^^
+        {"messages": [("user", prompt)]},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/app/app.py", line 77, in _sync_stream
+    for chunk in supervisor.stream(input_data, config=config, stream_mode="updates"):
+                 ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/pregel/main.py", line 2736, in stream
+    for _ in runner.tick(
+             ~~~~~~~~~~~^
+        [t for t in loop.tasks.values() if not t.writes],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        schedule_task=loop.accept_push,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/pregel/_runner.py", line 167, in tick
+    run_with_retry(
+    ~~~~~~~~~~~~~~^
+        t,
+        ^^
+    ...<10 lines>...
+        },
+        ^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/pregel/_retry.py", line 126, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 818, in _func
+    outputs = list(
+        executor.map(self._run_one, tool_calls, input_types, tool_runtimes)
+    )
+  File "/usr/local/lib/python3.13/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/runnables/config.py", line 579, in _wrapped_fn
+    return contexts.pop().run(fn, *args)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1031, in _run_one
+    return self._execute_tool_sync(tool_request, input_type, config)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 980, in _execute_tool_sync
+    content = _handle_tool_error(e, flag=self._handle_tool_errors)
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 432, in _handle_tool_error
+    content = flag(e)  # type: ignore [assignment, call-arg]
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 389, in _default_handle_tool_errors
+    raise e
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 937, in _execute_tool_sync
+    response = tool.invoke(call_args, config)
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 642, in invoke
+    return self.run(tool_input, **kwargs)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1001, in run
+    raise error_to_raise
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 967, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 97, in _run
+    return self.func(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/app/supervisor.py", line 80, in delegate_to_researcher
+    return _run_async_in_thread(_delegate_acp("researcher", request))
+  File "/app/supervisor.py", line 32, in _run_async_in_thread
+    return future.result(timeout=300)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/concurrent/futures/_base.py", line 458, in result
+    raise TimeoutError()
+TimeoutError
+During task with name 'tools' and id 'ad6b65d5-007e-ff6d-aca3-82d9672d5cb7'
+20:14:46 [INFO] User: compare all available SUVs on spanish market with 0 and ECO. financing: renting new auto all included (around 700 eur per month) for 3-4 years with minimum upfront payment. April 2026. Check realistic numbers and people's reviews
+20:14:48 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:14:51 [INFO] HTTP Request: POST http://acp:8903/runs "HTTP/1.1 200 OK"
+20:14:54 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:20:36 [INFO] User: compare all available SUVs on spanish market with 0 and ECO. financing: renting new auto all included (around 700 eur per month) for 3-4 years with minimum upfront payment. April 2026. Check realistic numbers and people's reviews
+20:20:38 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:20:45 [INFO] HTTP Request: POST http://acp:8903/runs "HTTP/1.1 200 OK"
+20:20:47 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:21:29 [INFO] HTTP Request: POST http://acp:8903/runs "HTTP/1.1 200 OK"
+20:21:36 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:21:50 [INFO] HTTP Request: POST http://acp:8903/runs "HTTP/1.1 200 OK"
+20:21:52 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:22:08 [INFO] HTTP Request: POST http://acp:8903/runs "HTTP/1.1 200 OK"
+20:22:14 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:22:27 [INFO] HTTP Request: POST http://acp:8903/runs "HTTP/1.1 200 OK"
+20:22:40 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:22:47 [INFO] HITL decision: {'type': 'approve'}
+20:22:49 [INFO] HTTP Request: POST http://report-mcp:8902/mcp "HTTP/1.1 200 OK"
+20:22:49 [INFO] Received session ID: ee5a15dbb15b4d9d9f8efe25955068b6
+20:22:49 [INFO] Negotiated protocol version: 2025-11-25
+20:22:49 [INFO] HTTP Request: POST http://report-mcp:8902/mcp "HTTP/1.1 202 Accepted"
+20:22:49 [INFO] HTTP Request: GET http://report-mcp:8902/mcp "HTTP/1.1 200 OK"
+20:22:49 [INFO] HTTP Request: POST http://report-mcp:8902/mcp "HTTP/1.1 200 OK"
+20:22:49 [INFO] HTTP Request: POST http://report-mcp:8902/mcp "HTTP/1.1 200 OK"
+20:22:49 [INFO] HTTP Request: DELETE http://report-mcp:8902/mcp "HTTP/1.1 200 OK"
+20:22:49 [INFO] GET stream disconnected, reconnecting in 1000ms...
+20:22:59 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
