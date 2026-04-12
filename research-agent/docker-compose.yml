@@ -41,6 +41,27 @@ services:
     depends_on:
       - search-mcp
 
+  web:
+    image: multi-agent-mcp-acp:latest
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - SEARCH_MCP_HOST=search-mcp
+      - REPORT_MCP_HOST=report-mcp
+      - ACP_HOST=acp
+    volumes:
+      - ./output:/app/output
+      - ./logs:/app/logs
+    entrypoint: ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+    depends_on:
+      - search-mcp
+      - report-mcp
+      - acp
+
+  # Interactive CLI — run with: docker compose --profile cli run --rm supervisor
   supervisor:
     image: multi-agent-mcp-acp:latest
     build: .
