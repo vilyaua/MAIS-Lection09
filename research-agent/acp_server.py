@@ -6,7 +6,10 @@ then runs a LangChain create_agent internally.
 Run: python acp_server.py  (port 8903)
 """
 
+import logging
 from collections.abc import AsyncGenerator
+from logging.handlers import RotatingFileHandler
+from pathlib import Path
 
 from acp_sdk.models import Message, MessagePart
 from acp_sdk.server import Context, RunYield, RunYieldResume, Server
@@ -16,6 +19,18 @@ from agents.planner import run_planner
 from agents.research import run_researcher
 from config import Settings
 from mcp_utils import get_search_mcp_client
+
+Path("logs").mkdir(exist_ok=True)
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+    datefmt="%H:%M:%S",
+    handlers=[
+        logging.StreamHandler(),
+        RotatingFileHandler("logs/acp_server.log", maxBytes=5_000_000, backupCount=3),
+    ],
+)
+logger = logging.getLogger("acp_server")
 
 settings = Settings()
 server = Server()

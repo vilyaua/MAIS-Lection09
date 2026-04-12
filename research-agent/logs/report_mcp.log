@@ -1,0 +1,22 @@
+19:51:14 [INFO] httpx: HTTP Request: GET https://pypi.org/pypi/fastmcp/json "HTTP/1.1 200 OK"
+19:51:14 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
+19:53:31 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 732c364dcc9f49889f9bd64c6040324d
+19:53:31 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:31 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:31 [INFO] mcp.server.streamable_http: Terminating session: 732c364dcc9f49889f9bd64c6040324d
+19:54:04 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 2e7823b0e5bf4ebdbd78fa183423e07e
+19:54:04 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:54:04 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:04 [INFO] mcp.server.streamable_http: Terminating session: 2e7823b0e5bf4ebdbd78fa183423e07e
+19:54:46 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 7ed9b3c06c2149119c6dcbe0c71a6d45
+19:54:46 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:54:46 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:46 [INFO] mcp.server.streamable_http: Terminating session: 7ed9b3c06c2149119c6dcbe0c71a6d45
+19:55:08 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: bf410e0f41da408caf7c07db98a977d5
+19:55:08 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:55:08 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:55:08 [INFO] mcp.server.streamable_http: Terminating session: bf410e0f41da408caf7c07db98a977d5
+19:55:37 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: c09af2ec396742fc9610521a3d8075f7
+19:55:37 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:55:37 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:55:37 [INFO] mcp.server.streamable_http: Terminating session: c09af2ec396742fc9610521a3d8075f7

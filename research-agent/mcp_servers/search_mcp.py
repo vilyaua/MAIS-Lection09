@@ -5,8 +5,10 @@ Run: python mcp_servers/search_mcp.py  (port 8901)
 """
 
 import json
+import logging
 import sys
 from concurrent.futures import ThreadPoolExecutor
+from logging.handlers import RotatingFileHandler
 from pathlib import Path
 
 import trafilatura
@@ -16,7 +18,19 @@ from fastmcp import FastMCP
 # Add parent dir so we can import config/retriever
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from config import Settings
+from config import Settings  # noqa: E402
+
+Path("logs").mkdir(exist_ok=True)
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+    datefmt="%H:%M:%S",
+    handlers=[
+        logging.StreamHandler(),
+        RotatingFileHandler("logs/search_mcp.log", maxBytes=5_000_000, backupCount=3),
+    ],
+)
+logger = logging.getLogger("search_mcp")
 
 settings = Settings()
 mcp = FastMCP("SearchMCP")
@@ -73,7 +87,7 @@ def read_url(url: str) -> str:
 def knowledge_search(query: str) -> str:
     """Search the local knowledge base (RAG) using hybrid retrieval + reranking."""
     try:
-        from retriever import retrieve
+        from retriever import retrieve  # noqa: E402
 
         results = retrieve(query)
         if not results:
@@ -113,4 +127,4 @@ def knowledge_base_stats() -> str:
 
 
 if __name__ == "__main__":
-    mcp.run(transport="http", host="0.0.0.0", port=settings.search_mcp_port)
+    mcp.run(transport="http", host="0.0.0.0", port=settings.search_mcp_port)  # noqa: S104

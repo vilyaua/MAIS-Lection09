@@ -4,13 +4,28 @@ Requires MCP servers and ACP server to be running first.
 Usage: python main.py
 """
 
+import logging
 import uuid
+from logging.handlers import RotatingFileHandler
+from pathlib import Path
 
 from langchain_core.messages import AIMessage, ToolMessage
 from langgraph.types import Command, Interrupt
 
 from config import APP_VERSION, Settings
 from supervisor import supervisor
+
+Path("logs").mkdir(exist_ok=True)
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+    datefmt="%H:%M:%S",
+    handlers=[
+        logging.StreamHandler(),
+        RotatingFileHandler("logs/supervisor.log", maxBytes=5_000_000, backupCount=3),
+    ],
+)
+logger = logging.getLogger("supervisor")
 
 settings = Settings()
 
