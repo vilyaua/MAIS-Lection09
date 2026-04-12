@@ -1,0 +1,80 @@
+[
+  {
+    "system": "L09",
+    "query": "Compare RAG approaches: naive, sentence-window, and parent-child. Write a report.",
+    "time_seconds": 55.0,
+    "tool_calls": [
+      "plan",
+      "research",
+      "critique",
+      "save_report"
+    ],
+    "tool_call_count": 4,
+    "report_length": 5544,
+    "revisions": 0
+  },
+  {
+    "system": "L09",
+    "query": "What are the latest LLM training techniques in 2026? Write a brief report.",
+    "time_seconds": 35.4,
+    "tool_calls": [
+      "plan",
+      "research",
+      "critique",
+      "save_report"
+    ],
+    "tool_call_count": 4,
+    "report_length": 4203,
+    "revisions": 0
+  },
+  {
+    "system": "L09",
+    "query": "Explain FAISS internals and when to use it vs Chroma. Write a report.",
+    "time_seconds": 87.2,
+    "tool_calls": [
+      "plan",
+      "research",
+      "critique",
+      "research",
+      "critique",
+      "save_report"
+    ],
+    "tool_call_count": 6,
+    "report_length": 10219,
+    "revisions": 1
+  },
+  {
+    "system": "L09",
+    "query": "What is LangChain and how does it work? Write a brief report.",
+    "time_seconds": 70.3,
+    "tool_calls": [
+      "plan",
+      "research",
+      "critique",
+      "research",
+      "critique",
+      "save_report"
+    ],
+    "tool_call_count": 6,
+    "report_length": 5883,
+    "revisions": 1
+  },
+  {
+    "system": "L09",
+    "query": "Compare transformer architecture with previous NLP approaches. Write a report.",
+    "time_seconds": 5955.3,
+    "tool_calls": [
+      "plan",
+      "research",
+      "critique",
+      "research",
+      "critique",
+      "research",
+      "critique",
+      "save_report"
+    ],
+    "tool_call_count": 8,
+    "report_length": 0,
+    "revisions": 2
+  }
+]

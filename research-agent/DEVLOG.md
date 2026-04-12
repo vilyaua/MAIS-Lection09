@@ -24,3 +24,19 @@
 - Worked around acp-sdk client serialization bug: replaced `acp_sdk.client.Client` with direct httpx calls
 - Added `./logs` volume mount to all Docker services
 - Verified full pipeline: Plan -> Research -> Critique (REVISE) -> Research -> Critique (APPROVE) via MCP+ACP
+
+## 2026-04-12 — FastAPI web UI, logging, and async fixes
+
+- Added `app.py` — FastAPI web UI with SSE streaming + HITL dialog (adapted from L08)
+- Added web service to docker-compose on :8000
+- Made MCP tools async with `run_in_executor` + `asyncio.wait_for` (fixes event loop deadlock)
+- Added RotatingFileHandler to all servers (search_mcp, report_mcp, acp_server, supervisor)
+- Added session ID tracing: `[session_id]` prefix in logs, session_id in SSE events
+- Added colored tool badges in web UI: PLAN (purple), RESEARCH (blue), CRITIQUE (orange), SAVE (green)
+
+## 2026-04-13 — L8 vs L9 comparison
+
+- Ran 5 test queries via test_runner.py
+- Results: avg 62s (excluding outlier), 6462 chars reports, 2/5 revision rounds
+- Created `L8_vs_L9_comparison.md` with cross-system analysis (L05/L08/L09)
+- L09 is faster than L08 (62s vs 93.6s) — protocol overhead negligible vs LLM latency
