@@ -1,0 +1,406 @@
+19:51:14 [INFO] httpx: HTTP Request: GET https://pypi.org/pypi/fastmcp/json "HTTP/1.1 200 OK"
+19:51:14 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
+19:51:54 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 55fdb1db92144375b0e89b0f3088ad4a
+19:51:54 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:51:54 [INFO] mcp.server.streamable_http: Terminating session: 55fdb1db92144375b0e89b0f3088ad4a
+19:52:57 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: d5a74dd91fc24f53b0830ac47bd26bde
+19:52:57 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:52:57 [INFO] mcp.server.streamable_http: Terminating session: d5a74dd91fc24f53b0830ac47bd26bde
+19:53:01 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 2cb14555c2334cda9c4a913f0af87a24
+19:53:01 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:01 [INFO] mcp.server.streamable_http: Terminating session: 2cb14555c2334cda9c4a913f0af87a24
+19:53:03 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: cfd1558ba7e34fada9a210cd0581ae2d
+19:53:03 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 9d66acf26364495c8c6f56a81e68cd03
+19:53:03 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: d432be17385548d8b4729faaa57180a4
+19:53:03 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: b6edb2f222df415b91d505b2fb5c795d
+19:53:03 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: f96c991d6fd8482d8b38eccab61e8e03
+19:53:03 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 25a781ea4e6145a0b56d08261278fa8a
+19:53:03 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:03 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:03 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:03 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:03 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:03 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:03 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:03 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:03 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:03 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:03 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:03 [INFO] mcp.server.streamable_http: Terminating session: 25a781ea4e6145a0b56d08261278fa8a
+19:53:04 [INFO] mcp.server.streamable_http: Terminating session: cfd1558ba7e34fada9a210cd0581ae2d
+19:53:04 [INFO] mcp.server.streamable_http: Terminating session: d432be17385548d8b4729faaa57180a4
+19:53:04 [INFO] mcp.server.streamable_http: Terminating session: 9d66acf26364495c8c6f56a81e68cd03
+19:53:04 [INFO] mcp.server.streamable_http: Terminating session: b6edb2f222df415b91d505b2fb5c795d
+19:53:04 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=state-of-the-art+RAG+techniques+overview&limit=1 200
+19:53:04 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=state-of-the-art%20RAG%20techniques%20overview 200
+19:53:06 [INFO] primp: response: https://www.mojeek.com/search?q=state-of-the-art+RAG+techniques+overview 200
+19:53:06 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:06 [INFO] mcp.server.streamable_http: Terminating session: f96c991d6fd8482d8b38eccab61e8e03
+19:53:08 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 593d78ccad04405b85c1c1bc61429f1a
+19:53:08 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 588ff8ead9aa461ab81aad67768dea2a
+19:53:08 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 82c207f7754748cdb97363cf21ef9893
+19:53:08 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:08 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:08 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:09 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:09 [INFO] mcp.server.streamable_http: Terminating session: 588ff8ead9aa461ab81aad67768dea2a
+19:53:09 [WARNING] urllib3.connectionpool: Connection pool is full, discarding connection: www.elastic.co. Connection pool size: 1
+19:53:09 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:09 [INFO] mcp.server.streamable_http: Terminating session: 82c207f7754748cdb97363cf21ef9893
+19:53:09 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:09 [INFO] mcp.server.streamable_http: Terminating session: 593d78ccad04405b85c1c1bc61429f1a
+19:53:20 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: bc7b870d812243f79ac94f0c69a07fe6
+19:53:20 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:20 [INFO] mcp.server.streamable_http: Terminating session: bc7b870d812243f79ac94f0c69a07fe6
+19:53:22 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 55025564a6bb4349865d5e35a8ec5cea
+19:53:22 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 89de0e4bab51457b9607638e81f0cf70
+19:53:22 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: c84d45d23df143b0b7e3eb555b62c4fa
+19:53:22 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: b0ae0cdf80274f39adebd5716aab2459
+19:53:22 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:22 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:22 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:22 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:22 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:22 [INFO] mcp.server.streamable_http: Terminating session: 55025564a6bb4349865d5e35a8ec5cea
+19:53:23 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=Elastic+Advanced+RAG+Techniques+2025&limit=1 200
+19:53:23 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=SIGIR%20LiveRAG%20challenge%202025%20summary 200
+19:53:23 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=advanced%20RAG%20techniques%20comparison%202025%202026 200
+19:53:23 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Elastic%20Advanced%20RAG%20Techniques%202025 200
+19:53:24 [INFO] primp: response: https://search.brave.com/search?q=Elastic+Advanced+RAG+Techniques+2025&source=web 429
+19:53:24 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=advanced+RAG+techniques+comparison+2025+2026&limit=1 200
+19:53:24 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=SIGIR+LiveRAG+challenge+2025+summary&limit=1 200
+19:53:24 [INFO] primp: response: https://search.brave.com/search?q=advanced+RAG+techniques+comparison+2025+2026&source=web 429
+19:53:25 [INFO] primp: response: https://html.duckduckgo.com/html/ 200
+19:53:25 [INFO] primp: response: https://www.google.com/search?q=SIGIR+LiveRAG+challenge+2025+summary&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+19:53:25 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:25 [INFO] mcp.server.streamable_http: Terminating session: b0ae0cdf80274f39adebd5716aab2459
+19:53:26 [INFO] primp: response: https://html.duckduckgo.com/html/ 200
+19:53:26 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:26 [INFO] mcp.server.streamable_http: Terminating session: c84d45d23df143b0b7e3eb555b62c4fa
+19:53:26 [INFO] primp: response: https://search.brave.com/search?q=SIGIR+LiveRAG+challenge+2025+summary&source=web 429
+19:53:27 [INFO] primp: response: https://yandex.com/search/site/?text=SIGIR+LiveRAG+challenge+2025+summary&web=1&searchid=1876305 200
+19:53:27 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:27 [INFO] mcp.server.streamable_http: Terminating session: 89de0e4bab51457b9607638e81f0cf70
+19:53:31 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 571993e8d1144dc69076f9f91b639dc2
+19:53:31 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:31 [INFO] mcp.server.streamable_http: Terminating session: 571993e8d1144dc69076f9f91b639dc2
+19:53:33 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: fde0756244c54b4daf545a71bf15920e
+19:53:33 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:33 [INFO] mcp.server.streamable_http: Terminating session: fde0756244c54b4daf545a71bf15920e
+19:53:36 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 9e897fdae6f747f7953428244e10b814
+19:53:36 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 47d16606779e4aa1aff8753c6040168f
+19:53:36 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: d3db1d86c123488d89c858e4cf56b302
+19:53:36 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 16e50a7732e447a49a2522ecbc526e86
+19:53:36 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 1487446afbd14cc6bcd243a16a0ff308
+19:53:36 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 1df27ab097e3404380034a826ca4b6c3
+19:53:36 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 16cdf13a4a104ad0bdccd55bf7ad4165
+19:53:36 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:36 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:36 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:36 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:36 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:36 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:36 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:36 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:36 [INFO] mcp.server.streamable_http: Terminating session: 1487446afbd14cc6bcd243a16a0ff308
+19:53:37 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=new+efficient+LLM+training+algorithms+2026&limit=1 200
+19:53:37 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=comparison%20LLM%20pre-training%20methods%202026 200
+19:53:37 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=state-of-the-art%20LLM%20fine-tuning%202026 200
+19:53:37 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=state-of-the-art+LLM+fine-tuning+2026&limit=1 200
+19:53:37 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=LLM+post-training+techniques+advances+2026&limit=1 200
+19:53:37 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=new%20efficient%20LLM%20training%20algorithms%202026 200
+19:53:37 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=LLM%20post-training%20techniques%20advances%202026 200
+19:53:37 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=comparison+LLM+pre-training+methods+2026&limit=1 200
+19:53:38 [INFO] primp: response: https://www.google.com/search?q=LLM+post-training+techniques+advances+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+19:53:38 [INFO] primp: response: https://yandex.com/search/site/?text=state-of-the-art+LLM+fine-tuning+2026&web=1&searchid=4960320 200
+19:53:38 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:38 [INFO] mcp.server.streamable_http: Terminating session: d3db1d86c123488d89c858e4cf56b302
+19:53:39 [INFO] primp: response: https://yandex.com/search/site/?text=comparison+LLM+pre-training+methods+2026&web=1&searchid=8092441 200
+19:53:39 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:39 [INFO] mcp.server.streamable_http: Terminating session: 16e50a7732e447a49a2522ecbc526e86
+19:53:39 [INFO] primp: response: https://search.brave.com/search?q=LLM+post-training+techniques+advances+2026&source=web 429
+19:53:39 [INFO] primp: response: https://www.mojeek.com/search?q=new+efficient+LLM+training+algorithms+2026 200
+19:53:39 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:39 [INFO] mcp.server.streamable_http: Terminating session: 47d16606779e4aa1aff8753c6040168f
+19:53:39 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=recent+breakthroughs+in+LLM+training+2026&limit=1 200
+19:53:39 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=recent%20breakthroughs%20in%20LLM%20training%202026 200
+19:53:39 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20large%20language%20model%20%28LLM%29%20training%20techniques%202026 200
+19:53:40 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=latest+large+language+model+%28LLM%29+training+techniques+2026&limit=1 200
+19:53:41 [INFO] primp: response: https://search.brave.com/search?q=latest+large+language+model+%28LLM%29+training+techniques+2026&source=web 429
+19:53:41 [INFO] primp: response: https://www.mojeek.com/search?q=LLM+post-training+techniques+advances+2026 200
+19:53:41 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:41 [INFO] mcp.server.streamable_http: Terminating session: 9e897fdae6f747f7953428244e10b814
+19:53:41 [INFO] primp: response: https://www.mojeek.com/search?q=recent+breakthroughs+in+LLM+training+2026 200
+19:53:41 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:41 [INFO] mcp.server.streamable_http: Terminating session: 16cdf13a4a104ad0bdccd55bf7ad4165
+19:53:41 [INFO] primp: response: https://yandex.com/search/site/?text=latest+large+language+model+%28LLM%29+training+techniques+2026&web=1&searchid=8485021 200
+19:53:42 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:42 [INFO] mcp.server.streamable_http: Terminating session: 1df27ab097e3404380034a826ca4b6c3
+19:53:45 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 18485f18c68b41c381c74626685c3394
+19:53:45 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 2e00bc205ceb49e59aae39f54924b859
+19:53:45 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 15712fea60a04aa89276f23081be88a7
+19:53:45 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 9cc2fdc60780418583e3b2c6bcd8179b
+19:53:45 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 989afd2b24ba47538b6f104a81555d23
+19:53:45 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:45 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:45 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:45 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:45 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:46 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:46 [INFO] mcp.server.streamable_http: Terminating session: 2e00bc205ceb49e59aae39f54924b859
+19:53:46 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:46 [INFO] mcp.server.streamable_http: Terminating session: 989afd2b24ba47538b6f104a81555d23
+19:53:46 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:46 [INFO] mcp.server.streamable_http: Terminating session: 15712fea60a04aa89276f23081be88a7
+19:53:46 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:46 [INFO] mcp.server.streamable_http: Terminating session: 9cc2fdc60780418583e3b2c6bcd8179b
+19:53:47 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:47 [INFO] mcp.server.streamable_http: Terminating session: 18485f18c68b41c381c74626685c3394
+19:53:55 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 555dd4aee5a74095b10c46e65cda6d09
+19:53:55 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:55 [INFO] mcp.server.streamable_http: Terminating session: 555dd4aee5a74095b10c46e65cda6d09
+19:53:57 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 31c4bcc689804fbca9b9d001d80e0256
+19:53:57 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 5e80d148ae8540d2a668a1391c18d31f
+19:53:57 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 12b15ffa81b5462aa280c92fb591214a
+19:53:57 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:57 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:57 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:53:57 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=MIT+Taming+the+Long+Tail+TLT+adaptive+speculative+decoding+LLM+training+2026&limit=1 200
+19:53:57 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=LLM+pre-training+post-training+trends+2026+Alibaba+Qwen+2+Apple+Intelligence+Foundation+Google+Gemma+2+Meta+Llama+3.1&limit=1 200
+19:53:58 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=MIT%20Taming%20the%20Long%20Tail%20TLT%20adaptive%20speculative%20decoding%20LLM%20training%202026 200
+19:53:58 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=LLM%20pre-training%20post-training%20trends%202026%20Alibaba%20Qwen%202%20Apple%20Intelligence%20Foundation%20Google%20Gemma%202%20Meta%20Llama%203.1 200
+19:53:58 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=Unsloth+Llama+3.3+fine-tuning+2026+memory+efficient+attention+QLoRA&limit=1 200
+19:53:58 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Unsloth%20Llama%203.3%20fine-tuning%202026%20memory%20efficient%20attention%20QLoRA 200
+19:53:58 [INFO] primp: response: https://www.google.com/search?q=LLM+pre-training+post-training+trends+2026+Alibaba+Qwen+2+Apple+Intelligence+Foundation+Google+Gemma+2+Meta+Llama+3.1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+19:53:59 [INFO] primp: response: https://yandex.com/search/site/?text=MIT+Taming+the+Long+Tail+TLT+adaptive+speculative+decoding+LLM+training+2026&web=1&searchid=3023364 200
+19:53:59 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:59 [INFO] mcp.server.streamable_http: Terminating session: 31c4bcc689804fbca9b9d001d80e0256
+19:53:59 [INFO] ddgs.ddgs: Error in engine yahoo: DDGSException("RequestError: RequestError('error sending request for url (https://search.yahoo.com/search;_ylt=-U6MsF90DOBvopIzhjtlH0tl;_ylu=3-Z0SdGMgmCgKWRWoe_wCC8ABXHuXuCqyCpo9XUDW-XPSzQ?p=LLM+pre-training+post-training+trends+2026+Alibaba+Qwen+2+Apple+Intelligence+Foundation+Google+Gemma+2+Meta+Llama+3.1)', 'https://search.yahoo.com/search;_ylt=-U6MsF90DOBvopIzhjtlH0tl;_ylu=3-Z0SdGMgmCgKWRWoe_wCC8ABXHuXuCqyCpo9XUDW-XPSzQ?p=LLM+pre-training+post-training+trends+2026+Alibaba+Qwen+2+Apple+Intelligence+Foundation+Google+Gemma+2+Meta+Llama+3.1')")
+19:53:59 [INFO] primp: response: https://search.brave.com/search?q=LLM+pre-training+post-training+trends+2026+Alibaba+Qwen+2+Apple+Intelligence+Foundation+Google+Gemma+2+Meta+Llama+3.1&source=web 429
+19:53:59 [INFO] primp: response: https://www.mojeek.com/search?q=Unsloth+Llama+3.3+fine-tuning+2026+memory+efficient+attention+QLoRA 200
+19:53:59 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:53:59 [INFO] mcp.server.streamable_http: Terminating session: 12b15ffa81b5462aa280c92fb591214a
+19:54:01 [INFO] primp: response: https://www.mojeek.com/search?q=LLM+pre-training+post-training+trends+2026+Alibaba+Qwen+2+Apple+Intelligence+Foundation+Google+Gemma+2+Meta+Llama+3.1 200
+19:54:01 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:01 [INFO] mcp.server.streamable_http: Terminating session: 5e80d148ae8540d2a668a1391c18d31f
+19:54:02 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 0000a1034ed743b29c5b85eb24cba78c
+19:54:02 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:54:02 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:02 [INFO] mcp.server.streamable_http: Terminating session: 0000a1034ed743b29c5b85eb24cba78c
+19:54:04 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 0fe7fc7ecc2d4c7e974113fa72e5b2a5
+19:54:04 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:04 [INFO] mcp.server.streamable_http: Terminating session: 0fe7fc7ecc2d4c7e974113fa72e5b2a5
+19:54:06 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: abcaea3f5cff442bb29f6f5197688ad4
+19:54:06 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:06 [INFO] mcp.server.streamable_http: Terminating session: abcaea3f5cff442bb29f6f5197688ad4
+19:54:08 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: dd2df9db4bf644d783e26d8e8a81fa5e
+19:54:08 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 15f98916727f4de8bae749cbe10d5908
+19:54:08 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 5c6216f2e7dd4952b9c9ffbe47f9da45
+19:54:08 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 8b518cf5d849441ebfc6db2d408cf691
+19:54:08 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:54:08 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:54:08 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:54:08 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:54:08 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:08 [INFO] mcp.server.streamable_http: Terminating session: dd2df9db4bf644d783e26d8e8a81fa5e
+19:54:08 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:08 [INFO] mcp.server.streamable_http: Terminating session: 5c6216f2e7dd4952b9c9ffbe47f9da45
+19:54:08 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=FAISS+vs+Chroma+vector+database+comparison&limit=1 200
+19:54:08 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=FAISS%20vs%20Chroma%20vector%20database%20comparison 200
+19:54:08 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=How+does+FAISS+work+internally&limit=1 200
+19:54:09 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=How%20does%20FAISS%20work%20internally 200
+19:54:10 [INFO] primp: response: https://html.duckduckgo.com/html/ 200
+19:54:10 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:10 [INFO] mcp.server.streamable_http: Terminating session: 8b518cf5d849441ebfc6db2d408cf691
+19:54:10 [INFO] primp: response: https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_c2c1053d-8cfe-4130-82e1-5f4d351037d8 200
+19:54:10 [INFO] primp: response: https://www.google.com/search?q=FAISS+vs+Chroma+vector+database+comparison&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+19:54:12 [INFO] primp: response: https://www.mojeek.com/search?q=FAISS+vs+Chroma+vector+database+comparison 200
+19:54:12 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:12 [INFO] mcp.server.streamable_http: Terminating session: 15f98916727f4de8bae749cbe10d5908
+19:54:14 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: df1a80e75eba489d959250f94393c7f8
+19:54:14 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 67cc4cd15dc04f759e5d15dfb7bfe91e
+19:54:14 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: a6fef3a443b14171baafebf619e01088
+19:54:14 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:54:14 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:54:14 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:54:14 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:14 [INFO] mcp.server.streamable_http: Terminating session: a6fef3a443b14171baafebf619e01088
+19:54:14 [ERROR] trafilatura.downloads: not a 200 response: 403 for URL https://arithmancylabs.medium.com/understanding-faiss-indexing-86ec98048bd9
+19:54:14 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:14 [INFO] mcp.server.streamable_http: Terminating session: 67cc4cd15dc04f759e5d15dfb7bfe91e
+19:54:14 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:14 [INFO] mcp.server.streamable_http: Terminating session: df1a80e75eba489d959250f94393c7f8
+19:54:16 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 61e0c27c20614ea59928049bb4f87ef6
+19:54:16 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:54:17 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:17 [INFO] mcp.server.streamable_http: Terminating session: 61e0c27c20614ea59928049bb4f87ef6
+19:54:32 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 9d74aecbe6cc4d1099b243d6fee2f816
+19:54:32 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:32 [INFO] mcp.server.streamable_http: Terminating session: 9d74aecbe6cc4d1099b243d6fee2f816
+19:54:33 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 84013f6aecec4458bb77bff9d6913f06
+19:54:33 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 6b9ac2b6e2b448cda080c47330a43a54
+19:54:33 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: ee61bfa641fa4762b1b47d19ed1c76a9
+19:54:33 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:54:33 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:54:33 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:54:34 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=FAISS+library+latest+updates+2025+2026&limit=1 200
+19:54:34 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=FAISS%20vs%20Chroma%202025%202026%20comparison%20latest 200
+19:54:34 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=FAISS%20library%20latest%20updates%202025%202026 200
+19:54:34 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=FAISS+vs+Chroma+2025+2026+comparison+latest&limit=1 200
+19:54:34 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Chroma%20vector%20database%20new%20features%202025%202026 200
+19:54:34 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=Chroma+vector+database+new+features+2025+2026&limit=1 200
+19:54:35 [INFO] primp: response: https://www.google.com/search?q=FAISS+library+latest+updates+2025+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+19:54:35 [INFO] primp: response: https://www.google.com/search?q=Chroma+vector+database+new+features+2025+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+19:54:36 [INFO] primp: response: https://html.duckduckgo.com/html/ 200
+19:54:36 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:36 [INFO] mcp.server.streamable_http: Terminating session: 6b9ac2b6e2b448cda080c47330a43a54
+19:54:36 [INFO] primp: response: https://yandex.com/search/site/?text=FAISS+library+latest+updates+2025+2026&web=1&searchid=7091247 200
+19:54:36 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:36 [INFO] mcp.server.streamable_http: Terminating session: 84013f6aecec4458bb77bff9d6913f06
+19:54:36 [INFO] primp: response: https://yandex.com/search/site/?text=Chroma+vector+database+new+features+2025+2026&web=1&searchid=3856487 200
+19:54:36 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:36 [INFO] mcp.server.streamable_http: Terminating session: ee61bfa641fa4762b1b47d19ed1c76a9
+19:54:37 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: f4c6be83ddbb42dfa743438ff92405cd
+19:54:37 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:54:37 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=Chroma+database+limitations+and+advanced+features+2025+2026&limit=1 200
+19:54:38 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Chroma%20database%20limitations%20and%20advanced%20features%202025%202026 200
+19:54:38 [INFO] primp: response: https://search.brave.com/search?q=Chroma+database+limitations+and+advanced+features+2025+2026&source=web 429
+19:54:40 [INFO] primp: response: https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_05028155-21d6-4c7e-8b28-e1321acae255 200
+19:54:41 [INFO] primp: response: https://www.google.com/search?q=Chroma+database+limitations+and+advanced+features+2025+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+19:54:42 [INFO] primp: response: https://www.mojeek.com/search?q=Chroma+database+limitations+and+advanced+features+2025+2026 200
+19:54:42 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:42 [INFO] mcp.server.streamable_http: Terminating session: f4c6be83ddbb42dfa743438ff92405cd
+19:54:44 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 2bea2b95c18e49e08ea312d1bfe424ec
+19:54:44 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:54:44 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:44 [INFO] mcp.server.streamable_http: Terminating session: 2bea2b95c18e49e08ea312d1bfe424ec
+19:54:46 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 3504538e4c4144e4863ef8ac94cbf4fe
+19:54:46 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:46 [INFO] mcp.server.streamable_http: Terminating session: 3504538e4c4144e4863ef8ac94cbf4fe
+19:54:48 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: fdc33114c1b14973b9fc10d2d68d496b
+19:54:48 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:48 [INFO] mcp.server.streamable_http: Terminating session: fdc33114c1b14973b9fc10d2d68d496b
+19:54:49 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: d75d749c34c248499ec5a9b41191b6b0
+19:54:49 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 13f1bdc901314020bb40ad7b8ef2e973
+19:54:49 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:54:49 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:54:49 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:49 [INFO] mcp.server.streamable_http: Terminating session: 13f1bdc901314020bb40ad7b8ef2e973
+19:54:49 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=What+is+LangChain%3F&limit=1 200
+19:54:49 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=What%20is%20LangChain%3F 200
+19:54:50 [INFO] primp: response: https://search.brave.com/search?q=What+is+LangChain%3F&source=web 429
+19:54:51 [INFO] primp: response: https://yandex.com/search/site/?text=What+is+LangChain%3F&web=1&searchid=1105884 200
+19:54:51 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:51 [INFO] mcp.server.streamable_http: Terminating session: d75d749c34c248499ec5a9b41191b6b0
+19:54:52 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 4ef9c0d0d07a45ba9f22c3b21bb2d195
+19:54:52 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 358274466d864716924fdaf5348414d8
+19:54:52 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 77e14e9a70bb482ea3a5de91b952ccfe
+19:54:52 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:54:52 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:54:52 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:54:53 [ERROR] trafilatura.downloads: not a 200 response: 403 for URL https://medium.com/@learnwithjohndanial/what-is-langchain-everything-you-need-to-know-39594534c41c
+19:54:53 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:53 [INFO] mcp.server.streamable_http: Terminating session: 4ef9c0d0d07a45ba9f22c3b21bb2d195
+19:54:53 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:53 [INFO] mcp.server.streamable_http: Terminating session: 358274466d864716924fdaf5348414d8
+19:54:53 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:54:53 [INFO] mcp.server.streamable_http: Terminating session: 77e14e9a70bb482ea3a5de91b952ccfe
+19:55:01 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 156dd909ea8549d19bdde8225390f88d
+19:55:01 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:55:01 [INFO] mcp.server.streamable_http: Terminating session: 156dd909ea8549d19bdde8225390f88d
+19:55:02 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: b5ef1c4657e34f059a0afca3945f14f7
+19:55:02 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 1f9e209368e74b249e91d4779c259b84
+19:55:02 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: cb5d5a2aa9e3462bba46d05a14aded99
+19:55:02 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: efefc58d1b6f42ab9a3303a8f1119fb3
+19:55:02 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:55:02 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:55:02 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:55:02 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:55:02 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:55:02 [INFO] mcp.server.streamable_http: Terminating session: efefc58d1b6f42ab9a3303a8f1119fb3
+19:55:03 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=LangChain+applications+review+2026&limit=1 200
+19:55:03 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=LangChain%20key%20components%20latest%20documentation 200
+19:55:03 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=LangChain%20applications%20review%202026 200
+19:55:03 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=LangChain%20framework%20features%202025%202026 200
+19:55:03 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=LangChain+key+components+latest+documentation&limit=1 200
+19:55:03 [INFO] primp: response: https://www.google.com/search?q=LangChain+applications+review+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+19:55:04 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=LangChain+framework+features+2025+2026&limit=1 200
+19:55:04 [INFO] primp: response: https://yandex.com/search/site/?text=LangChain+key+components+latest+documentation&web=1&searchid=7756025 200
+19:55:04 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:55:04 [INFO] mcp.server.streamable_http: Terminating session: b5ef1c4657e34f059a0afca3945f14f7
+19:55:04 [INFO] primp: response: https://yandex.com/search/site/?text=LangChain+applications+review+2026&web=1&searchid=2498453 200
+19:55:05 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:55:05 [INFO] mcp.server.streamable_http: Terminating session: 1f9e209368e74b249e91d4779c259b84
+19:55:06 [INFO] primp: response: https://html.duckduckgo.com/html/ 200
+19:55:06 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:55:06 [INFO] mcp.server.streamable_http: Terminating session: cb5d5a2aa9e3462bba46d05a14aded99
+19:55:08 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: bc6d00fb85b54f089455cbe4632a8754
+19:55:08 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:55:08 [INFO] mcp.server.streamable_http: Terminating session: bc6d00fb85b54f089455cbe4632a8754
+19:55:10 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 9fb64fd3c90f43af857ffb6516f719a8
+19:55:10 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:55:10 [INFO] mcp.server.streamable_http: Terminating session: 9fb64fd3c90f43af857ffb6516f719a8
+19:55:12 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 708381b005884dfebe58657e20e6f27f
+19:55:12 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 373c0f271eea43989df38c268cc4dcf7
+19:55:12 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 3c8af8c3bbe744e7b489b5635caf1d69
+19:55:12 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 9ec9a6d473184d27be40ace2f4c654e7
+19:55:12 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 42fba695e5ab42549a43251e20049f40
+19:55:12 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 4233e40ba2d049cdbe69f635195d178b
+19:55:12 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:55:12 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:55:12 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:55:12 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:55:12 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:55:12 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:55:12 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:55:12 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:55:12 [INFO] mcp.server.streamable_http: Terminating session: 708381b005884dfebe58657e20e6f27f
+19:55:12 [INFO] mcp.server.streamable_http: Terminating session: 373c0f271eea43989df38c268cc4dcf7
+19:55:12 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:55:12 [INFO] mcp.server.streamable_http: Terminating session: 4233e40ba2d049cdbe69f635195d178b
+19:55:13 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=advantages+of+transformers+over+previous+NLP+models&limit=1 200
+19:55:13 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=key+innovations+introduced+by+transformer+architecture&limit=1 200
+19:55:13 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=transformers%20vs%20RNNs%20and%20LSTMs%20performance%20comparison 200
+19:55:13 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=key%20innovations%20introduced%20by%20transformer%20architecture 200
+19:55:13 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=transformers+vs+RNNs+and+LSTMs+performance+comparison&limit=1 200
+19:55:13 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=advantages%20of%20transformers%20over%20previous%20NLP%20models 200
+19:55:14 [INFO] primp: response: https://www.google.com/search?q=transformers+vs+RNNs+and+LSTMs+performance+comparison&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+19:55:15 [INFO] primp: response: https://yandex.com/search/site/?text=advantages+of+transformers+over+previous+NLP+models&web=1&searchid=2649001 200
+19:55:15 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:55:15 [INFO] mcp.server.streamable_http: Terminating session: 9ec9a6d473184d27be40ace2f4c654e7
+19:55:15 [INFO] primp: response: https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_6d295a2f-1c08-42ce-b82c-f6497aa0aea2 200
+19:55:16 [INFO] primp: response: https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_fef69742-ee5c-450c-8b66-7dade9870973 200
+19:55:16 [INFO] primp: response: https://search.brave.com/search?q=transformers+vs+RNNs+and+LSTMs+performance+comparison&source=web 429
+19:55:17 [INFO] primp: response: https://www.mojeek.com/search?q=key+innovations+introduced+by+transformer+architecture 200
+19:55:17 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:55:17 [INFO] mcp.server.streamable_http: Terminating session: 42fba695e5ab42549a43251e20049f40
+19:55:18 [INFO] primp: response: https://www.mojeek.com/search?q=transformers+vs+RNNs+and+LSTMs+performance+comparison 200
+19:55:18 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:55:18 [INFO] mcp.server.streamable_http: Terminating session: 3c8af8c3bbe744e7b489b5635caf1d69
+19:55:20 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 92400dc17d5944ee92ddcda9b1d59fdd
+19:55:20 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: c3139e360e0d44c19cb3bd37165f7236
+19:55:20 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 25beb3f4e1ef4043b22cb26d881bbfb0
+19:55:20 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:55:20 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:55:20 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:55:21 [ERROR] trafilatura.downloads: not a 200 response: 403 for URL https://python.plainenglish.io/transformers-for-natural-language-processing-7df2e97d1b9e
+19:55:21 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:55:21 [INFO] mcp.server.streamable_http: Terminating session: 25beb3f4e1ef4043b22cb26d881bbfb0
+19:55:21 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:55:21 [INFO] mcp.server.streamable_http: Terminating session: c3139e360e0d44c19cb3bd37165f7236
+19:55:21 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:55:21 [INFO] mcp.server.streamable_http: Terminating session: 92400dc17d5944ee92ddcda9b1d59fdd
+19:55:32 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 3a0b2ee5f9034cb3af178977347ecadf
+19:55:32 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:55:32 [INFO] mcp.server.streamable_http: Terminating session: 3a0b2ee5f9034cb3af178977347ecadf
+19:55:33 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 680543e568944f758cd8e6b7ad6d819a
+19:55:33 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 4726caad4b354a04ae8ce3db019161ca
+19:55:33 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:55:33 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+19:55:33 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:55:33 [INFO] mcp.server.streamable_http: Terminating session: 4726caad4b354a04ae8ce3db019161ca
+19:55:34 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=Transformer+vs+RNN+LSTM+NLP+comparison+2025+2026&limit=1 200
+19:55:34 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Transformer%20vs%20RNN%20LSTM%20NLP%20comparison%202025%202026 200
+19:55:35 [INFO] primp: response: https://yandex.com/search/site/?text=Transformer+vs+RNN+LSTM+NLP+comparison+2025+2026&web=1&searchid=2862636 200
+19:55:35 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+19:55:35 [INFO] mcp.server.streamable_http: Terminating session: 680543e568944f758cd8e6b7ad6d819a

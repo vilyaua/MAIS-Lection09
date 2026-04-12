@@ -1,0 +1,24 @@
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+src = ["research-agent"]
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # isort
+    "UP",   # pyupgrade
+    "B",    # flake8-bugbear
+    "SIM",  # flake8-simplify
+    "S",    # flake8-bandit (security)
+]
+ignore = [
+    "E501",  # line length in string literals (prompts, docstrings) is fine
+    "S603",  # subprocess call - not relevant
+    "S301",  # pickle - used for BM25 chunks (trusted data)
+]
+
+[tool.ruff.lint.per-file-ignores]
+"research-agent/mcp_servers/*.py" = ["S104", "S110"]  # bind 0.0.0.0 for Docker, try-except-pass

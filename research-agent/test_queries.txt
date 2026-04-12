@@ -1,0 +1,5 @@
+Compare RAG approaches: naive, sentence-window, and parent-child. Write a report.
+What are the latest LLM training techniques in 2026? Write a brief report.
+Explain FAISS internals and when to use it vs Chroma. Write a report.
+What is LangChain and how does it work? Write a brief report.
+Compare transformer architecture with previous NLP approaches. Write a report.
