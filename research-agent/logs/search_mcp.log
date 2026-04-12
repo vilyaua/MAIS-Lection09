@@ -616,3 +616,410 @@
 20:22:23 [INFO] primp: response: https://yandex.com/search/site/?text=Spanish+ZBE+regulations+car+rental+2025+2026&web=1&searchid=9252476 200
 20:22:24 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
 20:22:24 [INFO] mcp.server.streamable_http: Terminating session: 7fef4d5dec814260907b2f629c642cb3
+20:33:31 [INFO] httpx: HTTP Request: GET https://pypi.org/pypi/fastmcp/json "HTTP/1.1 200 OK"
+20:33:31 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
+20:34:08 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: af14d79fcf5a453690f6ed99efcb0bec
+20:34:08 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:34:08 [INFO] mcp.server.streamable_http: Terminating session: af14d79fcf5a453690f6ed99efcb0bec
+20:34:14 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 15dc46d6b118416dbe35076feb6b156e
+20:34:14 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:34:14 [INFO] mcp.server.streamable_http: Terminating session: 15dc46d6b118416dbe35076feb6b156e
+20:34:15 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 6faa31460f4e4378bb453208e7f54193
+20:34:15 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:34:16 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=SUVs+0+emission+label+ECO+label+new+all-inclusive+renting+Spain+2024&limit=1 200
+20:34:16 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=SUVs%200%20emission%20label%20ECO%20label%20new%20all-inclusive%20renting%20Spain%202024 200
+20:34:18 [INFO] primp: response: https://www.mojeek.com/search?q=SUVs+0+emission+label+ECO+label+new+all-inclusive+renting+Spain+2024 200
+20:34:18 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:34:18 [INFO] mcp.server.streamable_http: Terminating session: 6faa31460f4e4378bb453208e7f54193
+20:34:19 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 243b6eddd7154585845da05a4e655cca
+20:34:19 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:34:19 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=SUVs%20with%200%20and%20ECO%20emission%20labels%20Spain%202024%20renting%20all-inclusive 200
+20:34:20 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=SUVs+with+0+and+ECO+emission+labels+Spain+2024+renting+all-inclusive&limit=1 200
+20:34:21 [INFO] primp: response: https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_2cb16612-e1b4-4e5a-a625-8e689e488edc 200
+20:34:22 [INFO] primp: response: https://yandex.com/search/site/?text=SUVs+with+0+and+ECO+emission+labels+Spain+2024+renting+all-inclusive&web=1&searchid=5323859 200
+20:34:22 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:34:22 [INFO] mcp.server.streamable_http: Terminating session: 243b6eddd7154585845da05a4e655cca
+20:34:24 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 63d86b04d590443197046cb95eb02da5
+20:34:24 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: def6777695b346158c567db540fecc8a
+20:34:24 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:34:24 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:34:24 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:34:24 [INFO] mcp.server.streamable_http: Terminating session: 63d86b04d590443197046cb95eb02da5
+20:34:24 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=SUV%20zero%20emission%20ECO%20emission%20label%20new%20renting%20Spain%202024%20monthly%20cost%20700%20EUR%203-4%20years%20delivery%20April%202026 200
+20:34:24 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=SUV+zero+emission+ECO+emission+label+new+renting+Spain+2024+monthly+cost+700+EUR+3-4+years+delivery+April+2026&limit=1 200
+20:34:26 [INFO] primp: response: https://html.duckduckgo.com/html/ 200
+20:34:26 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:34:26 [INFO] mcp.server.streamable_http: Terminating session: def6777695b346158c567db540fecc8a
+20:34:27 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: c196d24b609540d2ba66dc750b686361
+20:34:27 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:34:30 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:34:30 [INFO] mcp.server.streamable_http: Terminating session: c196d24b609540d2ba66dc750b686361
+20:34:31 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: cd64b2bf8d834a728f63886de1804b59
+20:34:31 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:34:31 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=New%20all-inclusive%20renting%20SUV%200%20emission%20ECO%20emission%20Spain%20700%20EUR%20month 200
+20:34:31 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=New+all-inclusive+renting+SUV+0+emission+ECO+emission+Spain+700+EUR+month&limit=1 200
+20:34:32 [INFO] primp: response: https://search.yahoo.com/search;_ylt=-q8nGyI5ueKXmA3172tRI3mK;_ylu=-Vi2g_6izl-S--v3T9SpXHp0X6rKrlyiPmqq4R2lvF_fLo8?p=New+all-inclusive+renting+SUV+0+emission+ECO+emission+Spain+700+EUR+month 200
+20:34:33 [INFO] primp: response: https://www.google.com/search?q=New+all-inclusive+renting+SUV+0+emission+ECO+emission+Spain+700+EUR+month&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+20:34:34 [INFO] primp: response: https://search.brave.com/search?q=New+all-inclusive+renting+SUV+0+emission+ECO+emission+Spain+700+EUR+month&source=web 429
+20:34:35 [INFO] primp: response: https://html.duckduckgo.com/html/ 200
+20:34:35 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:34:35 [INFO] mcp.server.streamable_http: Terminating session: cd64b2bf8d834a728f63886de1804b59
+20:34:36 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: ffae2157984e4832bc52e14426193d93
+20:34:37 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:34:37 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=SUV+all-inclusive+renting+contracts+Spain+monthly+cost+700+EUR+3-4+years+zero+emission+ECO+2024+2026+delivery&limit=1 200
+20:34:37 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=SUV%20all-inclusive%20renting%20contracts%20Spain%20monthly%20cost%20700%20EUR%203-4%20years%20zero%20emission%20ECO%202024%202026%20delivery 200
+20:34:39 [INFO] primp: response: https://www.mojeek.com/search?q=SUV+all-inclusive+renting+contracts+Spain+monthly+cost+700+EUR+3-4+years+zero+emission+ECO+2024+2026+delivery 200
+20:34:39 [INFO] primp: response: https://www.google.com/search?q=SUV+all-inclusive+renting+contracts+Spain+monthly+cost+700+EUR+3-4+years+zero+emission+ECO+2024+2026+delivery&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+20:34:41 [INFO] primp: response: https://html.duckduckgo.com/html/ 200
+20:34:41 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:34:41 [INFO] mcp.server.streamable_http: Terminating session: ffae2157984e4832bc52e14426193d93
+20:34:42 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 8db3537261d74c0996d9876b71cbd5e2
+20:34:42 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:34:43 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:34:43 [INFO] mcp.server.streamable_http: Terminating session: 8db3537261d74c0996d9876b71cbd5e2
+20:34:44 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 3daf5e164f484f29aca0569ee5546aa3
+20:34:44 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:34:45 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=SUV+new+all-inclusive+renting+Spain+700+EUR+month+zero+emission+ECO+2026+delivery&limit=1 200
+20:34:45 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=SUV%20new%20all-inclusive%20renting%20Spain%20700%20EUR%20month%20zero%20emission%20ECO%202026%20delivery 200
+20:34:45 [INFO] primp: response: https://search.brave.com/search?q=SUV+new+all-inclusive+renting+Spain+700+EUR+month+zero+emission+ECO+2026+delivery&source=web 429
+20:34:47 [INFO] primp: response: https://www.mojeek.com/search?q=SUV+new+all-inclusive+renting+Spain+700+EUR+month+zero+emission+ECO+2026+delivery 200
+20:34:47 [INFO] primp: response: https://www.google.com/search?q=SUV+new+all-inclusive+renting+Spain+700+EUR+month+zero+emission+ECO+2026+delivery&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+20:34:48 [INFO] ddgs.ddgs: Error in engine yahoo: DDGSException("RequestError: RequestError('error sending request for url (https://search.yahoo.com/search;_ylt=UUloGizr9cDyBEwWenSUUw6e;_ylu=cLHpz_Gaph9Z_9TJ2Q8TnyQmvfKLZ6lpSAQ_kcGs_YbGYf0?p=SUV+new+all-inclusive+renting+Spain+700+EUR+month+zero+emission+ECO+2026+delivery)', 'https://search.yahoo.com/search;_ylt=UUloGizr9cDyBEwWenSUUw6e;_ylu=cLHpz_Gaph9Z_9TJ2Q8TnyQmvfKLZ6lpSAQ_kcGs_YbGYf0?p=SUV+new+all-inclusive+renting+Spain+700+EUR+month+zero+emission+ECO+2026+delivery')")
+20:34:49 [INFO] primp: response: https://yandex.com/search/site/?text=SUV+new+all-inclusive+renting+Spain+700+EUR+month+zero+emission+ECO+2026+delivery&web=1&searchid=2259005 200
+20:34:49 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:34:49 [INFO] mcp.server.streamable_http: Terminating session: 3daf5e164f484f29aca0569ee5546aa3
+20:34:50 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 79c4f85f1dad4ab38311eb62ce2a18fb
+20:34:50 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:34:50 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=electric+SUV+renting+Spain+700+EUR+month+April+2026&limit=1 200
+20:34:51 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=electric%20SUV%20renting%20Spain%20700%20EUR%20month%20April%202026 200
+20:34:52 [INFO] primp: response: https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_8624ed82-9493-40b2-9883-e773a74ca1f8 200
+20:34:52 [INFO] primp: response: https://search.brave.com/search?q=electric+SUV+renting+Spain+700+EUR+month+April+2026&source=web 429
+20:34:53 [INFO] primp: response: https://yandex.com/search/site/?text=electric+SUV+renting+Spain+700+EUR+month+April+2026&web=1&searchid=4201681 200
+20:34:53 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:34:53 [INFO] mcp.server.streamable_http: Terminating session: 79c4f85f1dad4ab38311eb62ce2a18fb
+20:34:55 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: d4f503cd08c64397a39e6f9f1a8efa07
+20:34:55 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: e3a450a170bd4fdcb77159d476b07800
+20:34:55 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: c2ce9ff18de24f8c964a573afcb3a6bd
+20:34:55 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:34:55 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:34:55 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:34:56 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=all-inclusive+renting+contract+Spain+SUV+ECO+and+Zero+emission+labels+3-4+year+700+EUR&limit=1 200
+20:34:56 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=2026+delivery+new+electric+SUV+renting+Spain+700+EUR+month&limit=1 200
+20:34:56 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=2024%20SUV%20electric%20and%20hybrid%20renting%20Spain%20700%20EUR%20month%203-4%20years 200
+20:34:56 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=all-inclusive%20renting%20contract%20Spain%20SUV%20ECO%20and%20Zero%20emission%20labels%203-4%20year%20700%20EUR 200
+20:34:56 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=2026%20delivery%20new%20electric%20SUV%20renting%20Spain%20700%20EUR%20month 200
+20:34:56 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=2024+SUV+electric+and+hybrid+renting+Spain+700+EUR+month+3-4+years&limit=1 200
+20:34:57 [INFO] ddgs.ddgs: Error in engine yahoo: DDGSException("RequestError: RequestError('error sending request for url (https://search.yahoo.com/search;_ylt=ftCYEl3YMSzMhc0bPh2izFdF;_ylu=V1p0gdlsrPL2DcWga54xu-iKHvIuwW4bwhS3XSs1gIBhfhE?p=all-inclusive+renting+contract+Spain+SUV+ECO+and+Zero+emission+labels+3-4+year+700+EUR)', 'https://search.yahoo.com/search;_ylt=ftCYEl3YMSzMhc0bPh2izFdF;_ylu=V1p0gdlsrPL2DcWga54xu-iKHvIuwW4bwhS3XSs1gIBhfhE?p=all-inclusive+renting+contract+Spain+SUV+ECO+and+Zero+emission+labels+3-4+year+700+EUR')")
+20:34:57 [INFO] primp: response: https://search.brave.com/search?q=2024+SUV+electric+and+hybrid+renting+Spain+700+EUR+month+3-4+years&source=web 429
+20:34:58 [INFO] primp: response: https://yandex.com/search/site/?text=all-inclusive+renting+contract+Spain+SUV+ECO+and+Zero+emission+labels+3-4+year+700+EUR&web=1&searchid=2939487 200
+20:34:58 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:34:58 [INFO] mcp.server.streamable_http: Terminating session: e3a450a170bd4fdcb77159d476b07800
+20:34:58 [INFO] primp: response: https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_51a1b73a-0660-4a71-9b44-4717fea8b238 200
+20:34:58 [INFO] primp: response: https://html.duckduckgo.com/html/ 200
+20:34:58 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:34:58 [INFO] mcp.server.streamable_http: Terminating session: c2ce9ff18de24f8c964a573afcb3a6bd
+20:34:59 [INFO] primp: response: https://yandex.com/search/site/?text=2026+delivery+new+electric+SUV+renting+Spain+700+EUR+month&web=1&searchid=2025352 200
+20:34:59 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:34:59 [INFO] mcp.server.streamable_http: Terminating session: d4f503cd08c64397a39e6f9f1a8efa07
+20:35:18 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: acee70bfa82e4eaaa4b966698299f9de
+20:35:18 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:35:18 [INFO] mcp.server.streamable_http: Terminating session: acee70bfa82e4eaaa4b966698299f9de
+20:35:21 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: be29d0972811438fafa16f501056a0d6
+20:35:21 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 78a9e279c3ad40d1b8d83d110b78654f
+20:35:21 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 4d1dcb1d14c840de84d396b3d7515460
+20:35:21 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: c28b6345e5fe440085011bb9367c54a9
+20:35:21 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 0cdd19c5646d4dc0b65e3c1aa09681d0
+20:35:21 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 6f54b98d2cb4482089c3d3237b62aedb
+20:35:21 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:35:21 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:35:21 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:35:21 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:35:21 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:35:21 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:35:21 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:35:21 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:35:21 [INFO] mcp.server.streamable_http: Terminating session: 78a9e279c3ad40d1b8d83d110b78654f
+20:35:21 [INFO] mcp.server.streamable_http: Terminating session: be29d0972811438fafa16f501056a0d6
+20:35:22 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=0+emission+SUV+models+Spain+launch+2025+2026&limit=1 200
+20:35:22 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=0%20emission%20SUV%20models%20Spain%20launch%202025%202026 200
+20:35:22 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=SUV+cero+emisiones+renting+Espa%C3%B1a+2025+2026&limit=1 200
+20:35:22 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=SUV%20etiqueta%20ECO%20renting%20Espa%C3%B1a%202025%202026 200
+20:35:22 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=SUV%20cero%20emisiones%20renting%20Espa%C3%B1a%202025%202026 200
+20:35:22 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=SUV+etiqueta+ECO+renting+Espa%C3%B1a+2025+2026&limit=1 200
+20:35:22 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=SUV+electricos+renting+700+euros+mes+2026+Espa%C3%B1a&limit=1 200
+20:35:22 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=SUV%20electricos%20renting%20700%20euros%20mes%202026%20Espa%C3%B1a 200
+20:35:23 [INFO] ddgs.ddgs: Error in engine yahoo: DDGSException("RequestError: RequestError('error sending request for url (https://search.yahoo.com/search;_ylt=tKiqusmBynp-LVBe_jcyJCxh;_ylu=zXJYxMRrKQL7cnMqCCx0hwFRxxp8pXcZMuCoYW4Ri6_jTqw?p=0+emission+SUV+models+Spain+launch+2025+2026)', 'https://search.yahoo.com/search;_ylt=tKiqusmBynp-LVBe_jcyJCxh;_ylu=zXJYxMRrKQL7cnMqCCx0hwFRxxp8pXcZMuCoYW4Ri6_jTqw?p=0+emission+SUV+models+Spain+launch+2025+2026')")
+20:35:23 [INFO] primp: response: https://search.yahoo.com/search;_ylt=nBysTr52g19gIrHkyoMH4HXC;_ylu=vuBeiqKsSihZuhO2EjQwB0Ph29ejdHq7nVXxwQegjf0Xv7Q?p=SUV+cero+emisiones+renting+Espa%C3%B1a+2025+2026 200
+20:35:23 [INFO] primp: response: https://yandex.com/search/site/?text=SUV+etiqueta+ECO+renting+Espa%C3%B1a+2025+2026&web=1&searchid=8893627 200
+20:35:23 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:35:23 [INFO] mcp.server.streamable_http: Terminating session: c28b6345e5fe440085011bb9367c54a9
+20:35:23 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:35:23 [INFO] mcp.server.streamable_http: Terminating session: 4d1dcb1d14c840de84d396b3d7515460
+20:35:24 [INFO] primp: response: https://html.duckduckgo.com/html/ 200
+20:35:24 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:35:24 [INFO] mcp.server.streamable_http: Terminating session: 0cdd19c5646d4dc0b65e3c1aa09681d0
+20:35:24 [INFO] primp: response: https://www.mojeek.com/search?q=SUV+electricos+renting+700+euros+mes+2026+Espa%C3%B1a 200
+20:35:24 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:35:24 [INFO] mcp.server.streamable_http: Terminating session: 6f54b98d2cb4482089c3d3237b62aedb
+20:35:33 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: a380921c729c42cfa4ac489fa60a8bd7
+20:35:33 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:35:33 [INFO] mcp.server.streamable_http: Terminating session: a380921c729c42cfa4ac489fa60a8bd7
+20:35:35 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: c097e69b6161489280c288bcfe601207
+20:35:35 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: daccade602b74a799dd123d0cb3bc4f6
+20:35:35 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:35:35 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:35:35 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:35:35 [INFO] mcp.server.streamable_http: Terminating session: daccade602b74a799dd123d0cb3bc4f6
+20:35:36 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=2025+2026+SUV+electric+zero+emission+eco+Spain+new+car+renting+Plan+Auto%2B&limit=1 200
+20:35:36 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=2025%202026%20SUV%20electric%20zero%20emission%20eco%20Spain%20new%20car%20renting%20Plan%20Auto%2B 200
+20:35:37 [INFO] primp: response: https://yandex.com/search/site/?text=2025+2026+SUV+electric+zero+emission+eco+Spain+new+car+renting+Plan+Auto%2B&web=1&searchid=2819282 200
+20:35:37 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:35:37 [INFO] mcp.server.streamable_http: Terminating session: c097e69b6161489280c288bcfe601207
+20:35:39 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 3ca4544278b74d62935cb0153a7e677d
+20:35:39 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 3f91dd8a019e41dd95239fcd719fdbf1
+20:35:39 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: af6e547d0dae4ae0accc45e2c6716d10
+20:35:39 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:35:39 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:35:39 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:35:40 [WARNING] trafilatura.core: discarding data: None
+20:35:40 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:35:40 [INFO] mcp.server.streamable_http: Terminating session: af6e547d0dae4ae0accc45e2c6716d10
+20:35:40 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:35:40 [INFO] mcp.server.streamable_http: Terminating session: 3f91dd8a019e41dd95239fcd719fdbf1
+20:35:41 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:35:41 [INFO] mcp.server.streamable_http: Terminating session: 3ca4544278b74d62935cb0153a7e677d
+20:35:43 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 1eef7c5f63a94ec09ad5dd76cb23345f
+20:35:43 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: a3cfdc35605b4fec8035b0518092aabf
+20:35:43 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 7554af4ea1334466a98bf5eb7b78da71
+20:35:43 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 1803c666cd264ad987333369eb679f67
+20:35:43 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:35:43 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:35:43 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:35:43 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:35:44 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=Volvo+XC60+EV+2026+Spain+review+user+expert+opinion&limit=1 200
+20:35:44 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=SWM+G03F+EDi+2026+Spain+review+contract+offer&limit=1 200
+20:35:44 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=2025%202026%20SUV%20electric%20zero%20emission%20eco%20Spain%20new%20car%20renting%20Volvo%20XC60%20EV%20Lucid%20Gravity%20SWM%20G03F%20EDi%20Cadillac%20Optiq%20Hyundai%20Ioniq%209%20Voyah%20Free%20contract%20terms%20pricing%20early%20booking 200
+20:35:44 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=SWM%20G03F%20EDi%202026%20Spain%20review%20contract%20offer 200
+20:35:44 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Volvo%20XC60%20EV%202026%20Spain%20review%20user%20expert%20opinion 200
+20:35:44 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=2025+2026+SUV+electric+zero+emission+eco+Spain+new+car+renting+Volvo+XC60+EV+Lucid+Gravity+SWM+G03F+EDi+Cadillac+Optiq+Hyundai+Ioniq+9+Voyah+Free+contract+terms+pricing+early+booking&limit=1 200
+20:35:44 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=Lucid+Gravity+2026+Spain+review+user+expert+opinion&limit=1 200
+20:35:44 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Lucid%20Gravity%202026%20Spain%20review%20user%20expert%20opinion 200
+20:35:45 [INFO] primp: response: https://www.mojeek.com/search?q=2025+2026+SUV+electric+zero+emission+eco+Spain+new+car+renting+Volvo+XC60+EV+Lucid+Gravity+SWM+G03F+EDi+Cadillac+Optiq+Hyundai+Ioniq+9+Voyah+Free+contract+terms+pricing+early+booking 403
+20:35:45 [INFO] primp: response: https://yandex.com/search/site/?text=Volvo+XC60+EV+2026+Spain+review+user+expert+opinion&web=1&searchid=8663617 200
+20:35:45 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:35:45 [INFO] mcp.server.streamable_http: Terminating session: 7554af4ea1334466a98bf5eb7b78da71
+20:35:45 [INFO] primp: response: https://search.brave.com/search?q=2025+2026+SUV+electric+zero+emission+eco+Spain+new+car+renting+Volvo+XC60+EV+Lucid+Gravity+SWM+G03F+EDi+Cadillac+Optiq+Hyundai+Ioniq+9+Voyah+Free+contract+terms+pricing+early+booking&source=web 429
+20:35:46 [INFO] primp: response: https://www.mojeek.com/search?q=SWM+G03F+EDi+2026+Spain+review+contract+offer 200
+20:35:46 [INFO] primp: response: https://www.mojeek.com/search?q=Lucid+Gravity+2026+Spain+review+user+expert+opinion 200
+20:35:46 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:35:46 [INFO] mcp.server.streamable_http: Terminating session: 1803c666cd264ad987333369eb679f67
+20:35:46 [INFO] primp: response: https://search.brave.com/search?q=SWM+G03F+EDi+2026+Spain+review+contract+offer&source=web 429
+20:35:47 [INFO] primp: response: https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_ace19cad-8f58-42c6-ae8f-b553b7499853 200
+20:35:47 [INFO] primp: response: https://search.yahoo.com/search;_ylt=FaoO4B7XTzxZM5j-3cytsqcF;_ylu=Oj_x1VXUKXqBVhQbHM8wNw1YmXB-OxTiQiRpT4K_KhpvQcs?p=SWM+G03F+EDi+2026+Spain+review+contract+offer 200
+20:35:47 [INFO] primp: response: https://www.google.com/search?q=2025+2026+SUV+electric+zero+emission+eco+Spain+new+car+renting+Volvo+XC60+EV+Lucid+Gravity+SWM+G03F+EDi+Cadillac+Optiq+Hyundai+Ioniq+9+Voyah+Free+contract+terms+pricing+early+booking&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+20:35:48 [INFO] primp: response: https://yandex.com/search/site/?text=SWM+G03F+EDi+2026+Spain+review+contract+offer&web=1&searchid=6785617 200
+20:35:48 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:35:48 [INFO] mcp.server.streamable_http: Terminating session: 1eef7c5f63a94ec09ad5dd76cb23345f
+20:35:49 [INFO] primp: response: https://html.duckduckgo.com/html/ 200
+20:35:49 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:35:49 [INFO] mcp.server.streamable_http: Terminating session: a3cfdc35605b4fec8035b0518092aabf
+20:35:52 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 11bb66b4a706455daaf1dde23feb8c2b
+20:35:52 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 5e1b176ea404440aa68f50a014611eab
+20:35:52 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 3f06ba47924244e6bd674bbcbad9a0d5
+20:35:52 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 6c3610bd71084077913197dfe2eab8f0
+20:35:52 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 08238de2894c4f8cb62ec731f7046e01
+20:35:52 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 8c6e634aeda942c78fb1f6a444431ca2
+20:35:52 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 35ab2242d92f42eca239b536ba2a191f
+20:35:52 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:35:52 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:35:52 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:35:52 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:35:52 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:35:52 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:35:52 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:35:53 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=Lucid+Gravity+Spain+2026+availability+price+contract+renting&limit=1 200
+20:35:53 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=SWM+G03F+EDi+2026+Spain+contract+new+car+renting+pricing&limit=1 200
+20:35:53 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=Voyah+Free+2026+Spain+contract+new+car+renting+pricing&limit=1 200
+20:35:53 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Voyah%20Free%202026%20Spain%20contract%20new%20car%20renting%20pricing 200
+20:35:53 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Lucid%20Gravity%20Spain%202026%20availability%20price%20contract%20renting 200
+20:35:53 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=SWM%20G03F%20EDi%202026%20Spain%20contract%20new%20car%20renting%20pricing 200
+20:35:54 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:35:54 [INFO] mcp.server.streamable_http: Terminating session: 3f06ba47924244e6bd674bbcbad9a0d5
+20:35:54 [INFO] primp: response: https://www.google.com/search?q=SWM+G03F+EDi+2026+Spain+contract+new+car+renting+pricing&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+20:35:54 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=Cadillac+Optiq+2026+Spain+electric+SUV+release+pricing+renting+contract&limit=1 200
+20:35:55 [INFO] primp: response: https://html.duckduckgo.com/html/ 200
+20:35:55 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:35:55 [INFO] mcp.server.streamable_http: Terminating session: 6c3610bd71084077913197dfe2eab8f0
+20:35:55 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Cadillac%20Optiq%202026%20Spain%20electric%20SUV%20release%20pricing%20renting%20contract 200
+20:35:55 [INFO] primp: response: https://www.mojeek.com/search?q=Voyah+Free+2026+Spain+contract+new+car+renting+pricing 200
+20:35:55 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:35:55 [INFO] mcp.server.streamable_http: Terminating session: 11bb66b4a706455daaf1dde23feb8c2b
+20:35:55 [INFO] primp: response: https://html.duckduckgo.com/html/ 200
+20:35:55 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:35:55 [INFO] mcp.server.streamable_http: Terminating session: 5e1b176ea404440aa68f50a014611eab
+20:35:55 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:35:55 [INFO] mcp.server.streamable_http: Terminating session: 08238de2894c4f8cb62ec731f7046e01
+20:35:56 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=Hyundai+Ioniq+9+2026+Spain+review+pricing+renting+contract&limit=1 200
+20:35:56 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Hyundai%20Ioniq%209%202026%20Spain%20review%20pricing%20renting%20contract 200
+20:35:56 [INFO] primp: response: https://www.mojeek.com/search?q=Cadillac+Optiq+2026+Spain+electric+SUV+release+pricing+renting+contract 200
+20:35:57 [INFO] primp: response: https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_68fd1a20-6391-4bb5-8e13-7a142b501809 200
+20:35:58 [INFO] primp: response: https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_2b9c51a5-01ec-4655-b53e-a9bcbeb3735c 200
+20:35:58 [INFO] primp: response: https://html.duckduckgo.com/html/ 200
+20:35:58 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:35:58 [INFO] mcp.server.streamable_http: Terminating session: 35ab2242d92f42eca239b536ba2a191f
+20:35:59 [INFO] primp: response: https://search.brave.com/search?q=Cadillac+Optiq+2026+Spain+electric+SUV+release+pricing+renting+contract&source=web 429
+20:36:00 [INFO] primp: response: https://html.duckduckgo.com/html/ 200
+20:36:00 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:36:00 [INFO] mcp.server.streamable_http: Terminating session: 8c6e634aeda942c78fb1f6a444431ca2
+20:36:21 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 6beb1ed8c83c4666a79558df87beb306
+20:36:21 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:36:21 [INFO] mcp.server.streamable_http: Terminating session: 6beb1ed8c83c4666a79558df87beb306
+20:36:25 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 50e8158bc12c42a880b3446a6c0be24d
+20:36:25 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 12688423823548d8a9a61db240ea5414
+20:36:25 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 5266a7f420c54edf8299fa49102b4d97
+20:36:25 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: a00aaea40a7f419fb9f6b5ae29dc1129
+20:36:25 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 6a6cc1efb3b144e69fdb68e25454d8f1
+20:36:25 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 0e586aeff7a44bddb0600594d62c9334
+20:36:25 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 7a6c1e18b61b4f70bf6cc11bd1a90ae7
+20:36:25 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 4a3dfb318a57454caeb1b0b702869c00
+20:36:25 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 34f4750877c5455285b700106d9df7d6
+20:36:25 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 73f074a43312403db357476ef7e898bf
+20:36:25 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:25 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:25 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:25 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:25 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:25 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:25 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:25 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:25 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:25 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:25 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:36:25 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:36:25 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:36:25 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:36:25 [INFO] mcp.server.streamable_http: Terminating session: 50e8158bc12c42a880b3446a6c0be24d
+20:36:25 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:36:25 [INFO] mcp.server.streamable_http: Terminating session: 12688423823548d8a9a61db240ea5414
+20:36:25 [INFO] mcp.server.streamable_http: Terminating session: 6a6cc1efb3b144e69fdb68e25454d8f1
+20:36:25 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:36:25 [INFO] mcp.server.streamable_http: Terminating session: 0e586aeff7a44bddb0600594d62c9334
+20:36:25 [INFO] mcp.server.streamable_http: Terminating session: 73f074a43312403db357476ef7e898bf
+20:36:25 [INFO] mcp.server.streamable_http: Terminating session: 34f4750877c5455285b700106d9df7d6
+20:36:26 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=SUVs+with+%270+Emisiones%27+and+%27ECO%27+label+Spain+2025+2026+renting+offers&limit=1 200
+20:36:26 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=Hyundai+Ioniq+9+Spain+renting+2026+price+reviews&limit=1 200
+20:36:26 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=Electric+and+hybrid+SUV+renting+Spain+2026+reviews+user+experience&limit=1 200
+20:36:26 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Plan%20Auto%2B%20Spain%202026%20eligibility%20for%20renting%20all%20inclusive 200
+20:36:26 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Electric%20and%20hybrid%20SUV%20renting%20Spain%202026%20reviews%20user%20experience 200
+20:36:26 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=SUVs%20with%20%270%20Emisiones%27%20and%20%27ECO%27%20label%20Spain%202025%202026%20renting%20offers 200
+20:36:26 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Hyundai%20Ioniq%209%20Spain%20renting%202026%20price%20reviews 200
+20:36:26 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=Plan+Auto%2B+Spain+2026+eligibility+for+renting+all+inclusive&limit=1 200
+20:36:27 [INFO] primp: response: https://search.brave.com/search?q=Plan+Auto%2B+Spain+2026+eligibility+for+renting+all+inclusive&source=web 429
+20:36:28 [INFO] primp: response: https://html.duckduckgo.com/html/ 200
+20:36:28 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:36:28 [INFO] mcp.server.streamable_http: Terminating session: a00aaea40a7f419fb9f6b5ae29dc1129
+20:36:28 [INFO] primp: response: https://www.mojeek.com/search?q=SUVs+with+%270+Emisiones%27+and+%27ECO%27+label+Spain+2025+2026+renting+offers 200
+20:36:28 [INFO] primp: response: https://www.mojeek.com/search?q=Hyundai+Ioniq+9+Spain+renting+2026+price+reviews 200
+20:36:28 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:36:28 [INFO] mcp.server.streamable_http: Terminating session: 4a3dfb318a57454caeb1b0b702869c00
+20:36:28 [INFO] primp: response: https://html.duckduckgo.com/html/ 200
+20:36:28 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:36:28 [INFO] mcp.server.streamable_http: Terminating session: 5266a7f420c54edf8299fa49102b4d97
+20:36:29 [INFO] primp: response: https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_29616729-17b8-4d6f-93ae-628173689ef0 200
+20:36:30 [INFO] primp: response: https://yandex.com/search/site/?text=SUVs+with+%270+Emisiones%27+and+%27ECO%27+label+Spain+2025+2026+renting+offers&web=1&searchid=5948865 200
+20:36:30 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:36:30 [INFO] mcp.server.streamable_http: Terminating session: 7a6c1e18b61b4f70bf6cc11bd1a90ae7
+20:36:44 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 7ab4364ccc914fdf978f2adb5858279f
+20:36:44 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:36:44 [INFO] mcp.server.streamable_http: Terminating session: 7ab4364ccc914fdf978f2adb5858279f
+20:36:46 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 6571801ced1a4012960e8887a55b8638
+20:36:46 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: cfd9b6d282ec4cbfa60a166350ac96e5
+20:36:46 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 5f54916059d34c358a46260028a15a34
+20:36:46 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: b01cd1cf45e548279fa49957b5aebdf0
+20:36:46 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 0c09e95ae2134208bb134bee1e1f1a45
+20:36:46 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:46 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:46 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:46 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:46 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:46 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:36:46 [INFO] mcp.server.streamable_http: Terminating session: 6571801ced1a4012960e8887a55b8638
+20:36:47 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=2025%202026%20EV%20PHEV%20SUV%20launches%20detailed%20specs%20pricing%20delivery%20Spain 200
+20:36:47 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Spanish%20SUV%20EV%20PHEV%20rental%20reviews%202025%202026%20coches.com%20Northgate%20ALD%20LeasePlan 200
+20:36:47 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=2025+2026+EV+PHEV+SUV+launches+detailed+specs+pricing+delivery+Spain&limit=1 200
+20:36:47 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=2026+SUV+all-inclusive+renting+Spain+ECO+0+label+under+750+EUR+April+2026+delivery&limit=1 200
+20:36:47 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=2026%20SUV%20all-inclusive%20renting%20Spain%20ECO%200%20label%20under%20750%20EUR%20April%202026%20delivery 200
+20:36:47 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=Spanish+government+Plan+Auto%2B+2026+incentives+renting+vs+buying+SUVs+EV+PHEV&limit=1 200
+20:36:47 [INFO] primp: response: https://grokipedia.com/api/typeahead?query=Spanish+SUV+EV+PHEV+rental+reviews+2025+2026+coches.com+Northgate+ALD+LeasePlan&limit=1 200
+20:36:47 [INFO] primp: response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Spanish%20government%20Plan%20Auto%2B%202026%20incentives%20renting%20vs%20buying%20SUVs%20EV%20PHEV 200
+20:36:48 [INFO] primp: response: https://www.google.com/search?q=Spanish+SUV+EV+PHEV+rental+reviews+2025+2026+coches.com+Northgate+ALD+LeasePlan&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+20:36:48 [INFO] primp: response: https://search.brave.com/search?q=2025+2026+EV+PHEV+SUV+launches+detailed+specs+pricing+delivery+Spain&source=web 429
+20:36:48 [INFO] primp: response: https://www.google.com/search?q=2026+SUV+all-inclusive+renting+Spain+ECO+0+label+under+750+EUR+April+2026+delivery&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+20:36:48 [INFO] primp: response: https://search.yahoo.com/search;_ylt=ig0Nqg94zQpr1tQ3nzSGIkip;_ylu=LqCsi1QfSAIWC4supOLkMGE8NWV3T4Vlp1vSWF2GtG3RUto?p=Spanish+SUV+EV+PHEV+rental+reviews+2025+2026+coches.com+Northgate+ALD+LeasePlan 200
+20:36:49 [INFO] primp: response: https://html.duckduckgo.com/html/ 202
+20:36:49 [INFO] primp: response: https://html.duckduckgo.com/html/ 200
+20:36:49 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:36:49 [INFO] mcp.server.streamable_http: Terminating session: 0c09e95ae2134208bb134bee1e1f1a45
+20:36:49 [INFO] ddgs.ddgs: Error in engine yahoo: DDGSException("RequestError: RequestError('error sending request for url (https://search.yahoo.com/search;_ylt=7Ris_43XGNEoqmHhn2ZZ-Lob;_ylu=oI0nwQr32n4L7NShqgQe1-0eKvtprZ_OK4i_Ynwm7JeJ1_M?p=2026+SUV+all-inclusive+renting+Spain+ECO+0+label+under+750+EUR+April+2026+delivery)', 'https://search.yahoo.com/search;_ylt=7Ris_43XGNEoqmHhn2ZZ-Lob;_ylu=oI0nwQr32n4L7NShqgQe1-0eKvtprZ_OK4i_Ynwm7JeJ1_M?p=2026+SUV+all-inclusive+renting+Spain+ECO+0+label+under+750+EUR+April+2026+delivery')")
+20:36:49 [INFO] primp: response: https://html.duckduckgo.com/html/ 200
+20:36:49 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:36:49 [INFO] mcp.server.streamable_http: Terminating session: b01cd1cf45e548279fa49957b5aebdf0
+20:36:49 [INFO] primp: response: https://search.brave.com/search?q=2026+SUV+all-inclusive+renting+Spain+ECO+0+label+under+750+EUR+April+2026+delivery&source=web 429
+20:36:50 [INFO] primp: response: https://yandex.com/search/site/?text=Spanish+SUV+EV+PHEV+rental+reviews+2025+2026+coches.com+Northgate+ALD+LeasePlan&web=1&searchid=4902872 200
+20:36:50 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:36:50 [INFO] mcp.server.streamable_http: Terminating session: cfd9b6d282ec4cbfa60a166350ac96e5
+20:36:51 [INFO] primp: response: https://www.mojeek.com/search?q=2026+SUV+all-inclusive+renting+Spain+ECO+0+label+under+750+EUR+April+2026+delivery 200
+20:36:52 [INFO] primp: response: https://yandex.com/search/site/?text=2026+SUV+all-inclusive+renting+Spain+ECO+0+label+under+750+EUR+April+2026+delivery&web=1&searchid=3596268 200
+20:36:52 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:36:52 [INFO] mcp.server.streamable_http: Terminating session: 5f54916059d34c358a46260028a15a34
+20:36:57 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 51ebb5518e1e4f28bec49ad0433643f9
+20:36:57 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 432c0834c7844dc0aae6a7d3d6a92901
+20:36:57 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 6cac5f64b1d64683a6822fcaea644c6a
+20:36:57 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 9c313e34a70b440db75468ff64b9156c
+20:36:57 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 925c92abe5444fd98400161ab72fa306
+20:36:57 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 5caa7bda9d5a4f199abc3f1d6fb40cf7
+20:36:57 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 2f8921552b9a41e68adac07da068ac69
+20:36:57 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 61f3e890de314431aaa0fa5f04854383
+20:36:57 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 8341ba4797d54e5aa2184bf1b0499fa0
+20:36:57 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 7a209637dd1f455e8820ecdf45bbe523
+20:36:57 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: b2ba633b43a84c71986cfbaf8c15d098
+20:36:58 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:58 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:58 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:58 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:58 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:58 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:58 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:58 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:58 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:58 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:58 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+20:36:58 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:36:58 [INFO] mcp.server.streamable_http: Terminating session: 6cac5f64b1d64683a6822fcaea644c6a
+20:36:58 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:36:58 [INFO] mcp.server.streamable_http: Terminating session: 432c0834c7844dc0aae6a7d3d6a92901
+20:36:58 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:36:58 [INFO] mcp.server.streamable_http: Terminating session: 61f3e890de314431aaa0fa5f04854383
+20:36:58 [WARNING] urllib3.connectionpool: Retrying (Retry(total=1, connect=0, read=None, redirect=2, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.aldautomotive.es'. (_ssl.c:1032)"))': /
+20:36:58 [ERROR] trafilatura.downloads: not a 200 response: 403 for URL https://insideevs.com/features/783999/every-new-electric-car-ev-2026/
+20:36:58 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:36:58 [INFO] mcp.server.streamable_http: Terminating session: 9c313e34a70b440db75468ff64b9156c
+20:36:59 [ERROR] trafilatura.downloads: not a 200 response: 403 for URL https://www.dubicars.com/news/top-10-suvs-launching-2026.html
+20:36:59 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:36:59 [INFO] mcp.server.streamable_http: Terminating session: 925c92abe5444fd98400161ab72fa306
+20:36:59 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:36:59 [INFO] mcp.server.streamable_http: Terminating session: 8341ba4797d54e5aa2184bf1b0499fa0
+20:36:59 [INFO] urllib3.poolmanager: Redirecting https://www.leaseplan.com/es-es -> https://www.leaseplan.com/es-es/
+20:36:59 [INFO] urllib3.poolmanager: Redirecting https://www.leaseplan.com/es-es/ -> https://www.ayvens.com/es-es/
+20:37:00 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:37:00 [INFO] mcp.server.streamable_http: Terminating session: 2f8921552b9a41e68adac07da068ac69
+20:37:00 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:37:00 [INFO] mcp.server.streamable_http: Terminating session: 7a209637dd1f455e8820ecdf45bbe523
+20:37:00 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:37:00 [INFO] mcp.server.streamable_http: Terminating session: 5caa7bda9d5a4f199abc3f1d6fb40cf7
+20:37:00 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:37:00 [INFO] mcp.server.streamable_http: Terminating session: b2ba633b43a84c71986cfbaf8c15d098
+20:37:09 [WARNING] urllib3.connectionpool: Retrying (Retry(total=0, connect=0, read=None, redirect=2, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.aldautomotive.es'. (_ssl.c:1032)"))': /
+20:37:09 [ERROR] trafilatura.downloads: download error: https://www.aldautomotive.es/ HTTPSConnectionPool(host='www.aldautomotive.es', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.aldautomotive.es'. (_ssl.c:1032)")))
+20:37:09 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+20:37:09 [INFO] mcp.server.streamable_http: Terminating session: 51ebb5518e1e4f28bec49ad0433643f9

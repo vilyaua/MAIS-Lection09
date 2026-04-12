@@ -72,6 +72,7 @@ def _format_tool_result(msg) -> dict | None:
 def _sync_stream(thread_id: str, input_data):
     """Run supervisor.stream() synchronously, yielding SSE-ready events."""
     global pending_interrupt
+    sid = thread_id[:8]
     config = {"configurable": {"thread_id": thread_id}, "recursion_limit": 100}
 
     for chunk in supervisor.stream(input_data, config=config, stream_mode="updates"):
@@ -95,11 +96,18 @@ def _sync_stream(thread_id: str, input_data):
                 # Tool call events
                 tool_info = _format_tool_event(msg)
                 if tool_info:
+                    logger.info(
+                        "[%s] tool_call: %s(%s)",
+                        sid,
+                        tool_info["tool"],
+                        tool_info.get("args", "")[:60],
+                    )
                     yield {"type": "tool_call", **tool_info}
 
                 # Tool result events
                 tool_result = _format_tool_result(msg)
                 if tool_result:
+                    logger.info("[%s] tool_result: %s", sid, tool_result["detail"][:80])
                     yield {"type": "tool_result", **tool_result}
 
                 # Final agent message
@@ -117,6 +125,9 @@ async def _stream_response(prompt: str):
     """Bridge sync streaming into async SSE."""
     global current_thread_id
     current_thread_id = str(uuid.uuid4())
+    sid = current_thread_id
+
+    logger.info("[%s] New session — query: %s", sid[:8], prompt[:80])
 
     loop = asyncio.get_event_loop()
     queue: asyncio.Queue = asyncio.Queue()
@@ -125,12 +136,13 @@ async def _stream_response(prompt: str):
         def _run():
             try:
                 for event in _sync_stream(
-                    current_thread_id,
+                    sid,
                     {"messages": [("user", prompt)]},
                 ):
+                    event["session_id"] = sid
                     loop.call_soon_threadsafe(queue.put_nowait, event)
             except Exception as e:
-                logger.exception("Error during agent turn")
+                logger.exception("[%s] Error during agent turn", sid[:8])
                 loop.call_soon_threadsafe(
                     queue.put_nowait, {"type": "message", "content": f"Error: {e}"}
                 )
@@ -292,14 +304,20 @@ CHAT_HTML = """\
   .msg.assistant { align-self: flex-start; background: white; border: 1px solid #e5e7eb; }
   .msg.assistant pre { background: #f3f4f6; padding: 8px; border-radius: 6px;
                        overflow-x: auto; font-size: 13px; margin: 8px 0; }
-  .tool-log { font-size: 12px; padding: 4px 16px; }
-  .tool-log.plan { color: #8b5cf6; }
-  .tool-log.research { color: #2563eb; }
-  .tool-log.critique { color: #ea580c; }
+  .tool-log { font-size: 12px; padding: 4px 16px; font-family: 'SF Mono', Monaco, Consolas, monospace; }
+  .tool-log .badge { display: inline-block; padding: 1px 6px; border-radius: 4px; font-size: 10px;
+                     font-weight: 600; color: white; margin-right: 4px; }
+  .tool-log.delegate_to_planner { color: #8b5cf6; }
+  .tool-log.delegate_to_planner .badge { background: #8b5cf6; }
+  .tool-log.delegate_to_researcher { color: #2563eb; }
+  .tool-log.delegate_to_researcher .badge { background: #2563eb; }
+  .tool-log.delegate_to_critic { color: #ea580c; }
+  .tool-log.delegate_to_critic .badge { background: #ea580c; }
   .tool-log.save_report { color: #059669; }
-  .tool-log.web_search { color: #2563eb; }
-  .tool-log.read_url { color: #7c3aed; }
-  .tool-log.knowledge_search { color: #ea580c; }
+  .tool-log.save_report .badge { background: #059669; }
+  .tool-log.result { color: #6b7280; font-style: italic; }
+  .session-id { font-family: 'SF Mono', Monaco, Consolas, monospace; font-size: 10px;
+                color: #6c7086; background: #313244; padding: 2px 6px; border-radius: 4px; }
   .input-bar { padding: 16px 20px; background: white; border-top: 1px solid #e5e7eb;
                display: flex; gap: 8px; }
   .input-bar input { flex: 1; padding: 10px 14px; border: 1px solid #d1d5db;
@@ -334,6 +352,7 @@ CHAT_HTML = """\
   <h2>Multi-Agent Research (MCP+ACP)</h2>
   <button class="btn-reset" onclick="resetSession()">New Session</button>
   <div class="meta" id="meta">Loading...</div>
+  <div class="meta">Session: <span class="session-id" id="session-id">—</span></div>
   <h3>Reports</h3>
   <div class="reports-list" id="reports">Loading...</div>
 </div>
@@ -384,10 +403,22 @@ CHAT_HTML = """\
     return d;
   }
 
-  function addTool(text, toolName) {
+  const toolLabels = {
+    delegate_to_planner: 'PLAN', delegate_to_researcher: 'RESEARCH',
+    delegate_to_critic: 'CRITIQUE', save_report: 'SAVE'
+  };
+  let lastToolName = '';
+
+  function addTool(text, toolName, isResult) {
     const d = document.createElement('div');
-    d.className = 'tool-log ' + (toolName || '');
-    d.textContent = text;
+    const cls = isResult ? (lastToolName || '') : (toolName || '');
+    d.className = 'tool-log ' + cls + (isResult ? ' result' : '');
+    if (!isResult && toolName && toolLabels[toolName]) {
+      d.innerHTML = `<span class="badge">${toolLabels[toolName]}</span> ${text}`;
+      lastToolName = toolName;
+    } else {
+      d.textContent = text;
+    }
     msgs.appendChild(d);
     msgs.scrollTop = msgs.scrollHeight;
   }
@@ -471,8 +502,8 @@ CHAT_HTML = """\
             if (!line.startsWith('data: ')) continue;
             const d = JSON.parse(line.slice(6));
             if (d.type === 'message') el.innerHTML = formatMd(d.content);
-            if (d.type === 'tool_call') addTool(`\\u2192 ${d.tool}(${d.args || ''})`, d.tool);
-            if (d.type === 'tool_result') addTool(`  \\u2190 ${d.detail}`, '');
+            if (d.type === 'tool_call') addTool(`${d.tool}(${d.args || ''})`, d.tool, false);
+            if (d.type === 'tool_result') addTool(`  \\u2190 ${d.detail}`, '', true);
             if (d.type === 'interrupt') showHITL(d.filename, d.content_preview);
             if (d.type === 'done') { btn.disabled = false; input.focus(); loadReports(); }
           }
@@ -495,9 +526,10 @@ CHAT_HTML = """\
 
     es.onmessage = e => {
       const d = JSON.parse(e.data);
+      if (d.session_id) document.getElementById('session-id').textContent = d.session_id.slice(0,8);
       if (d.type === 'message') el.innerHTML = formatMd(d.content);
-      if (d.type === 'tool_call') addTool(`\\u2192 ${d.tool}(${d.args || ''})`, d.tool);
-      if (d.type === 'tool_result') addTool(`  \\u2190 ${d.detail}`, '');
+      if (d.type === 'tool_call') addTool(`${d.tool}(${d.args || ''})`, d.tool, false);
+      if (d.type === 'tool_result') addTool(`  \\u2190 ${d.detail}`, '', true);
       if (d.type === 'interrupt') { es.close(); showHITL(d.filename, d.content_preview); return; }
       if (d.type === 'done') { es.close(); btn.disabled = false; input.focus(); loadReports(); }
       msgs.scrollTop = msgs.scrollHeight;
