@@ -146,22 +146,33 @@ python main.py
 ## Dependencies (new vs hw8)
 
 ```
-fastmcp            # MCP server + client
-acp-sdk            # ACP server + client
+fastmcp>=3.0.0                    # MCP server + client
+acp-sdk>=1.0.0                    # ACP server (client has serialization bug, use httpx)
+langchain-mcp-adapters>=0.1.0     # MCP-to-LangChain tool conversion
+uvicorn>=0.35.0,<0.36.0           # CRITICAL: only version compatible with both fastmcp and acp-sdk
+httpx                             # ACP client workaround
 ```
 
 Keep all hw8 deps: langchain, langgraph, faiss-cpu, rank_bm25, sentence-transformers, ddgs, trafilatura, etc.
 
+## Known Issues
+
+- **acp-sdk client broken** — `acp_sdk.client.Client.run_sync()` has a serialization bug (422 error). Server works fine. Workaround: direct httpx POST to `/runs`.
+- **uvicorn pin is narrow** — only 0.35.x works (fastmcp needs >=0.35, acp-sdk needs LoopSetupType removed in 0.36).
+- **Async bridging** — LangGraph runs its own event loop, so `@tool` functions use `ThreadPoolExecutor` + `asyncio.run()` to call async ACP/MCP code.
+
+See `research-agent/FINDINGS.md` for full technical details.
+
 ## Requirements Checklist
 
-- [ ] 2 MCP servers (SearchMCP, ReportMCP) with tools and resources
-- [ ] 1 ACP server with 3 agents (planner, researcher, critic)
-- [ ] Each ACP agent connects to SearchMCP via `fastmcp.Client`
-- [ ] Each ACP agent created via `create_agent`
-- [ ] Supervisor orchestrates agents via `acp_sdk.client.Client`
-- [ ] Iterative Plan -> Research -> Critique cycle works via ACP
-- [ ] HITL on `save_report` via interrupt
-- [ ] `save_report` works through ReportMCP
+- [x] 2 MCP servers (SearchMCP, ReportMCP) with tools and resources
+- [x] 1 ACP server with 3 agents (planner, researcher, critic)
+- [x] Each ACP agent connects to SearchMCP via `langchain-mcp-adapters`
+- [x] Each ACP agent created via `create_agent`
+- [x] Supervisor orchestrates agents via ACP (httpx, due to SDK bug)
+- [x] Iterative Plan -> Research -> Critique cycle works via ACP
+- [x] HITL on `save_report` via interrupt
+- [x] `save_report` works through ReportMCP
 
 ## Important: Use Current APIs
 
