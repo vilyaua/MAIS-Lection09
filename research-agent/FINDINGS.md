@@ -38,14 +38,17 @@ All communication goes through HTTP protocols. Each component is a separate proc
 
 **Investigation:** The SDK client serializes the Pydantic models to bytes, but the server's FastAPI endpoint expects a JSON dict. Likely a httpx/pydantic version incompatibility in the archived SDK.
 
-**Workaround:** Replaced `acp_sdk.client.Client` with direct `httpx.AsyncClient` calls:
+**Fix:** Subclassed `acp_sdk.client.Client` as `PatchedACPClient` (see `acp_client.py`).
+The subclass wraps the internal httpx client's `post` method to inject
+`Content-Type: application/json` when `content=` is used (the SDK's pattern).
+This allows using the official SDK client API (`run_sync`, `Message`, etc.)
+while working around the serialization bug.
+
 ```python
-async with httpx.AsyncClient(timeout=300) as client:
-    resp = await client.post(f"{acp_url}/runs", json={
-        "agent_name": agent_name,
-        "input": [{"parts": [{"content": content, "content_type": "text/plain"}]}],
-        "mode": "sync",
-    })
+from acp_client import PatchedACPClient
+
+async with PatchedACPClient(base_url=settings.acp_url) as client:
+    run = await client.run_sync(agent=agent_name, input=input_messages)
 ```
 
 **Note:** `acp_sdk.server.Server` works perfectly — only the client is broken.
@@ -108,9 +111,9 @@ agent = create_agent(model, tools=tools, ...)
 - [x] ACP server with 3 agents (planner, researcher, critic)
 - [x] Each ACP agent connects to SearchMCP via langchain-mcp-adapters
 - [x] Each ACP agent uses create_agent with structured output (Planner, Critic)
-- [x] Supervisor orchestrates via ACP delegation (httpx)
+- [x] Supervisor orchestrates via ACP delegation (PatchedACPClient)
 - [x] Iterative Plan -> Research -> Critique -> REVISE -> Research -> APPROVE cycle
-- [x] HITL interrupt on save_report via ReportMCP
+- [x] HITL on save_report via HumanInTheLoopMiddleware
 - [x] Docker compose with 4 services + proper networking
 - [x] Local development (localhost) and Docker (service names) both supported
 
@@ -119,12 +122,12 @@ agent = create_agent(model, tools=tools, ...)
 | Package | Version | Notes |
 |---------|---------|-------|
 | fastmcp | 3.2.3 | MCP server + client |
-| acp-sdk | 1.0.3 | ACP server only (client broken) |
+| acp-sdk | 1.0.3 | ACP server + PatchedACPClient (client bug fixed via subclass) |
 | uvicorn | 0.35.0 | Pinned: only version compatible with both fastmcp and acp-sdk |
 | langchain-mcp-adapters | latest | MCP-to-LangChain tool conversion |
 | langchain | >=1.2.0 | create_agent, response_format |
 | langgraph | >=0.4.0 | checkpointer, interrupt, Command |
-| httpx | latest | ACP client workaround |
+| langchain (middleware) | >=1.2.0 | HumanInTheLoopMiddleware for HITL |
 
 ## Lessons Learned
 
@@ -133,3 +136,5 @@ agent = create_agent(model, tools=tools, ...)
 3. **Docker networking is simple but non-obvious** — `localhost` confusion is the #1 Docker networking mistake.
 4. **Async/sync bridging is tricky** — LangGraph's internal event loop makes calling async code from sync tools non-trivial.
 5. **Version pinning windows can be narrow** — the uvicorn 0.35.x window is exactly one minor version wide.
+6. **Subclassing beats monkey-patching** — `PatchedACPClient` cleanly fixes the SDK's serialization bug while preserving the official API surface.
+7. **Middleware > manual interrupt()** — `HumanInTheLoopMiddleware` is declarative and keeps HITL logic out of tool functions.

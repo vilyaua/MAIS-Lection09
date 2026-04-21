@@ -34,6 +34,19 @@
 - Added session ID tracing: `[session_id]` prefix in logs, session_id in SSE events
 - Added colored tool badges in web UI: PLAN (purple), RESEARCH (blue), CRITIQUE (orange), SAVE (green)
 
+## 2026-04-21 — Reviewer feedback fixes
+
+- Replaced direct httpx POST to ACP `/runs` with `PatchedACPClient` (subclass of `acp_sdk.client.Client`)
+  - Bug: SDK uses `content=model.model_dump_json()` without Content-Type header → 422
+  - Fix: subclass injects `Content-Type: application/json` header on POST calls
+  - New file: `acp_client.py`
+- Replaced manual `interrupt()` in `save_report` with `HumanInTheLoopMiddleware`
+  - Middleware declaratively intercepts `save_report` tool calls at agent level
+  - `save_report` is now a plain function (no HITL logic inside)
+  - Updated `main.py` to handle new interrupt format (`action_requests` / `decisions`)
+  - Updated `app.py` — fixed interrupt payload parsing for middleware format, wrapped resume decisions, added None-check for node output during streaming
+  - Updated `test_runner.py` — uses `PatchedACPClient` + `Message`/`MessagePart` instead of raw httpx, fully async
+
 ## 2026-04-13 — L8 vs L9 comparison
 
 - Ran 5 test queries via test_runner.py
