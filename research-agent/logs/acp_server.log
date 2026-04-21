@@ -1678,3 +1678,1973 @@
 20:37:09 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
 20:37:31 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 20:37:31 [INFO] acp: Run completed
+05:30:21 [INFO] acp: Run started
+05:30:21 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:30:21 [INFO] mcp.client.streamable_http: Received session ID: 17409cc823c04034a97694b1603612b9
+05:30:21 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+05:30:21 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:30:21 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+05:30:21 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:30:21 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:30:28 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+05:30:28 [INFO] acp: Run completed
+05:32:40 [INFO] acp: Run started
+05:32:40 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:32:40 [INFO] mcp.client.streamable_http: Received session ID: e2bb7ae6fc0e48f6b9ac1696d1aa9fc5
+05:32:40 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+05:32:40 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:32:40 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+05:32:40 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:32:40 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:32:40 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+05:32:44 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+05:32:44 [INFO] acp: Run completed
+05:32:44 [INFO] acp: Run started
+05:32:44 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:32:44 [INFO] mcp.client.streamable_http: Received session ID: e44a55d5e8684763a128c9152e203748
+05:32:44 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+05:32:44 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+05:32:44 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:32:44 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:32:44 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:32:44 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+05:32:46 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+05:32:47 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:32:47 [INFO] mcp.client.streamable_http: Received session ID: f85ace2c08824c7995e5fc5d0ba80d35
+05:32:47 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+05:32:47 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:32:47 [INFO] mcp.client.streamable_http: Received session ID: 8b95b5113bbb4a09a6518b0c86a82c67
+05:32:47 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+05:32:47 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:32:47 [INFO] mcp.client.streamable_http: Received session ID: 9b381d3b70704b60879e16be13ccffcf
+05:32:47 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+05:32:47 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:32:47 [INFO] mcp.client.streamable_http: Received session ID: 9afa09a3ba124812bbb807bbaace3195
+05:32:47 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+05:32:47 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:32:47 [INFO] mcp.client.streamable_http: Received session ID: 8ae4de851f3a4f588d33f832488095cd
+05:32:47 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+05:32:47 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+05:32:47 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:32:47 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+05:32:47 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:32:47 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:32:47 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:32:47 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+05:32:47 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+05:32:47 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+05:32:47 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:32:47 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:32:47 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:32:47 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:32:47 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:32:47 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:32:47 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:32:47 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+05:37:47 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+05:37:47 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+05:37:47 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+05:37:47 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+06:03:18 [INFO] acp: Run started
+06:08:18 [ERROR] acp: Run failed
+  + Exception Group Traceback (most recent call last):
+  |   File "/usr/local/lib/python3.13/site-packages/acp_sdk/server/executor.py", line 210, in _execute
+  |     raise next
+  |   File "/usr/local/lib/python3.13/site-packages/acp_sdk/server/executor.py", line 291, in _run_async_gen
+  |     value = await context.yield_async(await gen.asend(value))
+  |                                       ^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/usr/local/lib/python3.13/site-packages/acp_sdk/server/agent.py", line 102, in run
+  |     value = yield await gen.asend(value)
+  |                   ^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/app/acp_server.py", line 54, in planner_agent
+  |     tools = await _load_search_tools()
+  |             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/app/acp_server.py", line 42, in _load_search_tools
+  |     return await client.get_tools()
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/client.py", line 197, in get_tools
+  |     tools_list = await asyncio.gather(*load_mcp_tool_tasks)
+  |                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 478, in load_mcp_tools
+  |     async with create_session(
+  |                ~~~~~~~~~~~~~~^
+  |         connection, mcp_callbacks=mcp_callbacks
+  |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |     ) as tool_session:
+  |     ^
+  |   File "/usr/local/lib/python3.13/contextlib.py", line 235, in __aexit__
+  |     await self.gen.athrow(value)
+  |   File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/sessions.py", line 448, in create_session
+  |     async with _create_streamable_http_session(**params) as session:
+  |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  |   File "/usr/local/lib/python3.13/contextlib.py", line 235, in __aexit__
+  |     await self.gen.athrow(value)
+  |   File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/sessions.py", line 349, in _create_streamable_http_session
+  |     streamablehttp_client(
+  |     ~~~~~~~~~~~~~~~~~~~~~^
+  |         url,
+  |         ^^^^
+  |     ...<5 lines>...
+  |         **kwargs,
+  |         ^^^^^^^^^
+  |     ) as (read, write, _),
+  |     ^
+  |   File "/usr/local/lib/python3.13/contextlib.py", line 235, in __aexit__
+  |     await self.gen.athrow(value)
+  |   File "/usr/local/lib/python3.13/site-packages/mcp/client/streamable_http.py", line 717, in streamablehttp_client
+  |     async with streamable_http_client(
+  |                ~~~~~~~~~~~~~~~~~~~~~~^
+  |         url,
+  |         ^^^^
+  |         http_client=client,
+  |         ^^^^^^^^^^^^^^^^^^^
+  |         terminate_on_close=terminate_on_close,
+  |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |     ) as streams:
+  |     ^
+  |   File "/usr/local/lib/python3.13/contextlib.py", line 235, in __aexit__
+  |     await self.gen.athrow(value)
+  |   File "/usr/local/lib/python3.13/site-packages/mcp/client/streamable_http.py", line 647, in streamable_http_client
+  |     async with anyio.create_task_group() as tg:
+  |                ~~~~~~~~~~~~~~~~~~~~~~~^^
+  |   File "/usr/local/lib/python3.13/site-packages/anyio/_backends/_asyncio.py", line 799, in __aexit__
+  |     raise BaseExceptionGroup(
+  |         "unhandled errors in a TaskGroup", self._exceptions
+  |     ) from None
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    |     yield
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_transports/default.py", line 394, in handle_async_request
+    |     resp = await self._pool.handle_async_request(req)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    |     raise exc from None
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    |     response = await connection.handle_async_request(
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |         pool_request.request
+    |         ^^^^^^^^^^^^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_async/connection.py", line 103, in handle_async_request
+    |     return await self._connection.handle_async_request(request)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_async/http11.py", line 136, in handle_async_request
+    |     raise exc
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_async/http11.py", line 106, in handle_async_request
+    |     ) = await self._receive_response_headers(**kwargs)
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_async/http11.py", line 177, in _receive_response_headers
+    |     event = await self._receive_event(timeout=timeout)
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_async/http11.py", line 217, in _receive_event
+    |     data = await self._network_stream.read(
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |         self.READ_NUM_BYTES, timeout=timeout
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_backends/anyio.py", line 32, in read
+    |     with map_exceptions(exc_map):
+    |          ~~~~~~~~~~~~~~^^^^^^^^^
+    |   File "/usr/local/lib/python3.13/contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    |     raise to_exc(exc) from exc
+    | httpcore.ReadTimeout
+    |
+    | The above exception was the direct cause of the following exception:
+    |
+    | Traceback (most recent call last):
+    |   File "/usr/local/lib/python3.13/site-packages/mcp/client/streamable_http.py", line 565, in handle_request_async
+    |     await self._handle_post_request(ctx)
+    |   File "/usr/local/lib/python3.13/site-packages/mcp/client/streamable_http.py", line 340, in _handle_post_request
+    |     async with ctx.client.stream(
+    |                ~~~~~~~~~~~~~~~~~^
+    |         "POST",
+    |         ^^^^^^^
+    |     ...<2 lines>...
+    |         headers=headers,
+    |         ^^^^^^^^^^^^^^^^
+    |     ) as response:
+    |     ^
+    |   File "/usr/local/lib/python3.13/contextlib.py", line 214, in __aenter__
+    |     return await anext(self.gen)
+    |            ^^^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_client.py", line 1583, in stream
+    |     response = await self.send(
+    |                ^^^^^^^^^^^^^^^^
+    |     ...<4 lines>...
+    |     )
+    |     ^
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_client.py", line 1629, in send
+    |     response = await self._send_handling_auth(
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     ...<4 lines>...
+    |     )
+    |     ^
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_client.py", line 1657, in _send_handling_auth
+    |     response = await self._send_handling_redirects(
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     ...<3 lines>...
+    |     )
+    |     ^
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_client.py", line 1694, in _send_handling_redirects
+    |     response = await self._send_single_request(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_client.py", line 1730, in _send_single_request
+    |     response = await transport.handle_async_request(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_transports/default.py", line 393, in handle_async_request
+    |     with map_httpcore_exceptions():
+    |          ~~~~~~~~~~~~~~~~~~~~~~~^^
+    |   File "/usr/local/lib/python3.13/contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    |     raise mapped_exc(message) from exc
+    | httpx.ReadTimeout
+    +------------------------------------
+06:08:18 [INFO] acp: Run started
+06:13:18 [ERROR] acp: Run failed
+  + Exception Group Traceback (most recent call last):
+  |   File "/usr/local/lib/python3.13/site-packages/acp_sdk/server/executor.py", line 210, in _execute
+  |     raise next
+  |   File "/usr/local/lib/python3.13/site-packages/acp_sdk/server/executor.py", line 291, in _run_async_gen
+  |     value = await context.yield_async(await gen.asend(value))
+  |                                       ^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/usr/local/lib/python3.13/site-packages/acp_sdk/server/agent.py", line 102, in run
+  |     value = yield await gen.asend(value)
+  |                   ^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/app/acp_server.py", line 82, in critic_agent
+  |     tools = await _load_search_tools()
+  |             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/app/acp_server.py", line 42, in _load_search_tools
+  |     return await client.get_tools()
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/client.py", line 197, in get_tools
+  |     tools_list = await asyncio.gather(*load_mcp_tool_tasks)
+  |                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 478, in load_mcp_tools
+  |     async with create_session(
+  |                ~~~~~~~~~~~~~~^
+  |         connection, mcp_callbacks=mcp_callbacks
+  |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |     ) as tool_session:
+  |     ^
+  |   File "/usr/local/lib/python3.13/contextlib.py", line 235, in __aexit__
+  |     await self.gen.athrow(value)
+  |   File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/sessions.py", line 448, in create_session
+  |     async with _create_streamable_http_session(**params) as session:
+  |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  |   File "/usr/local/lib/python3.13/contextlib.py", line 235, in __aexit__
+  |     await self.gen.athrow(value)
+  |   File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/sessions.py", line 349, in _create_streamable_http_session
+  |     streamablehttp_client(
+  |     ~~~~~~~~~~~~~~~~~~~~~^
+  |         url,
+  |         ^^^^
+  |     ...<5 lines>...
+  |         **kwargs,
+  |         ^^^^^^^^^
+  |     ) as (read, write, _),
+  |     ^
+  |   File "/usr/local/lib/python3.13/contextlib.py", line 235, in __aexit__
+  |     await self.gen.athrow(value)
+  |   File "/usr/local/lib/python3.13/site-packages/mcp/client/streamable_http.py", line 717, in streamablehttp_client
+  |     async with streamable_http_client(
+  |                ~~~~~~~~~~~~~~~~~~~~~~^
+  |         url,
+  |         ^^^^
+  |         http_client=client,
+  |         ^^^^^^^^^^^^^^^^^^^
+  |         terminate_on_close=terminate_on_close,
+  |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |     ) as streams:
+  |     ^
+  |   File "/usr/local/lib/python3.13/contextlib.py", line 235, in __aexit__
+  |     await self.gen.athrow(value)
+  |   File "/usr/local/lib/python3.13/site-packages/mcp/client/streamable_http.py", line 647, in streamable_http_client
+  |     async with anyio.create_task_group() as tg:
+  |                ~~~~~~~~~~~~~~~~~~~~~~~^^
+  |   File "/usr/local/lib/python3.13/site-packages/anyio/_backends/_asyncio.py", line 799, in __aexit__
+  |     raise BaseExceptionGroup(
+  |         "unhandled errors in a TaskGroup", self._exceptions
+  |     ) from None
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    |     yield
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_transports/default.py", line 394, in handle_async_request
+    |     resp = await self._pool.handle_async_request(req)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    |     raise exc from None
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    |     response = await connection.handle_async_request(
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |         pool_request.request
+    |         ^^^^^^^^^^^^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_async/connection.py", line 103, in handle_async_request
+    |     return await self._connection.handle_async_request(request)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_async/http11.py", line 136, in handle_async_request
+    |     raise exc
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_async/http11.py", line 106, in handle_async_request
+    |     ) = await self._receive_response_headers(**kwargs)
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_async/http11.py", line 177, in _receive_response_headers
+    |     event = await self._receive_event(timeout=timeout)
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_async/http11.py", line 217, in _receive_event
+    |     data = await self._network_stream.read(
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |         self.READ_NUM_BYTES, timeout=timeout
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_backends/anyio.py", line 32, in read
+    |     with map_exceptions(exc_map):
+    |          ~~~~~~~~~~~~~~^^^^^^^^^
+    |   File "/usr/local/lib/python3.13/contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    |     raise to_exc(exc) from exc
+    | httpcore.ReadTimeout
+    |
+    | The above exception was the direct cause of the following exception:
+    |
+    | Traceback (most recent call last):
+    |   File "/usr/local/lib/python3.13/site-packages/mcp/client/streamable_http.py", line 565, in handle_request_async
+    |     await self._handle_post_request(ctx)
+    |   File "/usr/local/lib/python3.13/site-packages/mcp/client/streamable_http.py", line 340, in _handle_post_request
+    |     async with ctx.client.stream(
+    |                ~~~~~~~~~~~~~~~~~^
+    |         "POST",
+    |         ^^^^^^^
+    |     ...<2 lines>...
+    |         headers=headers,
+    |         ^^^^^^^^^^^^^^^^
+    |     ) as response:
+    |     ^
+    |   File "/usr/local/lib/python3.13/contextlib.py", line 214, in __aenter__
+    |     return await anext(self.gen)
+    |            ^^^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_client.py", line 1583, in stream
+    |     response = await self.send(
+    |                ^^^^^^^^^^^^^^^^
+    |     ...<4 lines>...
+    |     )
+    |     ^
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_client.py", line 1629, in send
+    |     response = await self._send_handling_auth(
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     ...<4 lines>...
+    |     )
+    |     ^
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_client.py", line 1657, in _send_handling_auth
+    |     response = await self._send_handling_redirects(
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     ...<3 lines>...
+    |     )
+    |     ^
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_client.py", line 1694, in _send_handling_redirects
+    |     response = await self._send_single_request(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_client.py", line 1730, in _send_single_request
+    |     response = await transport.handle_async_request(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_transports/default.py", line 393, in handle_async_request
+    |     with map_httpcore_exceptions():
+    |          ~~~~~~~~~~~~~~~~~~~~~~~^^
+    |   File "/usr/local/lib/python3.13/contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    |     raise mapped_exc(message) from exc
+    | httpx.ReadTimeout
+    +------------------------------------
+09:02:35 [ERROR] acp: Missing data
+09:02:35 [INFO] acp: Run started
+09:07:35 [ERROR] asyncio: Task was destroyed but it is pending!
+task: <Task pending name='Task-151' coro=<Executor._run_async_gen() done, defined at /usr/local/lib/python3.13/site-packages/acp_sdk/server/executor.py:286> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+09:07:35 [ERROR] asyncio: Task was destroyed but it is pending!
+task: <Task pending name='Task-159' coro=<Executor._run_async_gen() done, defined at /usr/local/lib/python3.13/site-packages/acp_sdk/server/executor.py:286> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+09:07:35 [ERROR] acp: Run failed
+  + Exception Group Traceback (most recent call last):
+  |   File "/usr/local/lib/python3.13/site-packages/acp_sdk/server/executor.py", line 210, in _execute
+  |     raise next
+  |   File "/usr/local/lib/python3.13/site-packages/acp_sdk/server/executor.py", line 291, in _run_async_gen
+  |     value = await context.yield_async(await gen.asend(value))
+  |                                       ^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/usr/local/lib/python3.13/site-packages/acp_sdk/server/agent.py", line 102, in run
+  |     value = yield await gen.asend(value)
+  |                   ^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/app/acp_server.py", line 54, in planner_agent
+  |     tools = await _load_search_tools()
+  |             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/app/acp_server.py", line 42, in _load_search_tools
+  |     return await client.get_tools()
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/client.py", line 197, in get_tools
+  |     tools_list = await asyncio.gather(*load_mcp_tool_tasks)
+  |                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 478, in load_mcp_tools
+  |     async with create_session(
+  |                ~~~~~~~~~~~~~~^
+  |         connection, mcp_callbacks=mcp_callbacks
+  |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |     ) as tool_session:
+  |     ^
+  |   File "/usr/local/lib/python3.13/contextlib.py", line 235, in __aexit__
+  |     await self.gen.athrow(value)
+  |   File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/sessions.py", line 448, in create_session
+  |     async with _create_streamable_http_session(**params) as session:
+  |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  |   File "/usr/local/lib/python3.13/contextlib.py", line 235, in __aexit__
+  |     await self.gen.athrow(value)
+  |   File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/sessions.py", line 349, in _create_streamable_http_session
+  |     streamablehttp_client(
+  |     ~~~~~~~~~~~~~~~~~~~~~^
+  |         url,
+  |         ^^^^
+  |     ...<5 lines>...
+  |         **kwargs,
+  |         ^^^^^^^^^
+  |     ) as (read, write, _),
+  |     ^
+  |   File "/usr/local/lib/python3.13/contextlib.py", line 235, in __aexit__
+  |     await self.gen.athrow(value)
+  |   File "/usr/local/lib/python3.13/site-packages/mcp/client/streamable_http.py", line 717, in streamablehttp_client
+  |     async with streamable_http_client(
+  |                ~~~~~~~~~~~~~~~~~~~~~~^
+  |         url,
+  |         ^^^^
+  |         http_client=client,
+  |         ^^^^^^^^^^^^^^^^^^^
+  |         terminate_on_close=terminate_on_close,
+  |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |     ) as streams:
+  |     ^
+  |   File "/usr/local/lib/python3.13/contextlib.py", line 235, in __aexit__
+  |     await self.gen.athrow(value)
+  |   File "/usr/local/lib/python3.13/site-packages/mcp/client/streamable_http.py", line 647, in streamable_http_client
+  |     async with anyio.create_task_group() as tg:
+  |                ~~~~~~~~~~~~~~~~~~~~~~~^^
+  |   File "/usr/local/lib/python3.13/site-packages/anyio/_backends/_asyncio.py", line 799, in __aexit__
+  |     raise BaseExceptionGroup(
+  |         "unhandled errors in a TaskGroup", self._exceptions
+  |     ) from None
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    |     yield
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_transports/default.py", line 394, in handle_async_request
+    |     resp = await self._pool.handle_async_request(req)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    |     raise exc from None
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    |     response = await connection.handle_async_request(
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |         pool_request.request
+    |         ^^^^^^^^^^^^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_async/connection.py", line 103, in handle_async_request
+    |     return await self._connection.handle_async_request(request)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_async/http11.py", line 136, in handle_async_request
+    |     raise exc
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_async/http11.py", line 106, in handle_async_request
+    |     ) = await self._receive_response_headers(**kwargs)
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_async/http11.py", line 177, in _receive_response_headers
+    |     event = await self._receive_event(timeout=timeout)
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_async/http11.py", line 217, in _receive_event
+    |     data = await self._network_stream.read(
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |         self.READ_NUM_BYTES, timeout=timeout
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     )
+    |     ^
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_backends/anyio.py", line 32, in read
+    |     with map_exceptions(exc_map):
+    |          ~~~~~~~~~~~~~~^^^^^^^^^
+    |   File "/usr/local/lib/python3.13/contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    |     raise to_exc(exc) from exc
+    | httpcore.ReadTimeout
+    |
+    | The above exception was the direct cause of the following exception:
+    |
+    | Traceback (most recent call last):
+    |   File "/usr/local/lib/python3.13/site-packages/mcp/client/streamable_http.py", line 565, in handle_request_async
+    |     await self._handle_post_request(ctx)
+    |   File "/usr/local/lib/python3.13/site-packages/mcp/client/streamable_http.py", line 340, in _handle_post_request
+    |     async with ctx.client.stream(
+    |                ~~~~~~~~~~~~~~~~~^
+    |         "POST",
+    |         ^^^^^^^
+    |     ...<2 lines>...
+    |         headers=headers,
+    |         ^^^^^^^^^^^^^^^^
+    |     ) as response:
+    |     ^
+    |   File "/usr/local/lib/python3.13/contextlib.py", line 214, in __aenter__
+    |     return await anext(self.gen)
+    |            ^^^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_client.py", line 1583, in stream
+    |     response = await self.send(
+    |                ^^^^^^^^^^^^^^^^
+    |     ...<4 lines>...
+    |     )
+    |     ^
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_client.py", line 1629, in send
+    |     response = await self._send_handling_auth(
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     ...<4 lines>...
+    |     )
+    |     ^
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_client.py", line 1657, in _send_handling_auth
+    |     response = await self._send_handling_redirects(
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     ...<3 lines>...
+    |     )
+    |     ^
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_client.py", line 1694, in _send_handling_redirects
+    |     response = await self._send_single_request(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_client.py", line 1730, in _send_single_request
+    |     response = await transport.handle_async_request(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_transports/default.py", line 393, in handle_async_request
+    |     with map_httpcore_exceptions():
+    |          ~~~~~~~~~~~~~~~~~~~~~~~^^
+    |   File "/usr/local/lib/python3.13/contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "/usr/local/lib/python3.13/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    |     raise mapped_exc(message) from exc
+    | httpx.ReadTimeout
+    +------------------------------------
+10:48:31 [INFO] acp: Run cancelled
+10:48:31 [ERROR] asyncio: unhandled exception during asyncio.run() shutdown
+task: <Task finished name='tools' coro=<arun_with_retry() done, defined at /usr/local/lib/python3.13/site-packages/langgraph/pregel/_retry.py:188> exception=UnboundLocalError("cannot access local variable 'call_tool_result' where it is not associated with a value")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        step.ainvoke(input, config, **kwargs), context=context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 853, in _afunc
+    outputs = await asyncio.gather(*coros)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1184, in _arun_one
+    return await self._execute_tool_async(tool_request, input_type, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1133, in _execute_tool_async
+    content = _handle_tool_error(e, flag=self._handle_tool_errors)
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 432, in _handle_tool_error
+    content = flag(e)  # type: ignore [assignment, call-arg]
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 389, in _default_handle_tool_errors
+    raise e
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1090, in _execute_tool_async
+    response = await tool.ainvoke(call_args, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 70, in ainvoke
+    return await super().ainvoke(input, config, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 652, in ainvoke
+    return await self.arun(tool_input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1131, in arun
+    raise error_to_raise
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1097, in arun
+    response = await coro_with_context(coro, context)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 124, in _arun
+    return await self.coroutine(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 412, in call_tool
+    call_tool_result = await handler(request)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 401, in execute_tool
+    return call_tool_result
+           ^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'call_tool_result' where it is not associated with a value
+During task with name 'tools' and id '622efd14-4950-69fe-3dd2-41a63f081b53'
+10:48:31 [ERROR] asyncio: unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-72' coro=<RunnableCallable.ainvoke() done, defined at /usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py:405> exception=UnboundLocalError("cannot access local variable 'call_tool_result' where it is not associated with a value")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        step.ainvoke(input, config, **kwargs), context=context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 853, in _afunc
+    outputs = await asyncio.gather(*coros)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1184, in _arun_one
+    return await self._execute_tool_async(tool_request, input_type, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1133, in _execute_tool_async
+    content = _handle_tool_error(e, flag=self._handle_tool_errors)
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 432, in _handle_tool_error
+    content = flag(e)  # type: ignore [assignment, call-arg]
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 389, in _default_handle_tool_errors
+    raise e
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1090, in _execute_tool_async
+    response = await tool.ainvoke(call_args, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 70, in ainvoke
+    return await super().ainvoke(input, config, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 652, in ainvoke
+    return await self.arun(tool_input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1131, in arun
+    raise error_to_raise
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1097, in arun
+    response = await coro_with_context(coro, context)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 124, in _arun
+    return await self.coroutine(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 412, in call_tool
+    call_tool_result = await handler(request)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 401, in execute_tool
+    return call_tool_result
+           ^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'call_tool_result' where it is not associated with a value
+During task with name 'tools' and id '460d349b-fc16-5788-921f-77e268913c64'
+10:48:31 [ERROR] asyncio: unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-69' coro=<RunnableCallable.ainvoke() done, defined at /usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py:405> exception=UnboundLocalError("cannot access local variable 'call_tool_result' where it is not associated with a value")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        step.ainvoke(input, config, **kwargs), context=context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 853, in _afunc
+    outputs = await asyncio.gather(*coros)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1184, in _arun_one
+    return await self._execute_tool_async(tool_request, input_type, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1133, in _execute_tool_async
+    content = _handle_tool_error(e, flag=self._handle_tool_errors)
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 432, in _handle_tool_error
+    content = flag(e)  # type: ignore [assignment, call-arg]
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 389, in _default_handle_tool_errors
+    raise e
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1090, in _execute_tool_async
+    response = await tool.ainvoke(call_args, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 70, in ainvoke
+    return await super().ainvoke(input, config, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 652, in ainvoke
+    return await self.arun(tool_input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1131, in arun
+    raise error_to_raise
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1097, in arun
+    response = await coro_with_context(coro, context)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 124, in _arun
+    return await self.coroutine(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 412, in call_tool
+    call_tool_result = await handler(request)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 401, in execute_tool
+    return call_tool_result
+           ^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'call_tool_result' where it is not associated with a value
+During task with name 'tools' and id '286d5779-8e3e-915b-cb4b-e7e5b8d57279'
+10:48:31 [ERROR] asyncio: unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-74' coro=<ToolNode._arun_one() done, defined at /usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py:1152> exception=UnboundLocalError("cannot access local variable 'call_tool_result' where it is not associated with a value")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        step.ainvoke(input, config, **kwargs), context=context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 853, in _afunc
+    outputs = await asyncio.gather(*coros)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1184, in _arun_one
+    return await self._execute_tool_async(tool_request, input_type, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1133, in _execute_tool_async
+    content = _handle_tool_error(e, flag=self._handle_tool_errors)
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 432, in _handle_tool_error
+    content = flag(e)  # type: ignore [assignment, call-arg]
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 389, in _default_handle_tool_errors
+    raise e
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1090, in _execute_tool_async
+    response = await tool.ainvoke(call_args, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 70, in ainvoke
+    return await super().ainvoke(input, config, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 652, in ainvoke
+    return await self.arun(tool_input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1131, in arun
+    raise error_to_raise
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1097, in arun
+    response = await coro_with_context(coro, context)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 124, in _arun
+    return await self.coroutine(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 412, in call_tool
+    call_tool_result = await handler(request)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 401, in execute_tool
+    return call_tool_result
+           ^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'call_tool_result' where it is not associated with a value
+During task with name 'tools' and id '286d5779-8e3e-915b-cb4b-e7e5b8d57279'
+10:48:31 [ERROR] asyncio: unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-75' coro=<ToolNode._arun_one() done, defined at /usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py:1152> exception=UnboundLocalError("cannot access local variable 'call_tool_result' where it is not associated with a value")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        step.ainvoke(input, config, **kwargs), context=context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 853, in _afunc
+    outputs = await asyncio.gather(*coros)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1184, in _arun_one
+    return await self._execute_tool_async(tool_request, input_type, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1133, in _execute_tool_async
+    content = _handle_tool_error(e, flag=self._handle_tool_errors)
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 432, in _handle_tool_error
+    content = flag(e)  # type: ignore [assignment, call-arg]
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 389, in _default_handle_tool_errors
+    raise e
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1090, in _execute_tool_async
+    response = await tool.ainvoke(call_args, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 70, in ainvoke
+    return await super().ainvoke(input, config, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 652, in ainvoke
+    return await self.arun(tool_input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1131, in arun
+    raise error_to_raise
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1097, in arun
+    response = await coro_with_context(coro, context)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 124, in _arun
+    return await self.coroutine(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 412, in call_tool
+    call_tool_result = await handler(request)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 401, in execute_tool
+    return call_tool_result
+           ^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'call_tool_result' where it is not associated with a value
+During task with name 'tools' and id '27ee98d0-fc9c-c99b-640f-f24f4ee232cf'
+10:48:31 [ERROR] asyncio: unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-76' coro=<ToolNode._arun_one() done, defined at /usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py:1152> exception=UnboundLocalError("cannot access local variable 'call_tool_result' where it is not associated with a value")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        step.ainvoke(input, config, **kwargs), context=context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 853, in _afunc
+    outputs = await asyncio.gather(*coros)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1184, in _arun_one
+    return await self._execute_tool_async(tool_request, input_type, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1133, in _execute_tool_async
+    content = _handle_tool_error(e, flag=self._handle_tool_errors)
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 432, in _handle_tool_error
+    content = flag(e)  # type: ignore [assignment, call-arg]
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 389, in _default_handle_tool_errors
+    raise e
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1090, in _execute_tool_async
+    response = await tool.ainvoke(call_args, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 70, in ainvoke
+    return await super().ainvoke(input, config, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 652, in ainvoke
+    return await self.arun(tool_input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1131, in arun
+    raise error_to_raise
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1097, in arun
+    response = await coro_with_context(coro, context)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 124, in _arun
+    return await self.coroutine(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 412, in call_tool
+    call_tool_result = await handler(request)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 401, in execute_tool
+    return call_tool_result
+           ^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'call_tool_result' where it is not associated with a value
+During task with name 'tools' and id '622efd14-4950-69fe-3dd2-41a63f081b53'
+10:48:31 [ERROR] asyncio: unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-71' coro=<RunnableCallable.ainvoke() done, defined at /usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py:405> exception=UnboundLocalError("cannot access local variable 'call_tool_result' where it is not associated with a value")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        step.ainvoke(input, config, **kwargs), context=context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 853, in _afunc
+    outputs = await asyncio.gather(*coros)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1184, in _arun_one
+    return await self._execute_tool_async(tool_request, input_type, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1133, in _execute_tool_async
+    content = _handle_tool_error(e, flag=self._handle_tool_errors)
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 432, in _handle_tool_error
+    content = flag(e)  # type: ignore [assignment, call-arg]
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 389, in _default_handle_tool_errors
+    raise e
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1090, in _execute_tool_async
+    response = await tool.ainvoke(call_args, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 70, in ainvoke
+    return await super().ainvoke(input, config, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 652, in ainvoke
+    return await self.arun(tool_input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1131, in arun
+    raise error_to_raise
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1097, in arun
+    response = await coro_with_context(coro, context)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 124, in _arun
+    return await self.coroutine(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 412, in call_tool
+    call_tool_result = await handler(request)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 401, in execute_tool
+    return call_tool_result
+           ^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'call_tool_result' where it is not associated with a value
+During task with name 'tools' and id '622efd14-4950-69fe-3dd2-41a63f081b53'
+10:48:31 [ERROR] asyncio: unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-77' coro=<ToolNode._arun_one() done, defined at /usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py:1152> exception=UnboundLocalError("cannot access local variable 'call_tool_result' where it is not associated with a value")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        step.ainvoke(input, config, **kwargs), context=context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 853, in _afunc
+    outputs = await asyncio.gather(*coros)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1184, in _arun_one
+    return await self._execute_tool_async(tool_request, input_type, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1133, in _execute_tool_async
+    content = _handle_tool_error(e, flag=self._handle_tool_errors)
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 432, in _handle_tool_error
+    content = flag(e)  # type: ignore [assignment, call-arg]
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 389, in _default_handle_tool_errors
+    raise e
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1090, in _execute_tool_async
+    response = await tool.ainvoke(call_args, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 70, in ainvoke
+    return await super().ainvoke(input, config, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 652, in ainvoke
+    return await self.arun(tool_input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1131, in arun
+    raise error_to_raise
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1097, in arun
+    response = await coro_with_context(coro, context)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 124, in _arun
+    return await self.coroutine(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 412, in call_tool
+    call_tool_result = await handler(request)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 401, in execute_tool
+    return call_tool_result
+           ^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'call_tool_result' where it is not associated with a value
+During task with name 'tools' and id '460d349b-fc16-5788-921f-77e268913c64'
+10:48:31 [ERROR] asyncio: unhandled exception during asyncio.run() shutdown
+task: <Task finished name='tools' coro=<arun_with_retry() done, defined at /usr/local/lib/python3.13/site-packages/langgraph/pregel/_retry.py:188> exception=UnboundLocalError("cannot access local variable 'call_tool_result' where it is not associated with a value")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        step.ainvoke(input, config, **kwargs), context=context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 853, in _afunc
+    outputs = await asyncio.gather(*coros)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1184, in _arun_one
+    return await self._execute_tool_async(tool_request, input_type, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1133, in _execute_tool_async
+    content = _handle_tool_error(e, flag=self._handle_tool_errors)
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 432, in _handle_tool_error
+    content = flag(e)  # type: ignore [assignment, call-arg]
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 389, in _default_handle_tool_errors
+    raise e
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1090, in _execute_tool_async
+    response = await tool.ainvoke(call_args, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 70, in ainvoke
+    return await super().ainvoke(input, config, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 652, in ainvoke
+    return await self.arun(tool_input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1131, in arun
+    raise error_to_raise
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1097, in arun
+    response = await coro_with_context(coro, context)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 124, in _arun
+    return await self.coroutine(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 412, in call_tool
+    call_tool_result = await handler(request)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 401, in execute_tool
+    return call_tool_result
+           ^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'call_tool_result' where it is not associated with a value
+During task with name 'tools' and id '460d349b-fc16-5788-921f-77e268913c64'
+10:48:31 [ERROR] asyncio: unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-79' coro=<StructuredTool._arun() done, defined at /usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py:101> exception=UnboundLocalError("cannot access local variable 'call_tool_result' where it is not associated with a value")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        step.ainvoke(input, config, **kwargs), context=context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 853, in _afunc
+    outputs = await asyncio.gather(*coros)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1184, in _arun_one
+    return await self._execute_tool_async(tool_request, input_type, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1133, in _execute_tool_async
+    content = _handle_tool_error(e, flag=self._handle_tool_errors)
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 432, in _handle_tool_error
+    content = flag(e)  # type: ignore [assignment, call-arg]
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 389, in _default_handle_tool_errors
+    raise e
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1090, in _execute_tool_async
+    response = await tool.ainvoke(call_args, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 70, in ainvoke
+    return await super().ainvoke(input, config, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 652, in ainvoke
+    return await self.arun(tool_input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1131, in arun
+    raise error_to_raise
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1097, in arun
+    response = await coro_with_context(coro, context)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 124, in _arun
+    return await self.coroutine(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 412, in call_tool
+    call_tool_result = await handler(request)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 401, in execute_tool
+    return call_tool_result
+           ^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'call_tool_result' where it is not associated with a value
+During task with name 'tools' and id '286d5779-8e3e-915b-cb4b-e7e5b8d57279'
+10:48:31 [ERROR] asyncio: unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-80' coro=<StructuredTool._arun() done, defined at /usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py:101> exception=UnboundLocalError("cannot access local variable 'call_tool_result' where it is not associated with a value")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        step.ainvoke(input, config, **kwargs), context=context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 853, in _afunc
+    outputs = await asyncio.gather(*coros)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1184, in _arun_one
+    return await self._execute_tool_async(tool_request, input_type, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1133, in _execute_tool_async
+    content = _handle_tool_error(e, flag=self._handle_tool_errors)
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 432, in _handle_tool_error
+    content = flag(e)  # type: ignore [assignment, call-arg]
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 389, in _default_handle_tool_errors
+    raise e
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1090, in _execute_tool_async
+    response = await tool.ainvoke(call_args, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 70, in ainvoke
+    return await super().ainvoke(input, config, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 652, in ainvoke
+    return await self.arun(tool_input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1131, in arun
+    raise error_to_raise
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1097, in arun
+    response = await coro_with_context(coro, context)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 124, in _arun
+    return await self.coroutine(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 412, in call_tool
+    call_tool_result = await handler(request)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 401, in execute_tool
+    return call_tool_result
+           ^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'call_tool_result' where it is not associated with a value
+During task with name 'tools' and id '27ee98d0-fc9c-c99b-640f-f24f4ee232cf'
+10:48:31 [ERROR] asyncio: unhandled exception during asyncio.run() shutdown
+task: <Task finished name='tools' coro=<arun_with_retry() done, defined at /usr/local/lib/python3.13/site-packages/langgraph/pregel/_retry.py:188> exception=UnboundLocalError("cannot access local variable 'call_tool_result' where it is not associated with a value")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        step.ainvoke(input, config, **kwargs), context=context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 853, in _afunc
+    outputs = await asyncio.gather(*coros)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1184, in _arun_one
+    return await self._execute_tool_async(tool_request, input_type, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1133, in _execute_tool_async
+    content = _handle_tool_error(e, flag=self._handle_tool_errors)
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 432, in _handle_tool_error
+    content = flag(e)  # type: ignore [assignment, call-arg]
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 389, in _default_handle_tool_errors
+    raise e
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1090, in _execute_tool_async
+    response = await tool.ainvoke(call_args, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 70, in ainvoke
+    return await super().ainvoke(input, config, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 652, in ainvoke
+    return await self.arun(tool_input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1131, in arun
+    raise error_to_raise
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1097, in arun
+    response = await coro_with_context(coro, context)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 124, in _arun
+    return await self.coroutine(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 412, in call_tool
+    call_tool_result = await handler(request)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 401, in execute_tool
+    return call_tool_result
+           ^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'call_tool_result' where it is not associated with a value
+During task with name 'tools' and id '286d5779-8e3e-915b-cb4b-e7e5b8d57279'
+10:48:31 [ERROR] asyncio: unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-81' coro=<StructuredTool._arun() done, defined at /usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py:101> exception=UnboundLocalError("cannot access local variable 'call_tool_result' where it is not associated with a value")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        step.ainvoke(input, config, **kwargs), context=context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 853, in _afunc
+    outputs = await asyncio.gather(*coros)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1184, in _arun_one
+    return await self._execute_tool_async(tool_request, input_type, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1133, in _execute_tool_async
+    content = _handle_tool_error(e, flag=self._handle_tool_errors)
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 432, in _handle_tool_error
+    content = flag(e)  # type: ignore [assignment, call-arg]
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 389, in _default_handle_tool_errors
+    raise e
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1090, in _execute_tool_async
+    response = await tool.ainvoke(call_args, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 70, in ainvoke
+    return await super().ainvoke(input, config, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 652, in ainvoke
+    return await self.arun(tool_input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1131, in arun
+    raise error_to_raise
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1097, in arun
+    response = await coro_with_context(coro, context)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 124, in _arun
+    return await self.coroutine(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 412, in call_tool
+    call_tool_result = await handler(request)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 401, in execute_tool
+    return call_tool_result
+           ^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'call_tool_result' where it is not associated with a value
+During task with name 'tools' and id '622efd14-4950-69fe-3dd2-41a63f081b53'
+10:48:31 [ERROR] asyncio: unhandled exception during asyncio.run() shutdown
+task: <Task finished name='tools' coro=<arun_with_retry() done, defined at /usr/local/lib/python3.13/site-packages/langgraph/pregel/_retry.py:188> exception=UnboundLocalError("cannot access local variable 'call_tool_result' where it is not associated with a value")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        step.ainvoke(input, config, **kwargs), context=context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 853, in _afunc
+    outputs = await asyncio.gather(*coros)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1184, in _arun_one
+    return await self._execute_tool_async(tool_request, input_type, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1133, in _execute_tool_async
+    content = _handle_tool_error(e, flag=self._handle_tool_errors)
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 432, in _handle_tool_error
+    content = flag(e)  # type: ignore [assignment, call-arg]
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 389, in _default_handle_tool_errors
+    raise e
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1090, in _execute_tool_async
+    response = await tool.ainvoke(call_args, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 70, in ainvoke
+    return await super().ainvoke(input, config, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 652, in ainvoke
+    return await self.arun(tool_input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1131, in arun
+    raise error_to_raise
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1097, in arun
+    response = await coro_with_context(coro, context)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 124, in _arun
+    return await self.coroutine(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 412, in call_tool
+    call_tool_result = await handler(request)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 401, in execute_tool
+    return call_tool_result
+           ^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'call_tool_result' where it is not associated with a value
+During task with name 'tools' and id '27ee98d0-fc9c-c99b-640f-f24f4ee232cf'
+10:48:31 [ERROR] asyncio: unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-82' coro=<StructuredTool._arun() done, defined at /usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py:101> exception=UnboundLocalError("cannot access local variable 'call_tool_result' where it is not associated with a value")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        step.ainvoke(input, config, **kwargs), context=context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 853, in _afunc
+    outputs = await asyncio.gather(*coros)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1184, in _arun_one
+    return await self._execute_tool_async(tool_request, input_type, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1133, in _execute_tool_async
+    content = _handle_tool_error(e, flag=self._handle_tool_errors)
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 432, in _handle_tool_error
+    content = flag(e)  # type: ignore [assignment, call-arg]
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 389, in _default_handle_tool_errors
+    raise e
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1090, in _execute_tool_async
+    response = await tool.ainvoke(call_args, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 70, in ainvoke
+    return await super().ainvoke(input, config, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 652, in ainvoke
+    return await self.arun(tool_input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1131, in arun
+    raise error_to_raise
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1097, in arun
+    response = await coro_with_context(coro, context)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 124, in _arun
+    return await self.coroutine(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 412, in call_tool
+    call_tool_result = await handler(request)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 401, in execute_tool
+    return call_tool_result
+           ^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'call_tool_result' where it is not associated with a value
+During task with name 'tools' and id '460d349b-fc16-5788-921f-77e268913c64'
+10:48:31 [ERROR] asyncio: unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-70' coro=<RunnableCallable.ainvoke() done, defined at /usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py:405> exception=UnboundLocalError("cannot access local variable 'call_tool_result' where it is not associated with a value")>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        step.ainvoke(input, config, **kwargs), context=context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 853, in _afunc
+    outputs = await asyncio.gather(*coros)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1184, in _arun_one
+    return await self._execute_tool_async(tool_request, input_type, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1133, in _execute_tool_async
+    content = _handle_tool_error(e, flag=self._handle_tool_errors)
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 432, in _handle_tool_error
+    content = flag(e)  # type: ignore [assignment, call-arg]
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 389, in _default_handle_tool_errors
+    raise e
+  File "/usr/local/lib/python3.13/site-packages/langgraph/prebuilt/tool_node.py", line 1090, in _execute_tool_async
+    response = await tool.ainvoke(call_args, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 70, in ainvoke
+    return await super().ainvoke(input, config, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 652, in ainvoke
+    return await self.arun(tool_input, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1131, in arun
+    raise error_to_raise
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/base.py", line 1097, in arun
+    response = await coro_with_context(coro, context)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/tools/structured.py", line 124, in _arun
+    return await self.coroutine(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 412, in call_tool
+    call_tool_result = await handler(request)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_mcp_adapters/tools.py", line 401, in execute_tool
+    return call_tool_result
+           ^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'call_tool_result' where it is not associated with a value
+During task with name 'tools' and id '27ee98d0-fc9c-c99b-640f-f24f4ee232cf'
+11:08:05 [INFO] acp: Run started
+11:08:05 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:08:05 [INFO] mcp.client.streamable_http: Received session ID: 5f7c623f5c8048d08638285c4343ab6b
+11:08:05 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+11:08:05 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:08:05 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+11:08:05 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:08:05 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:08:12 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+11:08:12 [INFO] acp: Run completed
+11:08:12 [INFO] acp: Run started
+11:08:12 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:08:12 [INFO] mcp.client.streamable_http: Received session ID: 7dbd845851f54bc98c9810c88ceff44f
+11:08:12 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+11:08:12 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:08:12 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+11:08:12 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:08:12 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:08:15 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+11:08:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:08:15 [INFO] mcp.client.streamable_http: Received session ID: 1c1a8cae8f414768839f7090989988d6
+11:08:15 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+11:08:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:08:15 [INFO] mcp.client.streamable_http: Received session ID: 1f07556ff3cc47caa0e71618b334d3e9
+11:08:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:08:15 [INFO] mcp.client.streamable_http: Received session ID: 41dd48c2433642a48d7f01059c6b97a0
+11:08:15 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+11:08:15 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+11:08:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:08:15 [INFO] mcp.client.streamable_http: Received session ID: 347b450343584b58b1df61eb23c15073
+11:08:15 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+11:08:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:08:15 [INFO] mcp.client.streamable_http: Received session ID: ab81c5cc273648ebb6d666eac309149d
+11:08:15 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+11:08:15 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:08:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+11:08:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+11:08:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+11:08:15 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:08:15 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:08:15 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:08:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+11:08:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+11:08:15 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:08:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:08:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:08:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:08:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:08:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:08:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:08:15 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+11:18:56 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+11:18:56 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+11:18:56 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+11:18:56 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+16:04:56 [INFO] acp: Run started
+16:05:02 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+16:05:02 [INFO] mcp.client.streamable_http: Received session ID: 0c8bf010a88c44289fbe1bcfe64f7c77
+16:05:03 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+16:05:03 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+16:05:03 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+16:05:03 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+16:05:04 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+16:07:38 [INFO] openai._base_client: Retrying request to /chat/completions in 0.430318 seconds
+16:07:47 [INFO] openai._base_client: Retrying request to /chat/completions in 0.794845 seconds
+16:07:56 [ERROR] acp: Run failed
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/usr/local/lib/python3.13/site-packages/httpx/_transports/default.py", line 394, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/usr/local/lib/python3.13/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        pool_request.request
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/httpcore/_async/connection.py", line 101, in handle_async_request
+    raise exc
+  File "/usr/local/lib/python3.13/site-packages/httpcore/_async/connection.py", line 78, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/httpcore/_async/connection.py", line 124, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/httpcore/_backends/auto.py", line 31, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/httpcore/_backends/anyio.py", line 113, in connect_tcp
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/openai/_base_client.py", line 1630, in request
+    response = await self._send_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/openai/_client.py", line 829, in _send_request
+    return await self._send_with_auth_retry(request, stream=stream, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/openai/_client.py", line 807, in _send_with_auth_retry
+    response = await super()._send_request(request, stream=stream, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/openai/_base_client.py", line 1553, in _send_request
+    return await self._client.send(request, stream=stream, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/httpx/_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/httpx/_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/httpx/_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/httpx/_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/httpx/_transports/default.py", line 393, in handle_async_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/acp_sdk/server/executor.py", line 210, in _execute
+    raise next
+  File "/usr/local/lib/python3.13/site-packages/acp_sdk/server/executor.py", line 291, in _run_async_gen
+    value = await context.yield_async(await gen.asend(value))
+                                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/acp_sdk/server/agent.py", line 102, in run
+    value = yield await gen.asend(value)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/acp_server.py", line 55, in planner_agent
+    result = await run_planner(request, tools)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/agents/planner.py", line 23, in run_planner
+    result = await planner.ainvoke(
+             ^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/pregel/main.py", line 3479, in ainvoke
+    async for chunk in self.astream(
+    ...<29 lines>...
+            chunks.append(chunk)
+  File "/usr/local/lib/python3.13/site-packages/langgraph/pregel/main.py", line 3128, in astream
+    async for _ in runner.atick(
+    ...<16 lines>...
+            yield o
+  File "/usr/local/lib/python3.13/site-packages/langgraph/pregel/_runner.py", line 304, in atick
+    await arun_with_retry(
+    ...<15 lines>...
+    )
+  File "/usr/local/lib/python3.13/site-packages/langgraph/pregel/_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        step.ainvoke(input, config, **kwargs), context=context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain/agents/factory.py", line 1358, in amodel_node
+    model_response = await _execute_model_async(request)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain/agents/factory.py", line 1330, in _execute_model_async
+    output = await model_.ainvoke(messages)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 5708, in ainvoke
+    return await self.bound.ainvoke(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 477, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1196, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+        prompt_messages, stop=stop, callbacks=callbacks, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1154, in agenerate
+    raise exceptions[0]
+  File "/usr/local/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1423, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+        messages, stop=stop, run_manager=run_manager, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/langchain_openai/chat_models/base.py", line 1754, in _agenerate
+    _handle_openai_api_error(e)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/local/lib/python3.13/site-packages/langchain_openai/chat_models/base.py", line 1719, in _agenerate
+    raw_response = await self.root_async_client.chat.completions.with_raw_response.parse(  # noqa: E501
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        **payload
+        ^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/openai/_legacy_response.py", line 384, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1694, in parse
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+    ...<52 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/openai/_base_client.py", line 1913, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/openai/_base_client.py", line 1665, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+During task with name 'model' and id 'b0bf5643-58f7-3879-95fe-1b0e59310f83'
+16:07:59 [INFO] acp: Run started
+16:07:59 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+16:07:59 [INFO] mcp.client.streamable_http: Received session ID: 730292e7b4c9465cab8d87c5f31553c7
+16:07:59 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+16:07:59 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+16:07:59 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+16:07:59 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+16:07:59 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+16:08:13 [INFO] openai._base_client: Retrying request to /chat/completions in 0.461038 seconds
+16:08:14 [INFO] openai._base_client: Retrying request to /chat/completions in 0.920975 seconds
+16:08:26 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:08:27 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+16:08:27 [INFO] mcp.client.streamable_http: Received session ID: 91fcdc99ecf54d2093df8bc0889c0b09
+16:08:27 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+16:08:27 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+16:08:27 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+16:08:27 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+16:08:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+16:08:31 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+16:08:34 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:08:34 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+16:08:34 [INFO] mcp.client.streamable_http: Received session ID: 7fe47fcb352143fc8a732bee96de2113
+16:08:34 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+16:08:34 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+16:08:34 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+16:08:34 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+16:08:45 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+16:08:45 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+16:08:48 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+16:08:49 [INFO] acp: Run completed
+19:16:24 [INFO] acp: Run started
+19:16:24 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:24 [INFO] mcp.client.streamable_http: Received session ID: c3413ff41fc64d97a6980fe732ff32a5
+19:16:24 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:16:24 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:16:24 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:24 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:24 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:28 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:16:28 [INFO] acp: Run completed
+19:16:31 [INFO] acp: Run started
+19:16:31 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:31 [INFO] mcp.client.streamable_http: Received session ID: a15957c7f1d7416492f4bf95ceb0ec90
+19:16:31 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:16:31 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:31 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:16:31 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:31 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:32 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:16:32 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:32 [INFO] mcp.client.streamable_http: Received session ID: a8f61099fadd4e51ac320dbf15f539eb
+19:16:32 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:16:32 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:16:32 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:32 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:37 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:37 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:39 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:16:39 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:39 [INFO] mcp.client.streamable_http: Received session ID: b1e38ba3b8b149bba23b9a6636b24e65
+19:16:39 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:16:39 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:39 [INFO] mcp.client.streamable_http: Received session ID: c93b0947ac3b46c9b6b817ee47ba23fd
+19:16:39 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:16:39 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:39 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:16:39 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:39 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:16:39 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:39 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:39 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:39 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:41 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:42 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:16:42 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:42 [INFO] mcp.client.streamable_http: Received session ID: 70cde0e667f648b4ba45b17c2d5ede34
+19:16:42 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:16:42 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:42 [INFO] mcp.client.streamable_http: Received session ID: 570a9a2b97f144d3bdd8ec59bad6dacf
+19:16:42 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:16:42 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:42 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:16:42 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:16:42 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:42 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:42 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:45 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:45 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:46 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:46 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:48 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:16:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:48 [INFO] mcp.client.streamable_http: Received session ID: 111fd79910a94df887c2bc54597ae927
+19:16:48 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:16:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:48 [INFO] mcp.client.streamable_http: Received session ID: 7e3a5c0c2bd64783a7797105e1be8e92
+19:16:48 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:16:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:48 [INFO] mcp.client.streamable_http: Received session ID: 9c6348ebe9914f959d4cfcbff69c617d
+19:16:48 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:16:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:48 [INFO] mcp.client.streamable_http: Received session ID: dc4e667468c34fc1941bed391dca95cd
+19:16:48 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:16:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:16:48 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:16:48 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:48 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:16:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:16:48 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:49 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:49 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:49 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+19:16:49 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:49 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:49 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:49 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:50 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:50 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:16:50 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+19:17:01 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:17:01 [INFO] acp: Run completed
+19:17:13 [INFO] acp: Run started
+19:17:13 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:13 [INFO] mcp.client.streamable_http: Received session ID: a45d5fba94554c09a1f5b63b59662220
+19:17:13 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:17:13 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:13 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:17:13 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:13 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:13 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+19:17:15 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:17:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:15 [INFO] mcp.client.streamable_http: Received session ID: 73a31007164d432aa07cd636cd2e9d76
+19:17:15 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:17:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:15 [INFO] mcp.client.streamable_http: Received session ID: f3ed64e3726f43efa27748eb4387b1fb
+19:17:15 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:17:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:15 [INFO] mcp.client.streamable_http: Received session ID: 6de754e922e7436890c16c2ccd9c1019
+19:17:15 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:17:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:15 [INFO] mcp.client.streamable_http: Received session ID: 69788eeb121b4bc7ba85f61c7d420951
+19:17:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:17:15 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:15 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:17:15 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:17:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:17:15 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:17:15 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:15 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:15 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+19:17:17 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:17 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:17 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+19:17:17 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:17 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:18 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:18 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:18 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+19:17:19 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:17:19 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:19 [INFO] mcp.client.streamable_http: Received session ID: 22c7e49cbabf48a899f215bfc39be157
+19:17:19 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:17:19 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:19 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:17:19 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:19 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:19 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:19 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+19:17:24 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:17:24 [INFO] acp: Run completed
+19:17:27 [INFO] acp: Run started
+19:17:27 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:27 [INFO] mcp.client.streamable_http: Received session ID: d9b2560b769f424a86426036f1fffda0
+19:17:27 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:17:27 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:27 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:17:27 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:27 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:27 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+19:17:28 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:17:28 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:28 [INFO] mcp.client.streamable_http: Received session ID: 7070fea9c2ee4720b761172585b9024c
+19:17:28 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:17:28 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:28 [INFO] mcp.client.streamable_http: Received session ID: 8d84ce155b024d40865a904cf3ed4c27
+19:17:28 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:17:28 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:28 [INFO] mcp.client.streamable_http: Received session ID: 2cd2b6993c484ef9af1c07d716c9511f
+19:17:28 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:17:28 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:28 [INFO] mcp.client.streamable_http: Received session ID: 185634c92e4e4bd8be3a038d19bba4d7
+19:17:28 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:17:28 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:28 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:17:28 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:17:28 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:28 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:28 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:28 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:17:29 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:17:29 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:29 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:29 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:29 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:29 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:29 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:29 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:29 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:29 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+19:17:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:30 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:31 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:31 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:31 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+19:17:32 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:17:32 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:32 [INFO] mcp.client.streamable_http: Received session ID: 9527bcca8fd74e4a984fc280ffd78bc8
+19:17:32 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:17:32 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:17:32 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:32 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:32 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:32 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:32 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+19:17:33 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:17:33 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:33 [INFO] mcp.client.streamable_http: Received session ID: 38ca40548e4b467a8177b3fc2552feb7
+19:17:33 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:17:33 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:17:33 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:33 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:36 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:36 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:36 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+19:17:47 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:17:47 [INFO] acp: Run completed
+19:17:56 [INFO] acp: Run started
+19:17:56 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:56 [INFO] mcp.client.streamable_http: Received session ID: ec4c50046cc14bac97f8cdee8778df5d
+19:17:56 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:17:56 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:17:56 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:56 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:56 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:59 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:17:59 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:59 [INFO] mcp.client.streamable_http: Received session ID: 2bb358c94e334481b8768f01173c87b9
+19:17:59 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:17:59 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:59 [INFO] mcp.client.streamable_http: Received session ID: 0333543857f0441f8241fb00a1554cd3
+19:17:59 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:17:59 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:59 [INFO] mcp.client.streamable_http: Received session ID: a70fef2db2064d53a8042e39bede439d
+19:17:59 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:17:59 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:59 [INFO] mcp.client.streamable_http: Received session ID: 9f4dc396b0e543b599fa2b0316c10550
+19:17:59 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:17:59 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:59 [INFO] mcp.client.streamable_http: Received session ID: 2d8e7ae1d1bf4ed18697af1665b0ccbc
+19:17:59 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+19:17:59 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:17:59 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:59 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:59 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:17:59 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:17:59 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:59 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:17:59 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:59 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:59 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+19:17:59 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:59 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:59 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:59 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:59 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:59 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:59 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:59 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:17:59 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:18:01 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:18:01 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:18:01 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+19:18:01 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:18:01 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:18:01 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+19:18:01 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:18:01 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+19:18:05 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:18:05 [INFO] acp: Run completed
