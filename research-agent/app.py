@@ -78,19 +78,31 @@ def _sync_stream(thread_id: str, input_data):
     for chunk in supervisor.stream(input_data, config=config, stream_mode="updates"):
         for node_name, node_output in chunk.items():
             if node_name == "__interrupt__":
-                # HITL interrupt — send to client for approval
+                # HITL interrupt from HumanInTheLoopMiddleware
                 for intr in node_output:
                     pending_interrupt = {
                         "thread_id": thread_id,
                         "value": intr.value,
                     }
+                    # Extract tool info from action_requests
+                    action_requests = intr.value.get("action_requests", [])
+                    filename = "unknown"
+                    content_preview = ""
+                    if action_requests:
+                        args = action_requests[0].get(
+                            "arguments", action_requests[0].get("args", {})
+                        )
+                        filename = args.get("filename", "unknown")
+                        content_preview = args.get("content", "")
                     yield {
                         "type": "interrupt",
-                        "filename": intr.value.get("filename", "unknown"),
-                        "content_preview": intr.value.get("content_preview", ""),
+                        "filename": filename,
+                        "content_preview": content_preview,
                     }
                 return
 
+            if node_output is None:
+                continue
             messages = node_output.get("messages", [])
             for msg in messages:
                 # Tool call events
@@ -243,12 +255,18 @@ async def chat(q: str):
 
 @app.post("/api/approve")
 async def approve(decision: dict):
-    """Resume after HITL interrupt. Body: {"type": "approve"|"edit"|"reject", ...}"""
+    """Resume after HITL interrupt. Body: {"type": "approve"|"edit"|"reject", ...}
+
+    Wraps the decision in HumanInTheLoopMiddleware format:
+    {"decisions": [{"type": "approve"}]}
+    """
     if not pending_interrupt:
         raise HTTPException(status_code=400, detail="No pending interrupt")
     logger.info("HITL decision: %s", decision)
+    # Wrap in middleware's expected format
+    resume_payload = {"decisions": [decision]}
     return StreamingResponse(
-        _stream_resume(decision),
+        _stream_resume(resume_payload),
         media_type="text/event-stream",
     )
 

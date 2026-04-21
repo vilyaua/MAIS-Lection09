@@ -1,18 +1,20 @@
 """Supervisor Agent — orchestrates Plan -> Research -> Critique -> Save.
 
-Calls sub-agents via ACP (acp_sdk.client.Client).
-Calls save_report via MCP (ReportMCP) with HITL interrupt.
+Calls sub-agents via ACP (PatchedACPClient — acp_sdk.client.Client subclass).
+Calls save_report via MCP (ReportMCP).
+HITL handled by HumanInTheLoopMiddleware on create_agent.
 """
 
 import asyncio
 from concurrent.futures import ThreadPoolExecutor
 
-import httpx
+from acp_sdk.models import Message, MessagePart
 from langchain.agents import create_agent
+from langchain.agents.middleware import HumanInTheLoopMiddleware
 from langchain_core.tools import tool
 from langgraph.checkpoint.memory import InMemorySaver
-from langgraph.types import interrupt
 
+from acp_client import PatchedACPClient
 from config import SUPERVISOR_PROMPT, Settings
 
 settings = Settings()
@@ -22,7 +24,7 @@ _executor = ThreadPoolExecutor(max_workers=4)
 
 
 def _run_async(coro):
-    """Run an async coroutine from a sync context (safe even inside an existing event loop)."""
+    """Run an async coroutine from a sync context."""
     return asyncio.run(coro)
 
 
@@ -33,21 +35,15 @@ def _run_async_in_thread(coro):
 
 
 async def _delegate_acp(agent_name: str, content: str) -> str:
-    """Delegate to an ACP agent via HTTP (bypasses acp-sdk client serialization bug)."""
-    payload = {
-        "agent_name": agent_name,
-        "input": [{"parts": [{"content": content, "content_type": "text/plain"}]}],
-        "mode": "sync",
-    }
-    async with httpx.AsyncClient(timeout=300) as client:
-        resp = await client.post(f"{settings.acp_url}/runs", json=payload)
-        resp.raise_for_status()
-        data = resp.json()
+    """Delegate to an ACP agent via acp_sdk.client.Client (patched)."""
+    input_messages = [Message(parts=[MessagePart(content=content, content_type="text/plain")])]
+    async with PatchedACPClient(base_url=settings.acp_url) as client:
+        run = await client.run_sync(agent=agent_name, input=input_messages)
         parts = []
-        for msg in data.get("output", []):
-            for part in msg.get("parts", []):
-                if part.get("content"):
-                    parts.append(part["content"])
+        for msg in run.output or []:
+            for part in msg.parts or []:
+                if part.content:
+                    parts.append(part.content)
         return "\n".join(parts)
 
 
@@ -92,25 +88,11 @@ def delegate_to_critic(findings: str) -> str:
 
 @tool
 def save_report(filename: str, content: str) -> str:
-    """Save a Markdown research report via ReportMCP. Requires human approval."""
-    decision = interrupt(
-        {
-            "tool": "save_report",
-            "filename": filename,
-            "content_preview": content,
-        }
-    )
+    """Save a Markdown research report via ReportMCP.
 
-    action = decision.get("type", "reject")
-
-    if action == "approve":
-        return _run_async_in_thread(_call_report_mcp(filename, content))
-    elif action == "edit":
-        feedback = decision.get("feedback", "")
-        return f"User requested changes: {feedback}. Please revise the report and call save_report again."
-    else:
-        reason = decision.get("message", "No reason given.")
-        return f"Report rejected by user: {reason}"
+    This tool requires human approval before execution.
+    """
+    return _run_async_in_thread(_call_report_mcp(filename, content))
 
 
 _supervisor_prompt = SUPERVISOR_PROMPT.format(
@@ -125,4 +107,9 @@ supervisor = create_agent(
     system_prompt=_supervisor_prompt,
     checkpointer=checkpointer,
     name="supervisor",
+    middleware=[
+        HumanInTheLoopMiddleware(
+            interrupt_on={"save_report": True},
+        ),
+    ],
 )

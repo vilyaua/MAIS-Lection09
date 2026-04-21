@@ -1,23 +1,29 @@
 """Test runner for L09 (MCP+ACP): runs the same queries as L08 test_runner.
 
-Calls the Supervisor via Docker CLI with auto-approve on HITL.
-Also supports direct ACP calls for timing individual agents.
+Calls ACP agents via PatchedACPClient (acp_sdk.client.Client subclass).
+Also saves reports via ReportMCP.
 
 Usage:
-  python test_runner.py                # run all queries via supervisor
+  python test_runner.py                # run all queries via ACP pipeline
   python test_runner.py --query "..."  # single query
 """
 
 import argparse
+import asyncio
 import json
 import time
 from datetime import datetime
 from pathlib import Path
 
-import httpx
+from acp_sdk.models import Message, MessagePart
 
-ACP_URL = "http://localhost:8903"
-REPORT_MCP_URL = "http://localhost:8902/mcp"
+from acp_client import PatchedACPClient
+from config import Settings
+
+settings = Settings()
+
+ACP_URL = settings.acp_url
+REPORT_MCP_URL = settings.report_mcp_url
 QUERIES_FILE = Path(__file__).parent / "test_queries.txt"
 OUTPUT_DIR = Path(__file__).parent / "output"
 
@@ -26,33 +32,26 @@ def load_queries(path: Path) -> list[str]:
     return [q.strip() for q in path.read_text().splitlines() if q.strip()]
 
 
-def call_acp_agent(agent_name: str, content: str) -> dict:
-    """Call an ACP agent directly via HTTP and return timing + result."""
+async def call_acp_agent(agent_name: str, content: str) -> dict:
+    """Call an ACP agent via PatchedACPClient and return timing + result."""
     start = time.time()
-    resp = httpx.post(
-        f"{ACP_URL}/runs",
-        json={
-            "agent_name": agent_name,
-            "input": [{"parts": [{"content": content, "content_type": "text/plain"}]}],
-            "mode": "sync",
-        },
-        timeout=300,
-    )
+    input_msgs = [Message(parts=[MessagePart(content=content, content_type="text/plain")])]
+    async with PatchedACPClient(base_url=ACP_URL) as client:
+        run = await client.run_sync(agent=agent_name, input=input_msgs)
+
     elapsed = time.time() - start
-    resp.raise_for_status()
-    data = resp.json()
 
     parts = []
-    for msg in data.get("output", []):
-        for part in msg.get("parts", []):
-            if part.get("content"):
-                parts.append(part["content"])
+    for msg in run.output or []:
+        for part in msg.parts or []:
+            if part.content:
+                parts.append(str(part.content))
     text = "\n".join(parts)
 
-    return {"time_seconds": round(elapsed, 1), "result": text, "status": data.get("status")}
+    return {"time_seconds": round(elapsed, 1), "result": text, "status": str(run.status)}
 
 
-def run_full_pipeline(query: str) -> dict:
+async def run_full_pipeline(query: str) -> dict:
     """Run the full Plan -> Research -> Critique -> (REVISE) -> Save pipeline."""
     start = time.time()
     tool_calls = []
@@ -60,13 +59,13 @@ def run_full_pipeline(query: str) -> dict:
 
     # 1. Plan
     print("    [plan]...", end="", flush=True)
-    plan = call_acp_agent("planner", query)
+    plan = await call_acp_agent("planner", query)
     tool_calls.append("plan")
     print(f" {plan['time_seconds']}s")
 
     # 2. Research
     print("    [research]...", end="", flush=True)
-    research = call_acp_agent("researcher", plan["result"])
+    research = await call_acp_agent("researcher", plan["result"])
     tool_calls.append("research")
     print(f" {research['time_seconds']}s")
 
@@ -74,7 +73,7 @@ def run_full_pipeline(query: str) -> dict:
     findings = research["result"]
     for _ in range(3):  # max 2 revisions + 1 initial
         print("    [critique]...", end="", flush=True)
-        critique = call_acp_agent("critic", findings)
+        critique = await call_acp_agent("critic", findings)
         tool_calls.append("critique")
         print(f" {critique['time_seconds']}s")
 
@@ -83,9 +82,12 @@ def run_full_pipeline(query: str) -> dict:
 
         if "VERDICT: REVISE" in critique["result"]:
             revisions += 1
-            revision_feedback = f"Revision based on critique feedback:\n{critique['result']}\n\nOriginal plan:\n{plan['result']}"
+            revision_feedback = (
+                f"Revision based on critique feedback:\n{critique['result']}\n\n"
+                f"Original plan:\n{plan['result']}"
+            )
             print(f"    [research] (revision {revisions})...", end="", flush=True)
-            research = call_acp_agent("researcher", revision_feedback)
+            research = await call_acp_agent("researcher", revision_feedback)
             tool_calls.append("research")
             findings = research["result"]
             print(f" {research['time_seconds']}s")
@@ -93,17 +95,9 @@ def run_full_pipeline(query: str) -> dict:
     # 4. Save report via ReportMCP (skip HITL for testing)
     from fastmcp import Client
 
-    async def save():
-        async with Client(REPORT_MCP_URL) as client:
-            slug = query[:40].strip().replace(" ", "_").lower()
-            result = await client.call_tool(
-                "save_report", {"filename": f"test_{slug}.md", "content": findings}
-            )
-            return str(result)
-
-    import asyncio
-
-    asyncio.run(save())
+    async with Client(REPORT_MCP_URL) as client:
+        slug = query[:40].strip().replace(" ", "_").lower()
+        await client.call_tool("save_report", {"filename": f"test_{slug}.md", "content": findings})
     tool_calls.append("save_report")
 
     elapsed = time.time() - start
@@ -127,7 +121,7 @@ def print_result(r: dict):
     )
 
 
-def main():
+async def main():
     parser = argparse.ArgumentParser(description="L09 MCP+ACP test runner")
     parser.add_argument("--query", type=str, help="Single query to test")
     args = parser.parse_args()
@@ -135,6 +129,8 @@ def main():
     queries = [args.query] if args.query else load_queries(QUERIES_FILE)
 
     # Verify connectivity
+    import httpx
+
     try:
         resp = httpx.get(f"{ACP_URL}/agents", timeout=5)
         agents = resp.json()
@@ -149,7 +145,7 @@ def main():
     for i, query in enumerate(queries, 1):
         print(f"--- Query {i}/{len(queries)}: {query[:60]}...")
         try:
-            r = run_full_pipeline(query)
+            r = await run_full_pipeline(query)
             print_result(r)
             results.append(r)
         except Exception as e:
@@ -180,4 +176,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())

@@ -22,7 +22,8 @@ MAIS-Lection09/                      # repo root
 ├── homework-lesson-9/               # assignment spec (read-only)
 └── research-agent/                  # implementation
     ├── main.py                      # REPL + HITL interrupt/resume loop
-    ├── supervisor.py                # Supervisor agent + ACP delegation tools
+    ├── supervisor.py                # Supervisor agent + ACP delegation tools + HumanInTheLoopMiddleware
+    ├── acp_client.py                # PatchedACPClient — fixes acp-sdk 1.0.3 serialization bug
     ├── acp_server.py                # ACP server with 3 agents (planner, researcher, critic)
     ├── mcp_servers/
     │   ├── search_mcp.py            # SearchMCP :8901 — web_search, read_url, knowledge_search
@@ -99,16 +100,21 @@ Supervisor Agent (local create_agent, NOT an ACP agent)
 ### Supervisor (orchestrator)
 
 - Local `create_agent` — NOT an ACP agent
-- Tools are wrappers over ACP calls via `acp_sdk.client.Client`
-- `save_report` is a separate MCP tool (via ReportMCP), HITL-gated with `interrupt()`
+- Tools are wrappers over ACP calls via `PatchedACPClient` (subclass of `acp_sdk.client.Client`)
+- `save_report` calls ReportMCP via MCP protocol — plain function, no HITL logic inside
 - `checkpointer=InMemorySaver()` for HITL interrupt/resume
 
 ### HITL
 
-- Same as hw8 — `interrupt()` inside `save_report` tool
-- `save_report` calls ReportMCP via MCP protocol
-- Three actions: approve, edit (with feedback), reject
-- Resume with `Command(resume={"type": "..."})`
+- `HumanInTheLoopMiddleware` on `create_agent` — declaratively intercepts `save_report` tool calls
+- Three decisions: approve, edit, reject
+- Resume with `Command(resume={"decisions": [{"type": "..."}]})`
+
+### ACP Client Fix (`acp_client.py`)
+
+- `acp_sdk.client.Client.run_sync()` has a serialization bug: uses `content=model.model_dump_json()` without `Content-Type: application/json` → 422
+- `PatchedACPClient` subclasses `Client` and injects the missing header on POST calls
+- SDK repo archived at 1.0.3 (Aug 2025) — bug will never be fixed upstream
 
 ### mcp_utils.py
 
@@ -147,17 +153,16 @@ python main.py
 
 ```
 fastmcp>=3.0.0                    # MCP server + client
-acp-sdk>=1.0.0                    # ACP server (client has serialization bug, use httpx)
+acp-sdk>=1.0.0                    # ACP server + client (client patched via PatchedACPClient)
 langchain-mcp-adapters>=0.1.0     # MCP-to-LangChain tool conversion
 uvicorn>=0.35.0,<0.36.0           # CRITICAL: only version compatible with both fastmcp and acp-sdk
-httpx                             # ACP client workaround
 ```
 
 Keep all hw8 deps: langchain, langgraph, faiss-cpu, rank_bm25, sentence-transformers, ddgs, trafilatura, etc.
 
 ## Known Issues
 
-- **acp-sdk client broken** — `acp_sdk.client.Client.run_sync()` has a serialization bug (422 error). Server works fine. Workaround: direct httpx POST to `/runs`.
+- **acp-sdk client patched** — `acp_sdk.client.Client.run_sync()` has a serialization bug (422 error). Server works fine. Fixed via `PatchedACPClient` subclass in `acp_client.py`.
 - **uvicorn pin is narrow** — only 0.35.x works (fastmcp needs >=0.35, acp-sdk needs LoopSetupType removed in 0.36).
 - **Async bridging** — LangGraph runs its own event loop, so `@tool` functions use `ThreadPoolExecutor` + `asyncio.run()` to call async ACP/MCP code.
 
@@ -169,9 +174,9 @@ See `research-agent/FINDINGS.md` for full technical details.
 - [x] 1 ACP server with 3 agents (planner, researcher, critic)
 - [x] Each ACP agent connects to SearchMCP via `langchain-mcp-adapters`
 - [x] Each ACP agent created via `create_agent`
-- [x] Supervisor orchestrates agents via ACP (httpx, due to SDK bug)
+- [x] Supervisor orchestrates agents via ACP (`PatchedACPClient`)
 - [x] Iterative Plan -> Research -> Critique cycle works via ACP
-- [x] HITL on `save_report` via interrupt
+- [x] HITL on `save_report` via `HumanInTheLoopMiddleware`
 - [x] `save_report` works through ReportMCP
 
 ## Important: Use Current APIs

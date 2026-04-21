@@ -1,5 +1,8 @@
 """REPL with HITL interrupt/resume loop for the multi-agent research system.
 
+HITL is handled by HumanInTheLoopMiddleware — interrupts arrive as
+action_requests and are resumed with decisions.
+
 Requires MCP servers and ACP server to be running first.
 Usage: python main.py
 """
@@ -63,49 +66,62 @@ def _format_tool_call(msg):
 
 
 def _handle_interrupt(interrupts: list[Interrupt], thread_id: str) -> None:
+    """Handle HITL interrupt from HumanInTheLoopMiddleware."""
     for intr in interrupts:
         payload = intr.value
-        filename = payload.get("filename", "unknown")
-        preview = payload.get("content_preview", "")
+        action_requests = payload.get("action_requests", [])
+        review_configs = payload.get("review_configs", [])
 
-        print("\n" + "=" * 60)
-        print("  ACTION REQUIRES APPROVAL")
-        print("=" * 60)
-        print("  Tool:     save_report")
-        print(f"  Filename: {filename}")
-        print(f"  Preview:\n{preview[:500]}")
-        print("=" * 60)
+        decisions = []
+        for i, action in enumerate(action_requests):
+            tool_name = action.get("name", "unknown")
+            tool_args = action.get("arguments", action.get("args", {}))
 
-        while True:
-            choice = input("\n  approve / edit / reject: ").strip().lower()
-            if choice in ("approve", "edit", "reject"):
-                break
-            print("  Please enter 'approve', 'edit', or 'reject'.")
+            # Show approval prompt
+            print("\n" + "=" * 60)
+            print("  ACTION REQUIRES APPROVAL")
+            print("=" * 60)
+            print(f"  Tool:     {tool_name}")
+            if tool_name == "save_report":
+                print(f"  Filename: {tool_args.get('filename', '?')}")
+                content_preview = tool_args.get("content", "")
+                if content_preview:
+                    print(f"  Preview:\n{content_preview[:500]}")
+            else:
+                print(f"  Args: {str(tool_args)[:300]}")
+            print("=" * 60)
 
+            # Get allowed decisions from review config
+            allowed = ["approve", "edit", "reject"]
+            if i < len(review_configs):
+                allowed = review_configs[i].get("allowed_decisions", allowed)
+
+            while True:
+                choice = input(f"\n  {' / '.join(allowed)}: ").strip().lower()
+                if choice in allowed:
+                    break
+                print(f"  Please enter one of: {', '.join(allowed)}")
+
+            if choice == "approve":
+                print("  Approved!")
+                decisions.append({"type": "approve"})
+            elif choice == "edit":
+                feedback = input("  Your feedback: ").strip()
+                print(f"  Sending feedback to Supervisor: {feedback}")
+                decisions.append(
+                    {"type": "edit", "edited_action": {**action, "feedback": feedback}}
+                )
+            else:
+                input("  Reason (optional): ").strip()
+                decisions.append({"type": "reject"})
+
+        # Resume with decisions
         config = {"configurable": {"thread_id": thread_id}, "recursion_limit": 100}
-
-        if choice == "approve":
-            print("  Approved!")
-            result = supervisor.invoke(
-                Command(resume={"type": "approve"}),
-                config=config,
-            )
-            _print_final_messages(result)
-        elif choice == "edit":
-            feedback = input("  Your feedback: ").strip()
-            print("  Sending feedback to Supervisor...")
-            result = supervisor.invoke(
-                Command(resume={"type": "edit", "feedback": feedback}),
-                config=config,
-            )
-            _check_and_handle(result, thread_id)
-        else:
-            reason = input("  Reason (optional): ").strip() or "User rejected."
-            result = supervisor.invoke(
-                Command(resume={"type": "reject", "message": reason}),
-                config=config,
-            )
-            _print_final_messages(result)
+        result = supervisor.invoke(
+            Command(resume={"decisions": decisions}),
+            config=config,
+        )
+        _check_and_handle(result, thread_id)
 
 
 def _check_and_handle(result: dict, thread_id: str):
