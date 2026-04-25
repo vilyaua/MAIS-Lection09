@@ -1,12 +1,13 @@
-# CLAUDE.md — MAIS Lection 09: MCP + ACP Multi-Agent System
+# CLAUDE.md — MAIS Lection 09: MCP + ACP/A2A Multi-Agent System
 
 ## Goal
 
 Take the multi-agent system from homework-8 (Supervisor + Planner, Researcher, Critic) and migrate to a protocol-based architecture:
 
 - **MCP** (Model Context Protocol) — for tools (web_search, read_url, knowledge_search, save_report)
-- **ACP** (Agent Communication Protocol) — for agent-to-agent communication
-- **Supervisor** remains a local orchestrator calling agents via ACP
+- **ACP** (Agent Communication Protocol) — for agent-to-agent communication (legacy, homework requirement)
+- **A2A** (Agent-to-Agent Protocol, Google/Linux Foundation) — parallel implementation, successor to ACP
+- **Supervisor** remains a local orchestrator calling agents via ACP or A2A (configurable)
 
 Same behavior as hw8 (Plan -> Research -> Critique -> HITL -> Save), but all communication goes through protocols.
 
@@ -22,9 +23,11 @@ MAIS-Lection09/                      # repo root
 ├── homework-lesson-9/               # assignment spec (read-only)
 └── research-agent/                  # implementation
     ├── main.py                      # REPL + HITL interrupt/resume loop
-    ├── supervisor.py                # Supervisor agent + ACP delegation tools + HumanInTheLoopMiddleware
+    ├── supervisor.py                # Supervisor agent + ACP/A2A delegation tools + HumanInTheLoopMiddleware
     ├── acp_client.py                # PatchedACPClient — fixes acp-sdk 1.0.3 serialization bug
     ├── acp_server.py                # ACP server with 3 agents (planner, researcher, critic)
+    ├── a2a_client.py                # A2A client helper — clean, no patches needed
+    ├── a2a_server.py                # A2A server with AgentExecutor + 3 skills (planner, researcher, critic)
     ├── mcp_servers/
     │   ├── search_mcp.py            # SearchMCP :8901 — web_search, read_url, knowledge_search
     │   └── report_mcp.py            # ReportMCP :8902 — save_report (HITL gated)
@@ -116,6 +119,15 @@ Supervisor Agent (local create_agent, NOT an ACP agent)
 - `PatchedACPClient` subclasses `Client` and injects the missing header on POST calls
 - SDK repo archived at 1.0.3 (Aug 2025) — bug will never be fixed upstream
 
+### A2A (parallel implementation)
+
+- ACP merged into Google's A2A protocol under Linux Foundation (Aug 2025)
+- `a2a-sdk` v1.0.1 is the actively maintained successor
+- `a2a_server.py` — `AgentExecutor` subclass with `AgentCard` (3 skills), Starlette app on :8904
+- `a2a_client.py` — clean `a2a-sdk` client, custom `httpx.AsyncClient(timeout=120s)` for long LLM calls
+- Skill routing via `metadata["skill_id"]` in `SendMessageRequest`
+- Toggle: `AGENT_PROTOCOL=acp` (default, homework requirement) or `AGENT_PROTOCOL=a2a`
+
 ### mcp_utils.py
 
 - `mcp_tools_to_langchain(mcp_client)` — converts MCP tool definitions to LangChain `@tool` format
@@ -129,7 +141,7 @@ Supervisor Agent (local create_agent, NOT an ACP agent)
 ### Config & Prompts
 
 - System prompts reused from hw8 `config.py`
-- Ports: SearchMCP=8901, ReportMCP=8902, ACP=8903
+- Ports: SearchMCP=8901, ReportMCP=8902, ACP=8903, A2A=8904
 - `OPENAI_API_KEY` for LangChain + embeddings
 
 ## Startup Order
@@ -142,10 +154,13 @@ python ingest.py
 python mcp_servers/search_mcp.py   # :8901
 python mcp_servers/report_mcp.py   # :8902
 
-# 3. ACP server
+# 3a. ACP server (default / homework requirement)
 python acp_server.py               # :8903
 
-# 4. Supervisor REPL
+# 3b. OR A2A server (modern alternative)
+python a2a_server.py               # :8904
+
+# 4. Supervisor REPL (set AGENT_PROTOCOL=a2a in .env to use A2A)
 python main.py
 ```
 
@@ -154,6 +169,7 @@ python main.py
 ```
 fastmcp>=3.0.0                    # MCP server + client
 acp-sdk>=1.0.0                    # ACP server + client (client patched via PatchedACPClient)
+a2a-sdk[http-server]>=1.0.0       # A2A server + client (Google, actively maintained)
 langchain-mcp-adapters>=0.1.0     # MCP-to-LangChain tool conversion
 uvicorn>=0.35.0,<0.36.0           # CRITICAL: only version compatible with both fastmcp and acp-sdk
 ```
@@ -163,8 +179,9 @@ Keep all hw8 deps: langchain, langgraph, faiss-cpu, rank_bm25, sentence-transfor
 ## Known Issues
 
 - **acp-sdk client patched** — `acp_sdk.client.Client.run_sync()` has a serialization bug (422 error). Server works fine. Fixed via `PatchedACPClient` subclass in `acp_client.py`.
-- **uvicorn pin is narrow** — only 0.35.x works (fastmcp needs >=0.35, acp-sdk needs LoopSetupType removed in 0.36).
-- **Async bridging** — LangGraph runs its own event loop, so `@tool` functions use `ThreadPoolExecutor` + `asyncio.run()` to call async ACP/MCP code.
+- **uvicorn pin is narrow** — only 0.35.x works for ACP (fastmcp needs >=0.35, acp-sdk needs LoopSetupType removed in 0.36). A2A does not have this constraint.
+- **Async bridging** — LangGraph runs its own event loop, so `@tool` functions use `ThreadPoolExecutor` + `asyncio.run()` to call async ACP/A2A/MCP code.
+- **ACP is archived** — `acp-sdk` merged into Google's A2A protocol (Aug 2025). Use `AGENT_PROTOCOL=a2a` for the actively maintained path.
 
 See `research-agent/FINDINGS.md` for full technical details.
 

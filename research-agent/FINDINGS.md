@@ -12,9 +12,9 @@ User (REPL)
   v
 Supervisor (local create_agent, LangGraph)
   |
-  |-- delegate_to_planner   --[httpx]--> ACP :8903 --> Planner --[fastmcp.Client]--> SearchMCP :8901
-  |-- delegate_to_researcher --[httpx]--> ACP :8903 --> Researcher --[fastmcp.Client]--> SearchMCP :8901
-  |-- delegate_to_critic     --[httpx]--> ACP :8903 --> Critic --[fastmcp.Client]--> SearchMCP :8901
+  |-- delegate_to_planner   --[ACP :8903 or A2A :8904]--> Planner --[fastmcp.Client]--> SearchMCP :8901
+  |-- delegate_to_researcher --[ACP :8903 or A2A :8904]--> Researcher --[fastmcp.Client]--> SearchMCP :8901
+  |-- delegate_to_critic     --[ACP :8903 or A2A :8904]--> Critic --[fastmcp.Client]--> SearchMCP :8901
   |-- save_report            --[fastmcp.Client]--> ReportMCP :8902 (HITL gated)
 ```
 
@@ -128,6 +128,39 @@ agent = create_agent(model, tools=tools, ...)
 | langchain | >=1.2.0 | create_agent, response_format |
 | langgraph | >=0.4.0 | checkpointer, interrupt, Command |
 | langchain (middleware) | >=1.2.0 | HumanInTheLoopMiddleware for HITL |
+
+## A2A Migration (Parallel Implementation)
+
+### Background
+
+ACP (Agent Communication Protocol) by IBM/BeeAI was archived at v1.0.3 in August 2025. The ACP team formally merged with Google's A2A (Agent-to-Agent) protocol under the Linux Foundation's LF AI & Data umbrella. The successor SDK is `a2a-sdk` (v1.0.1, April 2026).
+
+### ACP → A2A Mapping
+
+| ACP (acp-sdk 1.0.3) | A2A (a2a-sdk 1.0.1) |
+|---|---|
+| `acp_sdk.server.Server` + `@server.agent()` | `AgentExecutor` subclass + Starlette app |
+| One server, multiple agents | One server, multiple **skills** on one `AgentCard` |
+| `acp_sdk.client.Client.run_sync()` | `create_client()` + `send_message()` (async iterator) |
+| `acp_sdk.models.Message`, `MessagePart` | `a2a.types.Message`, `Part` (protobuf) |
+| Agent routing by name parameter | Skill routing via `metadata["skill_id"]` |
+| Pydantic models | Protobuf types (`a2a.types.a2a_pb2`) |
+
+### What A2A Fixes
+
+1. **No client serialization bug** — `a2a-sdk` client works out of the box (no `PatchedACPClient` needed)
+2. **No uvicorn version conflict** — A2A uses Starlette directly, no dependency on `LoopSetupType`
+3. **Actively maintained** — Google + 50+ partners under Linux Foundation
+4. **Richer protocol** — supports streaming, task lifecycle, artifacts, agent discovery via AgentCard
+
+### Implementation Notes
+
+- A2A server runs on port 8904 (alongside ACP on 8903)
+- `AgentCard` with 3 skills replaces 3 `@server.agent()` decorators
+- Skill routing via `context.metadata["skill_id"]` in the executor
+- `TaskUpdater` helper manages the task lifecycle (start_work → add_artifact → complete)
+- Client uses `ClientConfig(streaming=False, httpx_client=httpx.AsyncClient(timeout=120s))` — default httpx timeout is too short for LLM+MCP calls
+- Protocol toggle: `AGENT_PROTOCOL=acp|a2a` in `.env`
 
 ## Lessons Learned
 

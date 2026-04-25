@@ -1,22 +1,25 @@
 """Supervisor Agent — orchestrates Plan -> Research -> Critique -> Save.
 
-Calls sub-agents via ACP (PatchedACPClient — acp_sdk.client.Client subclass).
+Supports two agent-to-agent protocols (configurable via AGENT_PROTOCOL env var):
+  - "acp" (default) — PatchedACPClient (acp-sdk 1.0.3, archived)
+  - "a2a" — Google's A2A protocol (a2a-sdk, actively maintained)
+
 Calls save_report via MCP (ReportMCP).
 HITL handled by HumanInTheLoopMiddleware on create_agent.
 """
 
 import asyncio
+import logging
 from concurrent.futures import ThreadPoolExecutor
 
-from acp_sdk.models import Message, MessagePart
 from langchain.agents import create_agent
 from langchain.agents.middleware import HumanInTheLoopMiddleware
 from langchain_core.tools import tool
 from langgraph.checkpoint.memory import InMemorySaver
 
-from acp_client import PatchedACPClient
 from config import SUPERVISOR_PROMPT, Settings
 
+logger = logging.getLogger("supervisor")
 settings = Settings()
 
 # Thread pool for running async code from sync @tool functions
@@ -34,8 +37,17 @@ def _run_async_in_thread(coro):
     return future.result(timeout=300)
 
 
+# ---------------------------------------------------------------------------
+# ACP delegation (legacy — acp-sdk 1.0.3)
+# ---------------------------------------------------------------------------
+
+
 async def _delegate_acp(agent_name: str, content: str) -> str:
     """Delegate to an ACP agent via acp_sdk.client.Client (patched)."""
+    from acp_sdk.models import Message, MessagePart
+
+    from acp_client import PatchedACPClient
+
     input_messages = [Message(parts=[MessagePart(content=content, content_type="text/plain")])]
     async with PatchedACPClient(base_url=settings.acp_url) as client:
         run = await client.run_sync(agent=agent_name, input=input_messages)
@@ -47,6 +59,35 @@ async def _delegate_acp(agent_name: str, content: str) -> str:
         return "\n".join(parts)
 
 
+# ---------------------------------------------------------------------------
+# A2A delegation (current — a2a-sdk)
+# ---------------------------------------------------------------------------
+
+
+async def _delegate_a2a(skill_id: str, content: str) -> str:
+    """Delegate to an A2A agent skill via a2a-sdk client."""
+    from a2a_client import delegate_a2a
+
+    return await delegate_a2a(skill_id, content, base_url=settings.a2a_url)
+
+
+# ---------------------------------------------------------------------------
+# Unified delegation — picks protocol based on config
+# ---------------------------------------------------------------------------
+
+
+async def _delegate(agent_name: str, content: str) -> str:
+    """Delegate to a sub-agent using the configured protocol."""
+    if settings.agent_protocol == "a2a":
+        return await _delegate_a2a(agent_name, content)
+    return await _delegate_acp(agent_name, content)
+
+
+# ---------------------------------------------------------------------------
+# MCP call for save_report
+# ---------------------------------------------------------------------------
+
+
 async def _call_report_mcp(filename: str, content: str) -> str:
     """Call save_report on ReportMCP via fastmcp.Client."""
     from fastmcp import Client as MCPClient
@@ -56,34 +97,41 @@ async def _call_report_mcp(filename: str, content: str) -> str:
         return str(result)
 
 
+# ---------------------------------------------------------------------------
+# Supervisor tools
+# ---------------------------------------------------------------------------
+
+_protocol_label = "A2A" if settings.agent_protocol == "a2a" else "ACP"
+
+
 @tool
 def delegate_to_planner(request: str) -> str:
-    """Delegate a research request to the Planner agent via ACP.
+    """Delegate a research request to the Planner agent.
 
     The Planner decomposes the request into a structured research plan
     with specific search queries and sources to check.
     """
-    return _run_async_in_thread(_delegate_acp("planner", request))
+    return _run_async_in_thread(_delegate("planner", request))
 
 
 @tool
 def delegate_to_researcher(request: str) -> str:
-    """Delegate research execution to the Researcher agent via ACP.
+    """Delegate research execution to the Researcher agent.
 
     The Researcher follows the plan, searches web and knowledge base,
     and returns findings with source citations.
     """
-    return _run_async_in_thread(_delegate_acp("researcher", request))
+    return _run_async_in_thread(_delegate("researcher", request))
 
 
 @tool
 def delegate_to_critic(findings: str) -> str:
-    """Delegate research evaluation to the Critic agent via ACP.
+    """Delegate research evaluation to the Critic agent.
 
     The Critic independently verifies findings for freshness, completeness,
     and structure. Returns APPROVE or REVISE verdict.
     """
-    return _run_async_in_thread(_delegate_acp("critic", findings))
+    return _run_async_in_thread(_delegate("critic", findings))
 
 
 @tool
@@ -94,6 +142,8 @@ def save_report(filename: str, content: str) -> str:
     """
     return _run_async_in_thread(_call_report_mcp(filename, content))
 
+
+logger.info("Supervisor using %s protocol for agent delegation", _protocol_label)
 
 _supervisor_prompt = SUPERVISOR_PROMPT.format(
     max_revisions=settings.max_revision_rounds,

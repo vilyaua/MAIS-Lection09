@@ -1,11 +1,13 @@
-"""Test runner for L09 (MCP+ACP): runs the same queries as L08 test_runner.
+"""Test runner for L09: runs the same queries as L08 test_runner.
 
-Calls ACP agents via PatchedACPClient (acp_sdk.client.Client subclass).
+Supports both ACP (acp-sdk) and A2A (a2a-sdk) protocols.
 Also saves reports via ReportMCP.
 
 Usage:
-  python test_runner.py                # run all queries via ACP pipeline
-  python test_runner.py --query "..."  # single query
+  python test_runner.py                      # run all queries (uses AGENT_PROTOCOL from .env)
+  python test_runner.py --protocol a2a       # force A2A protocol
+  python test_runner.py --protocol acp       # force ACP protocol
+  python test_runner.py --query "..."        # single query
 """
 
 import argparse
@@ -15,14 +17,10 @@ import time
 from datetime import datetime
 from pathlib import Path
 
-from acp_sdk.models import Message, MessagePart
-
-from acp_client import PatchedACPClient
 from config import Settings
 
 settings = Settings()
 
-ACP_URL = settings.acp_url
 REPORT_MCP_URL = settings.report_mcp_url
 QUERIES_FILE = Path(__file__).parent / "test_queries.txt"
 OUTPUT_DIR = Path(__file__).parent / "output"
@@ -32,11 +30,20 @@ def load_queries(path: Path) -> list[str]:
     return [q.strip() for q in path.read_text().splitlines() if q.strip()]
 
 
+# ---------------------------------------------------------------------------
+# ACP agent calls (legacy)
+# ---------------------------------------------------------------------------
+
+
 async def call_acp_agent(agent_name: str, content: str) -> dict:
     """Call an ACP agent via PatchedACPClient and return timing + result."""
+    from acp_sdk.models import Message, MessagePart
+
+    from acp_client import PatchedACPClient
+
     start = time.time()
     input_msgs = [Message(parts=[MessagePart(content=content, content_type="text/plain")])]
-    async with PatchedACPClient(base_url=ACP_URL) as client:
+    async with PatchedACPClient(base_url=settings.acp_url) as client:
         run = await client.run_sync(agent=agent_name, input=input_msgs)
 
     elapsed = time.time() - start
@@ -51,7 +58,34 @@ async def call_acp_agent(agent_name: str, content: str) -> dict:
     return {"time_seconds": round(elapsed, 1), "result": text, "status": str(run.status)}
 
 
-async def run_full_pipeline(query: str) -> dict:
+# ---------------------------------------------------------------------------
+# A2A agent calls (current)
+# ---------------------------------------------------------------------------
+
+
+async def call_a2a_agent(skill_id: str, content: str) -> dict:
+    """Call an A2A agent skill and return timing + result."""
+    from a2a_client import delegate_a2a
+
+    start = time.time()
+    text = await delegate_a2a(skill_id, content, base_url=settings.a2a_url)
+    elapsed = time.time() - start
+
+    return {"time_seconds": round(elapsed, 1), "result": text, "status": "completed"}
+
+
+# ---------------------------------------------------------------------------
+# Unified caller
+# ---------------------------------------------------------------------------
+
+
+async def call_agent(agent_name: str, content: str, protocol: str) -> dict:
+    if protocol == "a2a":
+        return await call_a2a_agent(agent_name, content)
+    return await call_acp_agent(agent_name, content)
+
+
+async def run_full_pipeline(query: str, protocol: str) -> dict:
     """Run the full Plan -> Research -> Critique -> (REVISE) -> Save pipeline."""
     start = time.time()
     tool_calls = []
@@ -59,13 +93,13 @@ async def run_full_pipeline(query: str) -> dict:
 
     # 1. Plan
     print("    [plan]...", end="", flush=True)
-    plan = await call_acp_agent("planner", query)
+    plan = await call_agent("planner", query, protocol)
     tool_calls.append("plan")
     print(f" {plan['time_seconds']}s")
 
     # 2. Research
     print("    [research]...", end="", flush=True)
-    research = await call_acp_agent("researcher", plan["result"])
+    research = await call_agent("researcher", plan["result"], protocol)
     tool_calls.append("research")
     print(f" {research['time_seconds']}s")
 
@@ -73,7 +107,7 @@ async def run_full_pipeline(query: str) -> dict:
     findings = research["result"]
     for _ in range(3):  # max 2 revisions + 1 initial
         print("    [critique]...", end="", flush=True)
-        critique = await call_acp_agent("critic", findings)
+        critique = await call_agent("critic", findings, protocol)
         tool_calls.append("critique")
         print(f" {critique['time_seconds']}s")
 
@@ -87,7 +121,7 @@ async def run_full_pipeline(query: str) -> dict:
                 f"Original plan:\n{plan['result']}"
             )
             print(f"    [research] (revision {revisions})...", end="", flush=True)
-            research = await call_acp_agent("researcher", revision_feedback)
+            research = await call_agent("researcher", revision_feedback, protocol)
             tool_calls.append("research")
             findings = research["result"]
             print(f" {research['time_seconds']}s")
@@ -103,7 +137,7 @@ async def run_full_pipeline(query: str) -> dict:
     elapsed = time.time() - start
 
     return {
-        "system": "L09",
+        "system": f"L09-{protocol.upper()}",
         "query": query,
         "time_seconds": round(elapsed, 1),
         "tool_calls": tool_calls,
@@ -122,40 +156,57 @@ def print_result(r: dict):
 
 
 async def main():
-    parser = argparse.ArgumentParser(description="L09 MCP+ACP test runner")
+    parser = argparse.ArgumentParser(description="L09 MCP+ACP/A2A test runner")
     parser.add_argument("--query", type=str, help="Single query to test")
+    parser.add_argument(
+        "--protocol",
+        type=str,
+        choices=["acp", "a2a"],
+        default=settings.agent_protocol,
+        help=f"Agent protocol to use (default: {settings.agent_protocol})",
+    )
     args = parser.parse_args()
 
+    protocol = args.protocol
     queries = [args.query] if args.query else load_queries(QUERIES_FILE)
 
     # Verify connectivity
     import httpx
 
+    if protocol == "acp":
+        check_url = f"{settings.acp_url}/agents"
+    else:
+        check_url = f"{settings.a2a_url}/.well-known/agent-card.json"
+
     try:
-        resp = httpx.get(f"{ACP_URL}/agents", timeout=5)
-        agents = resp.json()
-        print(f"ACP: {len(agents['agents'])} agents registered")
+        resp = httpx.get(check_url, timeout=5)
+        if protocol == "acp":
+            agents = resp.json()
+            print(f"ACP: {len(agents['agents'])} agents registered")
+        else:
+            card = resp.json()
+            print(f"A2A: agent '{card['name']}' with {len(card.get('skills', []))} skills")
     except Exception as e:
-        print(f"ACP not reachable at {ACP_URL}: {e}")
+        print(f"{protocol.upper()} not reachable at {check_url}: {e}")
         return
 
     results = []
-    print(f"\nRunning {len(queries)} queries...\n")
+    print(f"\nRunning {len(queries)} queries via {protocol.upper()}...\n")
 
     for i, query in enumerate(queries, 1):
         print(f"--- Query {i}/{len(queries)}: {query[:60]}...")
         try:
-            r = await run_full_pipeline(query)
+            r = await run_full_pipeline(query, protocol)
             print_result(r)
             results.append(r)
         except Exception as e:
-            print(f"  [L09] ERROR: {e}")
+            print(f"  [{protocol.upper()}] ERROR: {e}")
         print()
 
     # Save results
     OUTPUT_DIR.mkdir(exist_ok=True)
     timestamp = datetime.now().strftime("%Y-%m-%d_%H%M")
-    out_path = OUTPUT_DIR / f"test_results_L09_{timestamp}.json"
+    out_path = OUTPUT_DIR / f"test_results_L09_{protocol}_{timestamp}.json"
     with open(out_path, "w") as f:
         json.dump(results, f, indent=2)
     print(f"Results saved to {out_path}")
@@ -163,7 +214,7 @@ async def main():
     # Summary
     if results:
         print("\n" + "=" * 60)
-        print("SUMMARY (L09 MCP+ACP)")
+        print(f"SUMMARY (L09 {protocol.upper()})")
         print("=" * 60)
         avg_time = sum(r["time_seconds"] for r in results) / len(results)
         avg_calls = sum(r["tool_call_count"] for r in results) / len(results)
