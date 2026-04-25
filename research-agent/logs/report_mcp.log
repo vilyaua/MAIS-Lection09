@@ -79,3 +79,42 @@
 19:24:32 [INFO] report_mcp: Report saved: output/2026-04-21_1924_spanish-suv-0-eco-renting-2026.md
 19:24:32 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
 19:24:32 [INFO] mcp.server.streamable_http: Terminating session: 873b42644231497cab352eb7f3408753
+20:18:56 [INFO] httpx: HTTP Request: GET https://pypi.org/pypi/fastmcp/json "HTTP/1.1 200 OK"
+20:18:58 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
+21:22:46 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager shutting down
+09:17:54 [INFO] httpx: HTTP Request: GET https://pypi.org/pypi/fastmcp/json "HTTP/1.1 200 OK"
+09:17:56 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
+10:53:58 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager shutting down
+10:56:47 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
+12:14:47 [INFO] httpx: HTTP Request: GET https://pypi.org/pypi/fastmcp/json "HTTP/1.1 200 OK"
+12:14:48 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
+12:19:13 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager shutting down
+12:23:15 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
+12:36:05 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager shutting down
+12:37:19 [INFO] httpx: HTTP Request: GET https://pypi.org/pypi/fastmcp/json "HTTP/1.1 200 OK"
+12:37:19 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
+12:39:27 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 296d961dcfd841229652dba30672b30e
+12:39:28 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+12:39:28 [INFO] report_mcp: Report saved: output/2026-04-25_1239_langchain_overview_report.md
+12:39:28 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+12:39:28 [INFO] mcp.server.streamable_http: Terminating session: 296d961dcfd841229652dba30672b30e
+13:17:35 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 5b2c974b7b4342b3978c36c2f362d977
+13:17:35 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+13:17:35 [INFO] report_mcp: Report saved: output/2026-04-25_1317_Comparison-of-RAG-Approaches-Naive-Sentence-Window-Parent-Child-2026.md
+13:17:35 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+13:17:35 [INFO] mcp.server.streamable_http: Terminating session: 5b2c974b7b4342b3978c36c2f362d977
+13:20:18 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 8849b03a79254f74957d77a5f96e58c3
+13:20:18 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+13:20:18 [INFO] report_mcp: Report saved: output/2026-04-25_1320_latest-LLM-training-techniques-2026.md
+13:20:18 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+13:20:18 [INFO] mcp.server.streamable_http: Terminating session: 8849b03a79254f74957d77a5f96e58c3
+13:23:07 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 1801e1e0c35b4d019b28c3e1ed5600a1
+13:23:07 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+13:23:07 [INFO] report_mcp: Report saved: output/2026-04-25_1323_faiss_vs_chroma_report.md
+13:23:07 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+13:23:07 [INFO] mcp.server.streamable_http: Terminating session: 1801e1e0c35b4d019b28c3e1ed5600a1
+13:25:52 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 45af0065717f4de5b711a0334ba44496
+13:25:52 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+13:25:52 [INFO] report_mcp: Report saved: output/2026-04-25_1325_transformers_vs_previous_nlp_architectures_2026.md
+13:25:52 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+13:25:52 [INFO] mcp.server.streamable_http: Terminating session: 45af0065717f4de5b711a0334ba44496

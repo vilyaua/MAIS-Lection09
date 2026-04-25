@@ -1,0 +1,1349 @@
+21:00:16 [INFO] a2a_server: Starting A2A server on port 8904 with 3 skills
+09:19:10 [INFO] a2a_server: Starting A2A server on port 8904 with 3 skills
+11:03:27 [INFO] a2a_server: Starting A2A server on port 8904 with 3 skills
+12:24:04 [INFO] a2a_server: Starting A2A server on port 8904 with 3 skills
+12:28:07 [INFO] a2a_server: Starting A2A server on port 8904 with 3 skills
+12:30:24 [INFO] a2a_server: Executing skill=planner, input=What is LangChain and how does it work? Write a brief report....
+12:30:24 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:30:24 [INFO] mcp.client.streamable_http: Received session ID: 1c79f99fab194789afe947595f69ac55
+12:30:24 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:30:24 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:30:24 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:30:24 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:30:24 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:30:24 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:30:31 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:30:31 [INFO] a2a_server: Skill planner completed, result length=388
+12:37:42 [INFO] a2a_server: Starting A2A server on port 8904 with 3 skills
+12:37:53 [INFO] a2a_server: Executing skill=planner, input=What is LangChain and how does it work? Write a brief report....
+12:37:53 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:37:53 [INFO] mcp.client.streamable_http: Received session ID: dd2509e9dc2b4979b25704868bc8bb7e
+12:37:53 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:37:53 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:37:53 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:37:53 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:37:53 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:37:53 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:37:58 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:37:58 [INFO] a2a_server: Skill planner completed, result length=428
+12:38:01 [INFO] a2a_server: Executing skill=researcher, input=RESEARCH PLAN:
+Goal: Explain what LangChain is and how it operates, providing a ...
+12:38:01 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:01 [INFO] mcp.client.streamable_http: Received session ID: 8a3a15f6ff0c4eada4f256c4bae8c3c0
+12:38:01 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:38:01 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:01 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:38:01 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:01 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:01 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:38:03 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:38:03 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:03 [INFO] mcp.client.streamable_http: Received session ID: ee0510ba905f4906931ad9c1137c6f12
+12:38:03 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:38:03 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:03 [INFO] mcp.client.streamable_http: Received session ID: aa50df4a9acf452ab166a52b1a559ecb
+12:38:03 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:38:03 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:03 [INFO] mcp.client.streamable_http: Received session ID: 5ae97e67b45d4ff58e00ef214f8497a2
+12:38:03 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:38:03 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:03 [INFO] mcp.client.streamable_http: Received session ID: 3a75889b245d4b4aadce60fda7bf5164
+12:38:03 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:38:03 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:03 [INFO] mcp.client.streamable_http: Received session ID: 5a61bc41149b406c840ed7d67f169752
+12:38:03 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:38:03 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:38:03 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:03 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:38:03 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:03 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:38:03 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:03 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:38:03 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:03 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:03 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:38:03 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:04 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:04 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:04 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:04 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:04 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:04 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:04 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:38:08 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:08 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:08 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:08 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:38:08 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:08 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:38:09 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:09 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:09 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:38:09 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:09 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:09 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:38:12 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:38:12 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:12 [INFO] mcp.client.streamable_http: Received session ID: 13ebfecdd926406d85c9f46efc7d3423
+12:38:12 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:38:12 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:12 [INFO] mcp.client.streamable_http: Received session ID: 69b2ca990da64c5a96d2144b59704f7e
+12:38:12 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:38:12 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:12 [INFO] mcp.client.streamable_http: Received session ID: 6c643b4ef7b043ebaa4e86f5800ebfb7
+12:38:12 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:38:12 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:12 [INFO] mcp.client.streamable_http: Received session ID: ea858ca7c4934bf79e362d32caa72e5e
+12:38:12 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:38:12 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:38:12 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:12 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:38:12 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:38:12 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:12 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:12 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:38:12 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:12 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:12 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:12 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:12 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:14 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:14 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:38:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:14 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:14 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:38:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:15 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:15 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:38:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:15 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:15 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:38:34 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:38:34 [INFO] a2a_server: Skill researcher completed, result length=4909
+12:38:41 [INFO] a2a_server: Executing skill=critic, input=LangChain Overview Report
+
+Definition:
+LangChain is an open-source software fram...
+12:38:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:41 [INFO] mcp.client.streamable_http: Received session ID: 88177507cab748c4963a64fa51cb7815
+12:38:41 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:38:41 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:38:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:41 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:41 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:38:42 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:38:42 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:42 [INFO] mcp.client.streamable_http: Received session ID: be848cbb6e0f4fdeb5c4046abe6ad895
+12:38:42 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:38:42 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:42 [INFO] mcp.client.streamable_http: Received session ID: 2b23457038d44247a1c4c08f1e8a27e1
+12:38:42 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:38:42 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:42 [INFO] mcp.client.streamable_http: Received session ID: 6d0e581949954fe580b09db6fad86d59
+12:38:42 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:38:42 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:42 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:38:42 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:38:42 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:42 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:38:42 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:42 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:42 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:42 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:42 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:43 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:43 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:38:45 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:45 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:45 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:38:46 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:46 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:38:46 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:38:48 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:38:48 [INFO] a2a_server: Skill critic completed, result length=539
+12:40:03 [INFO] a2a_server: Executing skill=planner, input=Compare RAG approaches: naive, sentence-window, and parent-child. Write a report...
+12:40:03 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:03 [INFO] mcp.client.streamable_http: Received session ID: 7eeb270b24144f00a6479aad07c9c6da
+12:40:03 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:40:03 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:03 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:40:03 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:03 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:03 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:40:09 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:40:09 [INFO] a2a_server: Skill planner completed, result length=733
+12:40:11 [INFO] a2a_server: Executing skill=researcher, input=Compare Retrieval-Augmented Generation (RAG) approaches: naive, sentence-window,...
+12:40:11 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:11 [INFO] mcp.client.streamable_http: Received session ID: c225a26559bd4fcca7ff5a3a19630404
+12:40:11 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:40:11 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:40:11 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:11 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:11 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:11 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:40:13 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:40:13 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:13 [INFO] mcp.client.streamable_http: Received session ID: 6abb8a36d8854a3a8e7d94f203d79f2a
+12:40:13 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:40:13 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:13 [INFO] mcp.client.streamable_http: Received session ID: 781e9c1f62a2496985ac317fad516b3e
+12:40:13 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:40:13 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:13 [INFO] mcp.client.streamable_http: Received session ID: b60bc3143f394aaea77f4c045748bd82
+12:40:13 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:40:13 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:13 [INFO] mcp.client.streamable_http: Received session ID: 98c98f7551ba4707b1ba4ddf198de5b8
+12:40:13 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:40:13 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:13 [INFO] mcp.client.streamable_http: Received session ID: 11bf501f2354408eb3ce7f7ccbb56c27
+12:40:13 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:40:13 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:13 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:40:13 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:40:13 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:13 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:40:13 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:13 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:40:13 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:40:14 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:14 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:14 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:40:14 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:14 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:40:14 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:14 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:40:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:16 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:16 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:40:17 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:17 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:17 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:40:22 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:40:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:22 [INFO] mcp.client.streamable_http: Received session ID: e88853010d614f6f8b94ad9c8287d3ba
+12:40:22 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:40:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:22 [INFO] mcp.client.streamable_http: Received session ID: d4a4b8b85c6b4a3599042ed31998bc78
+12:40:22 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:40:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:22 [INFO] mcp.client.streamable_http: Received session ID: 9aae7cdd350944238761c9ba8a7c0401
+12:40:22 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:40:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:22 [INFO] mcp.client.streamable_http: Received session ID: 4d72bf267fff4890a3c0ebc30a23490a
+12:40:22 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:40:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:22 [INFO] mcp.client.streamable_http: Received session ID: 0142d2032f3e48919d875041f7074762
+12:40:22 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:40:22 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:40:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:40:22 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:40:22 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:40:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:22 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:40:22 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:23 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:23 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:24 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:24 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:24 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:40:24 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:24 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:24 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:40:24 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:24 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:24 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:40:24 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:24 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:24 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:40:39 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:40:39 [INFO] a2a_server: Skill researcher completed, result length=6597
+12:40:48 [INFO] a2a_server: Executing skill=critic, input=Here is a detailed comparison of the three Retrieval-Augmented Generation (RAG) ...
+12:40:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:48 [INFO] mcp.client.streamable_http: Received session ID: 05998b1ce1e4485db43b89ab848c4061
+12:40:48 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:40:48 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:40:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:48 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:48 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:40:51 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:40:52 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:52 [INFO] mcp.client.streamable_http: Received session ID: 2504656d3e5246d689f8d68084dee8e9
+12:40:52 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:40:52 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:52 [INFO] mcp.client.streamable_http: Received session ID: 0ba6b2b9e1b049088cca1be6b66b24cc
+12:40:52 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:40:52 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:52 [INFO] mcp.client.streamable_http: Received session ID: 46b04ca3eaff42e3bfddd0d39cee26e2
+12:40:52 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:40:52 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:52 [INFO] mcp.client.streamable_http: Received session ID: bc36d7fc1ef64c5a99850291432a9b04
+12:40:52 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:40:52 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:52 [INFO] mcp.client.streamable_http: Received session ID: 88a68cbdc37c4dce81c2095a8eca1a31
+12:40:52 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:40:52 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:52 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:40:52 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:52 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:40:52 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:40:52 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:52 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:40:52 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:52 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:40:52 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:52 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:52 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:52 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:52 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:52 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:52 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:52 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:52 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:52 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:52 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:40:52 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:52 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:40:52 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:52 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:40:54 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:54 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:54 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:40:55 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:55 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:55 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:40:58 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:40:58 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:58 [INFO] mcp.client.streamable_http: Received session ID: 24fbda623f734ae88694668472a74834
+12:40:58 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:40:58 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:58 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:40:58 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:59 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:59 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:40:59 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:41:05 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:41:05 [INFO] a2a_server: Skill critic completed, result length=1930
+12:41:08 [INFO] a2a_server: Executing skill=researcher, input=Revise and update the RAG approaches comparison with up-to-date information from...
+12:41:08 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:08 [INFO] mcp.client.streamable_http: Received session ID: 07bc038aecc045c6b34c3b45ab5debe2
+12:41:08 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:41:08 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:08 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:41:08 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:08 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:08 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:41:10 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:41:10 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:10 [INFO] mcp.client.streamable_http: Received session ID: a1ab22a29e194f57a5c39c44823171bf
+12:41:10 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:41:10 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:10 [INFO] mcp.client.streamable_http: Received session ID: a7b1b89372724115af5871aa09af2454
+12:41:10 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:41:10 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:10 [INFO] mcp.client.streamable_http: Received session ID: fc95f96c58e040af9b6f117b2dcb80fc
+12:41:10 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:41:10 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:10 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:10 [INFO] mcp.client.streamable_http: Received session ID: fc541b5df10343a6bae1a62464314ce0
+12:41:10 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:41:10 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:41:11 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:41:11 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:11 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:11 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:41:11 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:11 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:41:11 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:11 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:11 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:11 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:14 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:14 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:41:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:14 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:14 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:41:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:14 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:14 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:41:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:16 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:16 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:41:20 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:41:20 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:20 [INFO] mcp.client.streamable_http: Received session ID: 40f592e9317a400798e8202cd477231d
+12:41:20 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:41:20 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:20 [INFO] mcp.client.streamable_http: Received session ID: 1f2ca44d0f8e485586370b12e957a14a
+12:41:20 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:41:20 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:20 [INFO] mcp.client.streamable_http: Received session ID: 92faa31b7e05401e85c9ac343dc653ac
+12:41:20 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:41:20 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:20 [INFO] mcp.client.streamable_http: Received session ID: 0b8bdd87f8c046188156257aed7cfce4
+12:41:20 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:41:20 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:20 [INFO] mcp.client.streamable_http: Received session ID: 668c2a636a68482389ff5f37f895aa91
+12:41:20 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:41:20 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:20 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:41:20 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:20 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:41:20 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:20 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:41:20 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:41:20 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:20 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:20 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:41:20 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:20 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:20 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:20 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:20 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:21 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:21 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:21 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:41:21 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:21 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:21 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:41:21 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:21 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:21 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:41:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:22 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:22 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:41:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:22 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:41:22 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:42:02 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:42:02 [INFO] a2a_server: Skill researcher completed, result length=9856
+12:42:16 [INFO] a2a_server: Executing skill=critic, input=Here is a refreshed and updated comparison report on Retrieval-Augmented Generat...
+12:42:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:16 [INFO] mcp.client.streamable_http: Received session ID: 9b3424a97dca46c78fc196726a94c818
+12:42:16 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:42:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:42:16 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:16 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:16 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:42:18 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:42:18 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:18 [INFO] mcp.client.streamable_http: Received session ID: 877cd3cb18f34bc2bf7bc9ec1ea3544e
+12:42:18 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:42:18 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:18 [INFO] mcp.client.streamable_http: Received session ID: 549d63a0daa54f1f8b3bbf5372bec2b1
+12:42:18 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:42:18 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:18 [INFO] mcp.client.streamable_http: Received session ID: 95286059c2a14a06be9fb7ab6238f34c
+12:42:18 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:42:18 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:18 [INFO] mcp.client.streamable_http: Received session ID: 0b6db4c0daff49dea88db6d0b4bb10ff
+12:42:18 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:42:18 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:18 [INFO] mcp.client.streamable_http: Received session ID: 3d7e2a7c554645c594688e8f6450263b
+12:42:18 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:42:18 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:42:18 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:18 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:42:18 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:18 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:42:18 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:18 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:42:18 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:18 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:42:18 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:18 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:18 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:18 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:18 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:18 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:20 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:20 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:20 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:42:20 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:20 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:20 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:42:20 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:20 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:20 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:20 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:42:20 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:20 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:42:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:22 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:22 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:42:23 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:42:23 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:23 [INFO] mcp.client.streamable_http: Received session ID: f8955ac28950469b9642a82d35338a24
+12:42:23 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:42:23 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:23 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:42:23 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:23 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:23 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:23 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:42:25 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:42:25 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:25 [INFO] mcp.client.streamable_http: Received session ID: 84030f25e799459399cb463d8a255b92
+12:42:25 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:42:25 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:25 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:42:25 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:25 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:25 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:25 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:42:26 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:42:26 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:26 [INFO] mcp.client.streamable_http: Received session ID: c155621eb77d47f6b24822c1f1c3f660
+12:42:26 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:42:26 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:26 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:42:26 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:26 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:26 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:26 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:42:26 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+12:42:26 [INFO] openai._base_client: Retrying request to /chat/completions in 7.853000 seconds
+12:42:35 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:42:35 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:35 [INFO] mcp.client.streamable_http: Received session ID: fb4741a11475411d86c401f78000944b
+12:42:35 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+12:42:35 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:35 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+12:42:35 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:37 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:37 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+12:42:37 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+12:42:37 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+12:42:37 [INFO] openai._base_client: Retrying request to /chat/completions in 16.566000 seconds
+12:42:54 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+12:42:54 [INFO] openai._base_client: Retrying request to /chat/completions in 0.198000 seconds
+12:42:59 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+12:42:59 [INFO] a2a_server: Skill critic completed, result length=1068
+13:18:06 [INFO] a2a_server: Executing skill=planner, input=What are the latest LLM training techniques in 2026? Write a brief report....
+13:18:06 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:06 [INFO] mcp.client.streamable_http: Received session ID: 4600ece52b4647be80b0189df9213785
+13:18:06 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:18:06 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:18:06 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:06 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:06 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:06 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:18:10 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:18:10 [INFO] a2a_server: Skill planner completed, result length=610
+13:18:13 [INFO] a2a_server: Executing skill=researcher, input=RESEARCH PLAN:
+Goal: Identify and summarize the latest techniques used for train...
+13:18:13 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:13 [INFO] mcp.client.streamable_http: Received session ID: 97af576d04f54bcebbd26243afc36719
+13:18:13 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:18:13 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:18:13 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:13 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:13 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:13 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:18:16 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:18:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:16 [INFO] mcp.client.streamable_http: Received session ID: 0b5e38f5fd704769940a3c8db5e7adc1
+13:18:16 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:18:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:16 [INFO] mcp.client.streamable_http: Received session ID: e0f0dd2f32f14990abba18c6ead10a97
+13:18:16 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:18:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:16 [INFO] mcp.client.streamable_http: Received session ID: f6f3ba725f16417aa41f2d83a413ba2a
+13:18:16 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:18:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:16 [INFO] mcp.client.streamable_http: Received session ID: 6ac09c219e4d4d0b869a0910077c842f
+13:18:16 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:18:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:16 [INFO] mcp.client.streamable_http: Received session ID: 86bac0071e694597a04822e0ca7ec1cf
+13:18:16 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:18:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:16 [INFO] mcp.client.streamable_http: Received session ID: 90320ed598fb4c668957738edcc315fb
+13:18:16 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:18:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:18:16 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:16 [INFO] mcp.client.streamable_http: Received session ID: a59c2bdccf184b488b9b05ebc072d175
+13:18:16 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:18:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:18:16 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:18:16 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:18:16 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:18:16 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:18:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:18:16 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:16 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:16 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:16 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:18:19 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:19 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:19 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:19 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:19 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:18:19 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:19 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:19 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:18:19 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:19 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:19 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:18:21 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:21 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:21 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:18:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:22 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:22 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:18:27 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:18:27 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:27 [INFO] mcp.client.streamable_http: Received session ID: 406ff0ed42fe426e9671917d31c4085b
+13:18:27 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:18:27 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:27 [INFO] mcp.client.streamable_http: Received session ID: 6404300a5af24878b1d5093fe9be434c
+13:18:27 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:18:27 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:27 [INFO] mcp.client.streamable_http: Received session ID: 7d4313cbab2748fa8c1a696cf98f3de7
+13:18:27 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:18:27 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:27 [INFO] mcp.client.streamable_http: Received session ID: d663a8dd3c814474bc4f598e4591d67a
+13:18:27 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:18:27 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:18:27 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:27 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:27 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:18:27 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:18:27 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:27 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:18:27 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:27 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:27 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:27 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:27 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:28 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:28 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:28 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:18:28 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:28 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:28 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:18:28 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:29 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:29 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:29 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:29 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:18:30 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:18:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:30 [INFO] mcp.client.streamable_http: Received session ID: a3c87e45e52c42338e8c9fd6fb4d2c29
+13:18:30 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:18:30 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:18:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:30 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:30 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:18:41 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:18:41 [INFO] a2a_server: Skill researcher completed, result length=3941
+13:18:46 [INFO] a2a_server: Executing skill=critic, input=Here is a brief report summarizing the latest techniques used for training large...
+13:18:46 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:46 [INFO] mcp.client.streamable_http: Received session ID: a99ce912800e4fc191f6284a825c0b25
+13:18:46 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:18:46 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:18:46 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:46 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:46 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:46 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:18:48 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:18:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:48 [INFO] mcp.client.streamable_http: Received session ID: 7967de10aac345f495ba0967028b3075
+13:18:48 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:18:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:48 [INFO] mcp.client.streamable_http: Received session ID: 7b1a1fd5f7f7469c80ff11c018518c66
+13:18:48 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:18:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:48 [INFO] mcp.client.streamable_http: Received session ID: 42b6ac0c9d6746dfa5fe07ba07203911
+13:18:48 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:18:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:48 [INFO] mcp.client.streamable_http: Received session ID: 6433f9b84d544ccd97d9b3041fcc2585
+13:18:48 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:18:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:18:48 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:48 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:18:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:18:48 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:48 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:18:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:48 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:50 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:50 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:50 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:18:51 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:51 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:51 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:18:52 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:52 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:52 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:18:52 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:52 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:18:52 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:18:59 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:18:59 [INFO] a2a_server: Skill critic completed, result length=2453
+13:19:01 [INFO] a2a_server: Executing skill=researcher, input=Please revise the report on latest LLM training techniques in 2026 per the follo...
+13:19:01 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:01 [INFO] mcp.client.streamable_http: Received session ID: 8e37ec5c0f264c129d562f79513322f4
+13:19:01 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:19:01 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:01 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:19:01 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:01 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:01 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:19:04 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:19:04 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:04 [INFO] mcp.client.streamable_http: Received session ID: 2b9150469b2d40da819bbf3b36bda221
+13:19:04 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:19:04 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:04 [INFO] mcp.client.streamable_http: Received session ID: 6c80f095871d4303917681b9fbb762ca
+13:19:04 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:19:04 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:04 [INFO] mcp.client.streamable_http: Received session ID: 376bc5311a514c47b5f04a0dffb6c5ac
+13:19:04 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:19:04 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:04 [INFO] mcp.client.streamable_http: Received session ID: 03472d0b7f84490484542e85c2f534fc
+13:19:04 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:19:04 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:04 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:19:04 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:04 [INFO] mcp.client.streamable_http: Received session ID: b2f7766a7f684947b457bf02ce9c6b0e
+13:19:04 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:19:04 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:04 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:19:04 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:19:04 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:04 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:04 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:19:04 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:04 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:19:04 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:04 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:04 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:04 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:04 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:04 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:04 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:04 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:04 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:04 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:19:04 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:04 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:04 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:19:04 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:04 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:19:04 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:04 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:19:07 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:07 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:07 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:19:14 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:19:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:14 [INFO] mcp.client.streamable_http: Received session ID: 27726a3a68124c50b94fcb0a1506f695
+13:19:14 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:19:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:14 [INFO] mcp.client.streamable_http: Received session ID: 9627e71229ee4fea8a49f2699b3c40b1
+13:19:14 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:19:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:14 [INFO] mcp.client.streamable_http: Received session ID: af02b17dbc694d038672e8ebdc3f617e
+13:19:14 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:19:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:14 [INFO] mcp.client.streamable_http: Received session ID: cf77bace0a3a4802bfaca52814f4eb7a
+13:19:14 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:19:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:14 [INFO] mcp.client.streamable_http: Received session ID: ad14f4beb85a47468e3241c6a48bcde4
+13:19:14 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:19:14 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:19:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:14 [INFO] mcp.client.streamable_http: Received session ID: d40a5bdca5a84b968e0e02f38bd62be3
+13:19:14 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:19:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:19:14 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:19:14 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:19:14 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:19:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:19:14 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:14 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:15 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:15 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:19:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:16 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:16 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:19:17 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:17 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:17 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:19:17 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:17 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:17 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:19:18 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:18 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:18 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:19:18 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:18 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:18 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:19:35 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:19:35 [INFO] a2a_server: Skill researcher completed, result length=6453
+13:19:41 [INFO] a2a_server: Executing skill=critic, input=Here is a revised report on the latest LLM training techniques in 2026, integrat...
+13:19:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:41 [INFO] mcp.client.streamable_http: Received session ID: 26853495660943ddad8a5f8902a772fe
+13:19:41 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:19:41 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:19:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:41 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:41 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:19:45 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:19:45 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:45 [INFO] mcp.client.streamable_http: Received session ID: 2b57e57ff54149fb8cfaf03ca28bcea7
+13:19:45 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:19:45 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:45 [INFO] mcp.client.streamable_http: Received session ID: 221dee7ba6174a3c9b9dd5b76de1937d
+13:19:45 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:19:45 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:45 [INFO] mcp.client.streamable_http: Received session ID: 67ee02e34d694c90be26096c1956f0d3
+13:19:45 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:19:45 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:45 [INFO] mcp.client.streamable_http: Received session ID: b7896283624a44fdad18171aa0b20740
+13:19:45 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:19:45 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:19:45 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:45 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:45 [INFO] mcp.client.streamable_http: Received session ID: 0f4bed8440da4c98af7293fd2f5bdab4
+13:19:45 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:19:45 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:45 [INFO] mcp.client.streamable_http: Received session ID: 7708ab329dd14ff3bf5100b9c351743d
+13:19:45 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:19:45 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:19:45 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:45 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:19:45 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:45 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:45 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:19:45 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:45 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:19:45 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:45 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:19:45 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:45 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:45 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:45 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:45 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:45 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:47 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:47 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:47 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:19:47 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:47 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:47 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:19:49 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:49 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:49 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:19:50 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:50 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:50 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:19:50 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:50 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:50 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:19:51 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:51 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:19:51 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:19:54 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:19:54 [INFO] a2a_server: Skill critic completed, result length=862
+13:21:20 [INFO] a2a_server: Executing skill=planner, input=Explain FAISS internals and when to use it vs Chroma. Write a report....
+13:21:20 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:20 [INFO] mcp.client.streamable_http: Received session ID: 60a0900fdde84d8e8bf2f2b50d7a9007
+13:21:20 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:21:20 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:20 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:21:20 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:20 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:20 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:21:26 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:21:26 [INFO] a2a_server: Skill planner completed, result length=652
+13:21:28 [INFO] a2a_server: Executing skill=researcher, input=RESEARCH PLAN:
+Goal: To explain the internal architecture of FAISS, compare it w...
+13:21:28 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:28 [INFO] mcp.client.streamable_http: Received session ID: 7280ce6ab3834341b824f092751d43af
+13:21:28 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:21:28 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:21:28 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:28 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:28 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:28 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:21:30 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:21:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:30 [INFO] mcp.client.streamable_http: Received session ID: 3708f88d35d64cb5a5fcf1e2ffeae297
+13:21:30 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:21:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:30 [INFO] mcp.client.streamable_http: Received session ID: 0ad4a4c41c0046ac89920a721eb686f8
+13:21:30 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:21:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:30 [INFO] mcp.client.streamable_http: Received session ID: cd97a3ac68f04cb9b3852797cb187159
+13:21:30 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:21:30 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:21:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:30 [INFO] mcp.client.streamable_http: Received session ID: 96a1f43f0f204779a7c149668409529d
+13:21:30 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:21:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:30 [INFO] mcp.client.streamable_http: Received session ID: d9b04064771c47e9ae2f99675cce5963
+13:21:30 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:21:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:30 [INFO] mcp.client.streamable_http: Received session ID: ed654d54f2794177958745ea7bec1777
+13:21:30 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:21:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:21:30 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:21:30 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:21:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:21:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:21:30 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:30 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:30 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:31 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:31 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:31 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:31 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:31 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:21:31 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:31 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:21:31 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:31 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:21:32 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:32 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:32 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:21:33 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:33 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:33 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:21:36 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:21:36 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:36 [INFO] mcp.client.streamable_http: Received session ID: 3b1961508e9d4c36b09bb68686689aa1
+13:21:36 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:21:36 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:36 [INFO] mcp.client.streamable_http: Received session ID: cc1a14b86d774fef9b54e46c257fa4cf
+13:21:36 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:21:36 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:36 [INFO] mcp.client.streamable_http: Received session ID: 8ee372bb7e884bebb0a486e14ce6a6bb
+13:21:36 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:21:36 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:36 [INFO] mcp.client.streamable_http: Received session ID: ccb482fd8e6640079a8e950ebf172d24
+13:21:36 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:21:36 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:36 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:21:36 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:21:36 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:36 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:21:36 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:36 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:21:36 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:36 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:36 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:36 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:36 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:37 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:37 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:37 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:21:37 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:37 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:37 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:21:37 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:37 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:37 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:21:37 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:37 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:21:37 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:21:57 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:21:57 [INFO] a2a_server: Skill researcher completed, result length=7562
+13:22:08 [INFO] a2a_server: Executing skill=critic, input=Here is a detailed report covering the internal architecture of FAISS, an overvi...
+13:22:08 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:22:08 [INFO] mcp.client.streamable_http: Received session ID: fc93db5839c545e9bc29c6ff472a5a9f
+13:22:08 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:22:08 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:22:08 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:22:08 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:22:08 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:22:08 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:22:09 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:22:10 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:22:10 [INFO] mcp.client.streamable_http: Received session ID: 4d8ea22cfc7b4f33985ac8d103980721
+13:22:10 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:22:10 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:22:10 [INFO] mcp.client.streamable_http: Received session ID: 455a1c0ff0a344d586022ff2619bfc26
+13:22:10 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:22:10 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:22:10 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:22:10 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:22:10 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:22:10 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:22:10 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:22:10 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:22:10 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:22:10 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:22:13 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:22:13 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:22:13 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:22:14 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:22:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:22:14 [INFO] mcp.client.streamable_http: Received session ID: 048122aa01d646fbae6402c4c3395a23
+13:22:14 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:22:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:22:14 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:22:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:22:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:22:14 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:22:14 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:22:17 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:22:17 [INFO] a2a_server: Skill critic completed, result length=611
+13:23:14 [INFO] a2a_server: Executing skill=planner, input=Compare transformer architecture with previous NLP approaches. Write a report....
+13:23:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:14 [INFO] mcp.client.streamable_http: Received session ID: bd1da1414d284fe5a26605c58cc889fb
+13:23:14 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:23:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:23:14 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:14 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:14 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:14 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:23:16 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:23:16 [INFO] a2a_server: Skill planner completed, result length=823
+13:23:19 [INFO] a2a_server: Executing skill=researcher, input=Compare the transformer architecture with previous NLP approaches, as outlined i...
+13:23:19 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:19 [INFO] mcp.client.streamable_http: Received session ID: 74acf2345b1349d79333ff497ec70b00
+13:23:19 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:23:19 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:19 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:23:19 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:19 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:19 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:23:22 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:23:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:22 [INFO] mcp.client.streamable_http: Received session ID: 0806cf6283fa43f0920e4aaff486c576
+13:23:22 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:23:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:22 [INFO] mcp.client.streamable_http: Received session ID: 971766367a04402f94352ecb91e49c5a
+13:23:22 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:23:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:22 [INFO] mcp.client.streamable_http: Received session ID: ed5d1cd169b346f3bb2846875b83763d
+13:23:22 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:23:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:22 [INFO] mcp.client.streamable_http: Received session ID: 46c52000d1034a228d9adc9220b4bf42
+13:23:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:23:22 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:23:22 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:22 [INFO] mcp.client.streamable_http: Received session ID: 642799d596c94eacbb3ae1ed15ff2282
+13:23:22 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:23:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:23:22 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:23:22 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:23:22 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:23:22 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:22 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:22 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:22 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:23:22 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:22 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:23:25 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:25 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:25 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:23:26 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:26 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:26 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:23:26 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:26 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:26 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:23:29 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:23:29 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:29 [INFO] mcp.client.streamable_http: Received session ID: 7d73be46a24d444182d12a95a10fc6c6
+13:23:29 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:23:29 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:29 [INFO] mcp.client.streamable_http: Received session ID: dbf349e6ae6945bc8d7b81a3d5c6f985
+13:23:29 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:23:29 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:29 [INFO] mcp.client.streamable_http: Received session ID: 31a475605c7e4b448bf21932350b5988
+13:23:29 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:23:29 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:29 [INFO] mcp.client.streamable_http: Received session ID: 07cfb79cda2c43b7a3e26c48917b0e19
+13:23:29 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:23:29 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:23:29 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:29 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:29 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:23:29 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:23:29 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:23:29 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:29 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:29 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:29 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:29 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:29 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:30 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:30 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:23:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:30 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:30 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:23:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:30 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:30 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:23:30 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:30 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:30 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:23:45 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:23:45 [INFO] a2a_server: Skill researcher completed, result length=6261
+13:23:52 [INFO] a2a_server: Executing skill=critic, input=1. Overview and definition of transformer architecture:
+Transformers are deep le...
+13:23:52 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:52 [INFO] mcp.client.streamable_http: Received session ID: 233b3a9134f74c549dab458eb5529472
+13:23:52 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:23:52 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:52 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:23:52 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:52 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:52 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:23:54 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:23:54 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:54 [INFO] mcp.client.streamable_http: Received session ID: 462ed814644f4586b7c5eb793c08b4b3
+13:23:54 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:23:54 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:54 [INFO] mcp.client.streamable_http: Received session ID: c7e3ecd1cd3048329f87dbde2942639f
+13:23:54 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:23:54 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:54 [INFO] mcp.client.streamable_http: Received session ID: 1e15e5abf9ce4fab8bfdefb0bd1149bd
+13:23:54 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:23:54 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:23:54 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:54 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:54 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:23:54 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:23:54 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:54 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:54 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:54 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:54 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:54 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:54 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:23:56 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:56 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:56 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:23:58 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:58 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:23:58 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:24:03 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:24:03 [INFO] a2a_server: Skill critic completed, result length=1946
+13:24:05 [INFO] a2a_server: Executing skill=researcher, input=Revise and update the comparison of transformer architecture with previous NLP a...
+13:24:05 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:05 [INFO] mcp.client.streamable_http: Received session ID: 4e5b5e15961f4c87955a06596490ec28
+13:24:05 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:24:05 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:24:05 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:05 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:05 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:05 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:24:08 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:24:08 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:08 [INFO] mcp.client.streamable_http: Received session ID: 85bf6ffb90534b6eb9f6af2cc5160636
+13:24:08 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:24:08 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:08 [INFO] mcp.client.streamable_http: Received session ID: 4562d398d62847119cbdf26385d9440f
+13:24:08 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:24:08 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:24:08 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:08 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:24:08 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:08 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:08 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:08 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:08 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:08 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:24:11 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:11 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:11 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:24:15 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:24:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:15 [INFO] mcp.client.streamable_http: Received session ID: 22690cb4bfd24d43af6eb4562ee1d2db
+13:24:15 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:24:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:15 [INFO] mcp.client.streamable_http: Received session ID: 4e3f7c5c0038481fa0df05411b8ca4d6
+13:24:15 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:24:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:15 [INFO] mcp.client.streamable_http: Received session ID: 605a7bac883b4ab79c121862301b97f5
+13:24:15 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:24:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:15 [INFO] mcp.client.streamable_http: Received session ID: 16b3669597d14446892c0236622a7da3
+13:24:15 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:24:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:15 [INFO] mcp.client.streamable_http: Received session ID: 9955f0fdeb8c459da2d472cff27ccf9f
+13:24:15 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:24:15 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:24:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:24:15 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:24:15 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:24:15 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:24:15 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:15 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:16 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:16 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:24:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:16 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:16 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:24:16 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:16 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:16 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:24:17 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:17 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:17 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:24:17 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:17 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:17 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:24:33 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:24:33 [INFO] a2a_server: Skill researcher completed, result length=7094
+13:24:39 [INFO] a2a_server: Executing skill=critic, input=Here is a revised and updated comparison of transformer architecture with previo...
+13:24:39 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:39 [INFO] mcp.client.streamable_http: Received session ID: 5980dca7b617448883e36237c853d406
+13:24:39 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:24:39 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:39 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:24:39 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:39 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:39 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:24:41 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:24:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] mcp.client.streamable_http: Received session ID: dd5f69e6c6ed4ad5a337d25cd50adefc
+13:24:41 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:24:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] mcp.client.streamable_http: Received session ID: 5a8012cd719a46358db0fa674549fe02
+13:24:41 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:24:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] mcp.client.streamable_http: Received session ID: 80ec0cba493843d88bb79cd7b3580a38
+13:24:41 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:24:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] mcp.client.streamable_http: Received session ID: b49a78e571fd41348dcdf6e95603f902
+13:24:41 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:24:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] mcp.client.streamable_http: Received session ID: ca5eaf3951ed47539af01aecad91523a
+13:24:41 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:24:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] mcp.client.streamable_http: Received session ID: 78b8ae83114a49ab9e1e82054ab4b2ec
+13:24:41 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:24:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:24:41 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:24:41 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] mcp.client.streamable_http: Received session ID: 8ced2bfc88254b8d99a0e78af48c539e
+13:24:41 [INFO] mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+13:24:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:24:41 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:24:41 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:24:41 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:24:41 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 202 Accepted"
+13:24:41 [INFO] httpx: HTTP Request: GET http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:41 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:24:44 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:44 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:44 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:24:44 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:44 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:44 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:24:44 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:44 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:44 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:24:46 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:46 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:46 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:24:46 [INFO] httpx: HTTP Request: POST http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:46 [INFO] httpx: HTTP Request: DELETE http://search-mcp:8901/mcp "HTTP/1.1 200 OK"
+13:24:46 [INFO] mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+13:24:50 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:24:50 [INFO] a2a_server: Skill critic completed, result length=1320
