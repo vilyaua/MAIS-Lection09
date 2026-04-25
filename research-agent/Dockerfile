@@ -18,7 +18,7 @@ COPY . .
 
 RUN mkdir -p output logs
 
-EXPOSE 8000 8901 8902 8903
+EXPOSE 8000 8901 8902 8903 8904
 
 # Default: start all servers + REPL via the launcher
 ENTRYPOINT ["python", "main.py"]

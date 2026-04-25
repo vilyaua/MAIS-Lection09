@@ -41,6 +41,28 @@ services:
     depends_on:
       - search-mcp
 
+  # A2A server — Google's Agent-to-Agent protocol (successor to ACP)
+  # Use with: AGENT_PROTOCOL=a2a
+  a2a:
+    image: multi-agent-mcp-acp:latest
+    build: .
+    env_file:
+      - .env
+    environment:
+      - SEARCH_MCP_HOST=search-mcp
+      - A2A_HOST=a2a
+    ports:
+      - "8904:8904"
+    volumes:
+      - ./data:/app/data
+      - ./index:/app/index
+      - ./logs:/app/logs
+    entrypoint: ["python", "a2a_server.py"]
+    depends_on:
+      - search-mcp
+    profiles: ["a2a"]
+
+  # Web UI — set AGENT_PROTOCOL=a2a in .env to use A2A instead of ACP
   web:
     image: multi-agent-mcp-acp:latest
     build: .
@@ -52,6 +74,7 @@ services:
       - SEARCH_MCP_HOST=search-mcp
       - REPORT_MCP_HOST=report-mcp
       - ACP_HOST=acp
+      - A2A_HOST=a2a
     volumes:
       - ./output:/app/output
       - ./logs:/app/logs
@@ -59,7 +82,6 @@ services:
     depends_on:
       - search-mcp
       - report-mcp
-      - acp
 
   # Interactive CLI — run with: docker compose --profile cli run --rm supervisor
   supervisor:
@@ -73,6 +95,7 @@ services:
       - SEARCH_MCP_HOST=search-mcp
       - REPORT_MCP_HOST=report-mcp
       - ACP_HOST=acp
+      - A2A_HOST=a2a
     volumes:
       - ./output:/app/output
       - ./logs:/app/logs

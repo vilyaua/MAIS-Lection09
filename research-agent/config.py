@@ -11,18 +11,23 @@ APP_VERSION = (Path(__file__).parent / "VERSION").read_text().strip()
 class Settings(BaseSettings):
     """App configuration loaded from .env (via pydantic-settings)."""
 
-    app_name: str = "Multi-Agent Research System L09 (MCP+ACP)"
+    app_name: str = "Multi-Agent Research System L09 (MCP+ACP/A2A)"
     openai_api_key: SecretStr
     model_powerful: str = "openai:gpt-4.1"
     model_fast: str = "openai:gpt-4.1-mini"
+
+    # Protocol toggle: "acp" (legacy) or "a2a" (current)
+    agent_protocol: str = "acp"
 
     # Service hosts (localhost for local dev, service names for Docker)
     search_mcp_host: str = "localhost"
     report_mcp_host: str = "localhost"
     acp_host: str = "localhost"
+    a2a_host: str = "localhost"
     search_mcp_port: int = 8901
     report_mcp_port: int = 8902
     acp_port: int = 8903
+    a2a_port: int = 8904
 
     # Web search
     max_search_results: int = 5
@@ -55,6 +60,10 @@ class Settings(BaseSettings):
     @property
     def acp_url(self) -> str:
         return f"http://{self.acp_host}:{self.acp_port}"
+
+    @property
+    def a2a_url(self) -> str:
+        return f"http://{self.a2a_host}:{self.a2a_port}"
 
 
 # ---------------------------------------------------------------------------
